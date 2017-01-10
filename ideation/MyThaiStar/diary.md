@@ -28,8 +28,11 @@ Decisions:
  
 ## Review before Christmas (*Jens, Christian, Marco, Thorsten, Rainer*)
 
-Everyone is satisfied by solution.
+Everyone is satisfied by solution, except: 
 
 - Minor changes in layout
 - Layout of filter should be changed
-- filter should exist, sorting should be included, only few filter criteria are enough in order to show how to do it
+- filter should exist, sorting should be included, only a few filter criteria are enough in order to show how to implement a filter
+- switching languages added
+- login (only username and password) required, no maintainance of user profile needed
+
