@@ -4,7 +4,7 @@
 This diary explains what happened when and which decisions were taken during the project
 
 ## 17.10.2016: Kickoff Offenbach 
-'Jens, Christian, Marco, Thorsten'
+`Jens, Christian, Marco, Thorsten`
 
 What happened?
 Design thinking light:
