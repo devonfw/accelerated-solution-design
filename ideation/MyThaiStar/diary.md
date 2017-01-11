@@ -30,7 +30,7 @@ Decisions:
 For each main use case first personas and scenarios and first screens (wireframes) are defined based on previous, rough user story map. Outcome of discussion is used to refine user story map and to finalize the scenarios.
 Outcome: Axure Prototype with Screens, Scenarios, User Story Map
 
-## 07.12.2017: Pablo Javier Martinez Calvo and Jaime Moncho Llorca create first Visual Design (color, layout, pictures)
+## 07.12.2016: Pablo Javier Martinez Calvo and Jaime Moncho Llorca create first Visual Design (color, layout, pictures)
 
 Starting from first mockups Pablo and Jaime create first Axure prototype with visual design. Afterwards Jens incorporates the current state of the scenarios.
 
@@ -39,7 +39,7 @@ Further changes:
 - removed visual selection of table (out of scope)
 - some layout changes (moved filter from left to top, added order-basket directly on main page)
 
-## 22.12.2017: Review before Christmas (Jens, Christian, Marco, Thorsten, Rainer)
+## 22.12.2016: Review before Christmas (Jens, Christian, Marco, Thorsten, Rainer)
 
 Jens presents scenarios and prototype: Everyone is satisfied with solution :-)
 
