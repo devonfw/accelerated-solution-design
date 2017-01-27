@@ -108,15 +108,17 @@ AC: ...
 
 
 checklist:
+
 talk about:
-- who?
-- what?
-- why (purpose)
-- why (objective)
-- what happens outside the software
-- what might go wrong
-- any question or assumptions (write them down) , DoR should check that those sections are empty.
-- is there any better solution?
-- how (technical perspective)
-- do a rough estimate
-- check INVEST
+
+ - who?
+ - what?
+ - why (purpose)
+ - why (objective)
+ - what happens outside the software
+ - what might go wrong
+ - any question or assumptions (write them down) , DoR should check that those sections are empty.
+ - is there any better solution?
+ - how (technical perspective)
+ - do a rough estimate
+ - check INVEST
