@@ -1,17 +1,18 @@
 
 # Diary Ideation
 
-This diary explains what happened when and which decisions were taken during the ideation phase
+This diary explains what happened when and which decisions were taken during the project
 
-## 17.10.2016: Kickoff Offenbach (Jens, Christian, Marco, Thorsten)
+## 17.10.2016: Kickoff Offenbach 
+`Jens, Christian, Marco, Thorsten`
 
 What happened?
 Design thinking light:
 - Brainstorming about Question "How might we show to whom? with our digital example the strength of our iCSD-platform / community?"
 - Ideation results in three main use cases: Invite friend, digital menu, rate by twitter
-- First sketching of screens
-- First rough user story map created
-- Results has been captured afterwards in realtimenboard (find link here [GIT]).
+- First sketching for screens
+- First rough user story map
+- Results/Work has been captured afterwards in realtimenboard (find link in [GIT]).
 
 Decisions:
  - make the example more digital following SMACT: should work on mobile devices, dashboard might include some analytics, social by twitter integration and social logins, IoT is omitted)
@@ -26,23 +27,24 @@ Decisions:
    - main operational entities are order and table bookings
    - chief does still exist for dashboard
 
-## After 17.10.2016: Developing of personas, scenarios, prototype plus user story map (Jens, Sebastian)
-For each main use case first personas and scenarios and screens (wireframes) are defined based on previous, rough user story map. Discussions (1h meetings) are used to refine user story map and to finalize the scenarios and screens.
+## After 17.10.2016: Developing of personas, scenarios, prototype plus user story map 
+`Jens, Sebastian`
 
-First wireframes are handed over to spain for a visual design.
+For each main use case first personas and scenarios and first screens (wireframes) are defined based on previous, rough user story map. Outcome of discussion is used to refine user story map and to finalize the scenarios.
+Outcome: Axure Prototype with Screens, Scenarios, User Story Map
 
-## 07.12.2017: Pablo Javier Martinez Calvo and Jaime Moncho Llorca create first Visual Design (color, layout, pictures)
+## 07.12.2016: Pablo Javier Martinez Calvo and Jaime Moncho Llorca create first Visual Design (color, layout, pictures)
+`Pablo Javier Martinez Calvo, Jaime Moncho Llorca`
 
 Starting from first mockups Pablo and Jaime create first Axure prototype with visual design. Afterwards Jens incorporates the current state of the scenarios.
 
-Changes:  
+Further changes:  
 - Changed primary color from blue to green
-- removed visual selection of table (out of scope, too complex for first release)
+- removed visual selection of table (out of scope)
 - some layout changes (moved filter from left to top, added order-basket directly on main page)
 
-Outcome: Axure Prototype with Screens, Scenarios, User Story Map
-
-## 22.12.2017: Review before Christmas (Jens, Christian, Marco, Thorsten, Rainer)
+## 22.12.2016: Review before Christmas
+`Jens, Christian, Marco, Thorsten, Rainer`
 
 Jens presents scenarios and prototype: Everyone is satisfied with solution :-)
 
@@ -57,11 +59,13 @@ except:
 - login (only username and password) required, no maintainance of user profile needed so far
 
 
-## 05.01.2017: Cover Page to shape the common visison
+## 05.01.2017: Coverpage to shape the common visison
 In order to shape a shared vision for the example Jens creates a cover page (see [GIT]) representing his understanding of the vision.
 
 ## 06.01.2017: Mobile first?
-Lukas Birn and Florian Bemm start developing screens following mobile first approach.
+`Lukas Birn, Florian Bemm`
+
+Lukas and Florian start developing screens following mobile first approach.
 
 
 [GIT]: https://github.com/devonfw/devon-methodology/tree/master/ideation/MyThaiStar
