@@ -1,7 +1,7 @@
 
 # Diary Ideation
 
-This diary explains what happened when and which decisions were taken during the project
+This diary explains what happened when and which decisions were taken during the ideation phase
 
 ## 17.10.2016: Kickoff Offenbach (Jens, Christian, Marco, Thorsten)
 
@@ -9,9 +9,9 @@ What happened?
 Design thinking light:
 - Brainstorming about Question "How might we show to whom? with our digital example the strength of our iCSD-platform / community?"
 - Ideation results in three main use cases: Invite friend, digital menu, rate by twitter
-- First sketching for screens
-- First rough user story map
-- Results/Work has been captured afterwards in realtimenboard (find link in [GIT]).
+- First sketching of screens
+- First rough user story map created
+- Results has been captured afterwards in realtimenboard (find link here [GIT]).
 
 Decisions:
  - make the example more digital following SMACT: should work on mobile devices, dashboard might include some analytics, social by twitter integration and social logins, IoT is omitted)
@@ -27,17 +27,20 @@ Decisions:
    - chief does still exist for dashboard
 
 ## After 17.10.2016: Developing of personas, scenarios, prototype plus user story map (Jens, Sebastian)
-For each main use case first personas and scenarios and first screens (wireframes) are defined based on previous, rough user story map. Outcome of discussion is used to refine user story map and to finalize the scenarios.
-Outcome: Axure Prototype with Screens, Scenarios, User Story Map
+For each main use case first personas and scenarios and screens (wireframes) are defined based on previous, rough user story map. Discussions (1h meetings) are used to refine user story map and to finalize the scenarios and screens.
+
+First wireframes are handed over to spain for a visual design.
 
 ## 07.12.2017: Pablo Javier Martinez Calvo and Jaime Moncho Llorca create first Visual Design (color, layout, pictures)
 
 Starting from first mockups Pablo and Jaime create first Axure prototype with visual design. Afterwards Jens incorporates the current state of the scenarios.
 
-Further changes:  
+Changes:  
 - Changed primary color from blue to green
-- removed visual selection of table (out of scope)
+- removed visual selection of table (out of scope, too complex for first release)
 - some layout changes (moved filter from left to top, added order-basket directly on main page)
+
+Outcome: Axure Prototype with Screens, Scenarios, User Story Map
 
 ## 22.12.2017: Review before Christmas (Jens, Christian, Marco, Thorsten, Rainer)
 
@@ -54,7 +57,7 @@ except:
 - login (only username and password) required, no maintainance of user profile needed so far
 
 
-## 05.01.2017: Coverpage to shape the common visison
+## 05.01.2017: Cover Page to shape the common visison
 In order to shape a shared vision for the example Jens creates a cover page (see [GIT]) representing his understanding of the vision.
 
 ## 06.01.2017: Mobile first?
