@@ -15,11 +15,12 @@ As a guest I want to create an dinner event by entering date and time and adding
 - only date and time in future possible and both required
 - only valid email addresses: text@text.xx, one entered email-address is required
 - if AGB are not checked, an error message is shown
+- after the invite I receive a confirmation email about my invite containing date, time and invited guests
 
 ===== Wireframes
 ...
 
-==== US: handle invite
+=== US: handle invite
 
 As an invited guest I would like to receive an email - after somebody as invited me - with the option to accept or decline the invite so that the system knows about my participation
 
@@ -30,6 +31,14 @@ As an invited guest I would like to receive an email - after somebody as invited
   .. date and time of the invite
   .. button to accept or decline
   .. after pressing the buttons the system will store the status (yes/no) of my invite
+
+=== US: revoke accepted invite
+
+As an invited guest I would like to revoke my previous answer in order to inform the system and the inviter about my no showup
+
+==== AC:
+. ....
+
 
 === US: calculate best table
 
@@ -51,10 +60,14 @@ As a ?guest/waiter? I would like to search by reference number or email address 
 === US: cancel invite
 Epic: Invite friends
 
-As a guets who has sent an invite I want to be able to cancel my previous invite
+As a guests who has sent an invite I want to be able to cancel my previous invite in order to inform the restaurent and my invited guests that I will not show up
 
 ===== AC:
-...
+ . the option to cancel the invite is available in the confirmation-mail about my invite
+ . after my cancelation all invited guests receives a mail about the cancelation
+ . I see a confirmation that my invite was cancelled successfully
+ . after my cancelation my invite and reservation and all orders related to it are deleted from the system and no one can accept or decline any invite for it
+ . the cancelation is only possible one hour before the inite takes place. After that I am not allowed to cancel it any more.
 
 == Epic: Digital Menu
 === US: filter menu
@@ -84,7 +97,7 @@ As a guest I want to define my order by selecting dishes from the menu
 
 ===== AC:
 - The guest can add each dish to the order
-- In case the guest adds the same dish multiple times, a counter is increased for this dish
+- In case the guest adds the same dish multiple times, a counter in the order for this dish is increased for this dish
 - The guest can remove the dish from the order
 - The guest can add for each main dish the type of meat (pork, chicken, tofu)
 - The guest can add for each dish a free-text-comment
@@ -92,17 +105,69 @@ As a guest I want to define my order by selecting dishes from the menu
 
 === US: Order the order
 
-AC: I receive a mail containing my order with all dishes
+As a guest I want to order my selected dishes (order)
+
+AC:
+
+.  I receive a mail containing my order with all dishes and the final price
+[red]*
+.  precondtion for ordering:
+.. Ordering is only allowed in case a reservation is created before or an invite was acccepted before;
+.. In case precondition is not fullfillied, the guest is asked
+... whether he/she would like to create a reservation/invite and is forwarded to US Invite Friends. Only after finalizing the reservation the order is accepted.
+... or he/she would enter previous created reservation-id he/she knows in order to associate his/her order with this reservation
 
 === US: Cancel order
-AC: ...
+
+As a guest I want to cancel my order.
+
+AC:
+
+. in my receveid confirmation mail I have the option to cancel my order
+. the cancelation is only possible one hour before my reservation takes place
+. my order is deleted from the system
+
+Remark: Changing the order is not possible. For that the order must be cancel and created from scratch again
+
+=== US: Read twitter rating for dishes
+
+As a guest I want to read for all dishes the rating done be twitter because I would like to know the opnion of others
+
+AC:
+
+ . For each dish I see the latest 3 comments done by twitter for this vote (text, username, avatar)
+ . For each dish I see the number of likes done by twitter
+
+== Epic: User Profile
+
+=== US: User Profile
+
+As a guest I want to have a user profile to associate it with my twitter account to be able to like/rate dishes
+
+AC:
+
+ . Username of my profile is my email address
+ . My profile is protected by password
+ . I can log in and log out to my profile
+ . I can reset my password by triggering the reset by mail
+ . I can assocaite my profile with my twitter account in order to rate dishes and store my favorites by liking posts assocaited to dishes
+
+  'default values when creating an invite?'
 
 == Epic: Rate by twitter
 
+todo
 
+== Epic: Waiter Cockpit
 
+=== US: As a waiter I want to see all orders/reservation
 
-
+AC:
+ . orders/reservations are shown in seperate lists. Those list can be filtered and sorted (similar to excel-data-filters)
+ . for each order the dish, meat, comment, item, reservation-id, reservation datetime, creation-datetime is shown
+ . for each reservation the inviters email, the guests-emails, the number of accepts and declines, calculated table nummber, the reservation-id, reservation date-time and creation-datetime are shown
+ . the default filter for all lists is the todays date for reservation datetime. this filter can be deleted.
+ . only reservations and orders with reservation date in the future shall be available in this view. All other orders and reservation shall not be deleted; for data analytics those orders and reservation shall still exisit in the system.
 
 
 
