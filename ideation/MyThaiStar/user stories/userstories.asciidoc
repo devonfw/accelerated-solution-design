@@ -12,10 +12,13 @@ Epic: Invite friends
 As a guest I want to create an dinner event by entering date and time and adding potential guest by their emails so that each potential guests receives a email in order to confirm or decline my invite.
 
 ===== Acceptance criteria
-- only date and time in future possible and both required
-- only valid email addresses: text@text.xx, one entered email-address is required
-- if AGB are not checked, an error message is shown
-- after the invite I receive a confirmation email about my invite containing date, time and invited guests
+ . only date and time in future possible and both required
+ . only valid email addresses: text@text.xx, one entered email-address is required
+ . if AGB are not checked, an error message is shown
+ . after the invite is done
+ .. I receive a confirmation email about my invite containing date, time and invited guests
+ .. all guests receive an mail with my invite
+
 
 ===== Wireframes
 ...
