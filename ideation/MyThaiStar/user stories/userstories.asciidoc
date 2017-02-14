@@ -159,19 +159,35 @@ AC:
 
 == Epic: Rate by twitter
 
-todo
+=== US: Receive mail to rate your dish
+
+As a guest I want to receive a mail by the system in order to rate my dish
+
+=== US: Rate your dish
+
+
+As a guest I want to add a comment or a like via my twitter account for a dish
+
+AC:
+
+ . Before I write my rate I would like to be able to read all tweets of other users for this dihs
+ . I would like to see the number of likes for a dish
+
 
 == Epic: Waiter Cockpit
 
-=== US: As a waiter I want to see all orders/reservation
+=== US: See all orders/reservations
+
+As a waiter I want to see all orders/reservation in order to know what is going on in my restaurant
 
 AC:
- . orders/reservations are shown in seperate lists. Those list can be filtered and sorted (similar to excel-data-filters)
+
+ . all orders/reservations are shown in a list view (read-only). Those list can be filtered and sorted (similar to excel-data-filters)
+ . orders/reservations are shown in seperate lists.
  . for each order the dish, meat, comment, item, reservation-id, reservation datetime, creation-datetime is shown
- . for each reservation the inviters email, the guests-emails, the number of accepts and declines, calculated table nummber, the reservation-id, reservation date-time and creation-datetime are shown
+ . for each reservation the inviters email, the guests-emails, the number of accepts and declines, calculated table number, the reservation-id, reservation date-time and creation-datetime are shown
  . the default filter for all lists is the todays date for reservation datetime. this filter can be deleted.
  . only reservations and orders with reservation date in the future shall be available in this view. All other orders and reservation shall not be deleted; for data analytics those orders and reservation shall still exisit in the system.
-
 
 
 
