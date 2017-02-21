@@ -17,11 +17,11 @@ As a guest I want to create an dinner event by entering date and time and adding
  . if AGB are not checked, an error message is shown
  . after the invite is done
  .. I receive a confirmation email about my invite containing date, time and invited guests
- .. all guests receive an mail with my invite
+ .. all guests receive a mail with my invite
 
 
 ===== Wireframes
-...
+see realtimeboard
 
 === US: handle invite
 
@@ -54,7 +54,7 @@ For each decline of a guest remove guest and search with reduced number for new 
 
 === US: find table by reservation info
 
-As a ?guest/waiter? I would like to search by reference number or email address for my reserved table in order to know the table for my visit. (when arriving at the restaurant)
+As a waiter I would like to search by reference number or email address for the reserved table in order to know the table for my visit. (when arriving at the restaurant)
 
 ===== AC:
 . After entering the email the systems shows the number of the table. In case no reservation found, a message is shown.
@@ -188,6 +188,10 @@ AC:
  . for each reservation the inviters email, the guests-emails, the number of accepts and declines, calculated table number, the reservation-id, reservation date-time and creation-datetime are shown
  . the default filter for all lists is the todays date for reservation datetime. this filter can be deleted.
  . only reservations and orders with reservation date in the future shall be available in this view. All other orders and reservation shall not be deleted; for data analytics those orders and reservation shall still exisit in the system.
+
+
+
+
 
 
 
