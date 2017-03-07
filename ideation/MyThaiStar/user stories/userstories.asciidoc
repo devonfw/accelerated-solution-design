@@ -9,15 +9,30 @@ Content
 
 Epic: Invite friends
 
-As a guest I want to create an dinner event by entering date and time and adding potential guest by their emails so that each potential guests receives a email in order to confirm or decline my invite.
+As a guest I want to create an dinner event by entering date and time and adding potential guests by their emails so that each potential guests receives a email in order to confirm or decline my invite.
 
 ===== Acceptance criteria
  . only date and time in future possible and both required
  . only valid email addresses: text@text.xx, one entered email-address is required
  . if AGB are not checked, an error message is shown
  . after the invite is done
+ .. I see the confirmation screen of my invite (see wireframe)
  .. I receive a confirmation email about my invite containing date, time and invited guests
  .. all guests receive a mail with my invite
+
+=== US: create reservation
+
+Epic: Invite friends
+
+As a guest I want to create a reservation by entering date and time and number of adults and kids
+
+===== Acceptance criteria
+. only date and time in future possible and both required
+. only valid email addresses: text@text.xx, one entered email-address is required
+. if AGB are not checked, an error message is shown
+. after the reservation is done
+.. I see a confirmation screen of my reservation with datetime, number of persons and kids
+.. I receive a confirmation email about my reservation
 
 
 ===== Wireframes
@@ -40,8 +55,10 @@ As an invited guest I would like to receive an email - after somebody as invited
 As an invited guest I would like to revoke my previous answer in order to inform the system and the inviter about my no showup
 
 ==== AC:
-. ....
-
+ . the inviter and myself receives an email about my cancelation
+ . the system sets my status of my invite to no
+ . in case I have placed an order, the order is also removed from the system.
+ . the cancelation is only possible 10 minutes before the event takes place. The system shows a message that cancelation is not possible anymore.
 
 === US: calculate best table
 
@@ -113,12 +130,11 @@ As a guest I want to order my selected dishes (order)
 AC:
 
 .  I receive a mail containing my order with all dishes and the final price
-[red]*
 .  precondtion for ordering:
-.. Ordering is only allowed in case a reservation is created before or an invite was acccepted before;
-.. In case precondition is not fullfillied, the guest is asked
-... whether he/she would like to create a reservation/invite and is forwarded to US Invite Friends. Only after finalizing the reservation the order is accepted.
-... or he/she would enter previous created reservation-id he/she knows in order to associate his/her order with this reservation
+.. Each order must be assocaited with a reservation / invite. Without any reference no order could be placed. The reference could be obtain from a previous reservation/invite (created during same session) or by the previous accepted invite (link in email) or by entering the reference id when asked by the system.
+... In case precondition is not fullfillied, the guest is asked
+.... whether he/she would like to create a reservation/invite and is forwarded to US Invite Friends. Only after finalizing the reservation the order is accepted.
+.... or he/she would enter previous created reservation-id he/she knows in order to associate his/her order with this reservation
 
 === US: Cancel order
 
@@ -126,11 +142,11 @@ As a guest I want to cancel my order.
 
 AC:
 
-. in my receveid confirmation mail I have the option to cancel my order
+. in my received confirmation mail I have the option to cancel my order
 . the cancelation is only possible one hour before my reservation takes place
 . my order is deleted from the system
 
-Remark: Changing the order is not possible. For that the order must be cancel and created from scratch again
+Remark: Changing the order is not possible. For that the order must be canceled and created from scratch again
 
 === US: Read twitter rating for dishes
 
@@ -154,8 +170,6 @@ AC:
  . I can log in and log out to my profile
  . I can reset my password by triggering the reset by mail
  . I can assocaite my profile with my twitter account in order to rate dishes and store my favorites by liking posts assocaited to dishes
-
-  'default values when creating an invite?'
 
 == Epic: Rate by twitter
 
@@ -210,4 +224,3 @@ talk about:
  - how (technical perspective)
  - do a rough estimate
  - check INVEST
-
