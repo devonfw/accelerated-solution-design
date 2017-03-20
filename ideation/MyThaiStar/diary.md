@@ -67,5 +67,36 @@ In order to shape a shared vision for the example Jens creates a cover page (see
 
 Lukas and Florian start developing screens following mobile first approach.
 
+## 07.03.2017: Low fidelity design
+`Jens Bartelheimer, Jaime Moncho, Santos Jiménez`
+
+In this phase **low fidelity wireframes** are designed by Jaime Moncho.
+
+A wireframe is a static, **low-fidelity representation of the product**, and in the world of user experience, a basic guideline of the website or app – the skeletal framework – for both designers and developers to follow.
+
+Developers use wireframes to better understand the **core functionality** of an app, whereas designers may use them to show the **navigation flow** between site screens.
+
+With wireframes, you dedicate time solely to answering **crucial layout, structure, and organization** questions before the team iterates on visual details.
+
+The main reason to design the low fidelity wireframes was to get aligned with the latest front end components and conventions proposed by Santos Jiménez in this [presentation].
+
+**Summary of the proposal:**
+
+- Use Angular CLI as the main tool to develop, build and test components. With Angular CLI:
+  - [Angular 2 Official Style Guide] is followed.
+  - Webpack is included as the default builder and bundler tool.
+  - Karma is bundled as the default tests runner.
+- Follow Material Design specifications in the UI design guide in order to: 
+  - Get the Mobile First approach.
+  - Get a fully responsive application. 
+  - Use the most modern design patterns and conventions developed by Google.
+- Use [Covalent] UI framework as a superset of Material Design Components for Angular 2+ to build easily layouts and interfaces. This framework uses Material Design components for Angular 2 as dependency and is very well documented. 
+
+Jens will check this proposal and the low fidelity designs to comment, request changes or approve them. 
+
+The Angular 2 developer team will be able to use these low fidelity designs to build the UI components and behaviour before having the high fidelity ones. Jaime will create the high fidelity designs in parallel when the first ones are approved.
 
 [GIT]: https://github.com/devonfw/devon-methodology/tree/master/ideation/MyThaiStar
+[presentation]:https://docs.google.com/presentation/d/18B2zZvTJJEIlZvqCvW57sjlWavX_IorBuxk4oeTRL6s/edit#slide=id.g1d14f6509a_0_3
+[Angular 2 Official Style Guide]:https://angular.io/docs/ts/latest/guide/style-guide.html
+[Covalent]:https://teradata.github.io/covalent/
