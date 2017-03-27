@@ -96,6 +96,24 @@ Jens will check this proposal and the low fidelity designs to comment, request c
 
 The Angular 2 developer team will be able to use these low fidelity designs to build the UI components and behaviour before having the high fidelity ones. Jaime will create the high fidelity designs in parallel when the first ones are approved.
 
+## 24.03.2017: First Sprint Planning
+`Roberto García, Jaime Moncho, Cristóbal Belda, Marc Burmester, José Manuel Sánchez, Santos Jiménez`
+
+We held the first sprint planning meeting where we made the user stories estimation for this sprint using **Planning Poker** at [this link](https://play.planningpoker.com/play/game/qgZ2bIlY). 
+
+Also, we agreed the proposed schedule of future events and meetings:
+
+- Sprint 1 Planning	24/03/2017
+- Sprint 1 Start 27/03/2017
+- Sprint 1 Review 27/04/2017 (Holy Week holidays)
+- Sprint 1 Retrospective 28/04/2017
+- Sprint 2 Planning 02/05/2017
+- Sprint 2 Start 03/05/2017
+- Sprint 2 Review	25/05/2017
+- Two daily meetings every week. 
+  - Preferably mondays and thursdays. 
+
+
 [GIT]: https://github.com/devonfw/devon-methodology/tree/master/ideation/MyThaiStar
 [presentation]:https://docs.google.com/presentation/d/18B2zZvTJJEIlZvqCvW57sjlWavX_IorBuxk4oeTRL6s/edit#slide=id.g1d14f6509a_0_3
 [Angular 2 Official Style Guide]:https://angular.io/docs/ts/latest/guide/style-guide.html
