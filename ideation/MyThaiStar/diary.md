@@ -113,6 +113,14 @@ Also, we agreed the proposed schedule of future events and meetings:
 - Two daily meetings every week. 
   - Preferably mondays and thursdays. 
 
+## 28.03.2017: High fidelity wireframes Sprint 1
+`Jens Bartelheimer, Jaime Moncho, Santos Jiménez`
+
+Jaime send high fidelity wireframes to Jens and Santos.
+
+A high fidelity wireframe is a design model of the final UI of our app. The general idea of a high-fidelity prototype is to represent as close to the final product as possible.
+
+Jens will check this proposal.
 
 [GIT]: https://github.com/devonfw/devon-methodology/tree/master/ideation/MyThaiStar
 [presentation]:https://docs.google.com/presentation/d/18B2zZvTJJEIlZvqCvW57sjlWavX_IorBuxk4oeTRL6s/edit#slide=id.g1d14f6509a_0_3
