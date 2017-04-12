@@ -119,3 +119,4 @@ Though this is a tried and tested methodology by Google; it is also a brand new 
 - [The Design Sprint](http://www.gv.com/sprint/)
 - [Make Your UX Design Process Agile Using Google’s Methodology](https://www.interaction-design.org/literature/article/make-your-ux-design-process-agile-using-google-s-methodology)
 - [Google Design Sprints](http://www.agilemarketing.net/google-design-sprints/)
+- [Google Design Sprint Kit] (https://designsprintkit.withgoogle.com/)
