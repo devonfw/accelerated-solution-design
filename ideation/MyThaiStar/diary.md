@@ -3,7 +3,7 @@
 
 This diary explains what happened when and which decisions were taken during the project
 
-## 17.10.2016: Kickoff Offenbach 
+## 17.10.2016: Kickoff Offenbach
 `Jens, Christian, Marco, Thorsten`
 
 What happened?
@@ -27,7 +27,7 @@ Decisions:
    - main operational entities are order and table bookings
    - chief does still exist for dashboard
 
-## After 17.10.2016: Developing of personas, scenarios, prototype plus user story map 
+## After 17.10.2016: Developing of personas, scenarios, prototype plus user story map
 `Jens, Sebastian`
 
 For each main use case first personas and scenarios and first screens (wireframes) are defined based on previous, rough user story map. Outcome of discussion is used to refine user story map and to finalize the scenarios.
@@ -86,20 +86,20 @@ The main reason to design the low fidelity wireframes was to get aligned with th
   - [Angular 2 Official Style Guide] is followed.
   - Webpack is included as the default builder and bundler tool.
   - Karma is bundled as the default tests runner.
-- Follow Material Design specifications in the UI design guide in order to: 
+- Follow Material Design specifications in the UI design guide in order to:
   - Get the Mobile First approach.
-  - Get a fully responsive application. 
+  - Get a fully responsive application.
   - Use the most modern design patterns and conventions developed by Google.
-- Use [Covalent] UI framework as a superset of Material Design Components for Angular 2+ to build easily layouts and interfaces. This framework uses Material Design components for Angular 2 as dependency and is very well documented. 
+- Use [Covalent] UI framework as a superset of Material Design Components for Angular 2+ to build easily layouts and interfaces. This framework uses Material Design components for Angular 2 as dependency and is very well documented.
 
-Jens will check this proposal and the low fidelity designs to comment, request changes or approve them. 
+Jens will check this proposal and the low fidelity designs to comment, request changes or approve them.
 
 The Angular 2 developer team will be able to use these low fidelity designs to build the UI components and behaviour before having the high fidelity ones. Jaime will create the high fidelity designs in parallel when the first ones are approved.
 
 ## 24.03.2017: First Sprint Planning
 `Roberto García, Jaime Moncho, Cristóbal Belda, Marc Burmester, José Manuel Sánchez, Santos Jiménez`
 
-We held the first sprint planning meeting where we made the user stories estimation for this sprint using **Planning Poker** at [this link](https://play.planningpoker.com/play/game/qgZ2bIlY). 
+We held the first sprint planning meeting where we made the user stories estimation for this sprint using **Planning Poker** at [this link](https://play.planningpoker.com/play/game/qgZ2bIlY).
 
 Also, we agreed the proposed schedule of future events and meetings:
 
@@ -110,8 +110,8 @@ Also, we agreed the proposed schedule of future events and meetings:
 - Sprint 2 Planning 02/05/2017
 - Sprint 2 Start 03/05/2017
 - Sprint 2 Review	25/05/2017
-- Two daily meetings every week. 
-  - Preferably mondays and thursdays. 
+- Two daily meetings every week.
+  - Preferably mondays and thursdays.
 
 ## 28.03.2017: High fidelity wireframes Sprint 1
 `Jens Bartelheimer, Jaime Moncho, Santos Jiménez`
@@ -126,3 +126,21 @@ Jens will check this proposal.
 [presentation]:https://docs.google.com/presentation/d/18B2zZvTJJEIlZvqCvW57sjlWavX_IorBuxk4oeTRL6s/edit#slide=id.g1d14f6509a_0_3
 [Angular 2 Official Style Guide]:https://angular.io/docs/ts/latest/guide/style-guide.html
 [Covalent]:https://teradata.github.io/covalent/
+
+## ~29.03.2017
+`Jens Bartelheimer`
+
+Review of screens finihed by Jens. Minor changes proposed & accepted.
+
+## ~18.04.2017
+`Jens Bartelheimer, Jaime Moncho`
+
+Jaime has created screen for mobile. Jens reviews them. Minor changes requested.
+
+## ~18.04.2017: Datamodel design proposed and discussed by PO and Team
+`Whole team`
+
+## 21.04.2017: First parts of application are shown
+`Whole team`
+
+In our daily the team presented first parts of the real application, e.g. backed plus frontend (US Invite friends, US Digital Menu).
