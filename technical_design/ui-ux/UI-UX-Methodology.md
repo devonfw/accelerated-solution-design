@@ -1,8 +1,8 @@
-# UI/UX Methodology
+# UX Methodology
 
 ## Introduction
 
-This document gathers the methodology that UI/UX teams have implemented with success in many engagements. This methodology tries to define a strategy that other teams can incorporate in their projects to improve estimations and project planning in general. 
+This document gathers the methodology that UX teams have implemented with success in many engagements. This methodology tries to define a strategy that other teams can incorporate in their projects to improve estimations and project planning in general. 
 
 With this strategy the UX Team integrates itself in a process of Agile development together with the Dev Team. This allows to focus on the requirements and the Dev Team needs in order to improve the speed of the deliverables.
 
@@ -32,7 +32,7 @@ The following graph shows the involvement of each team in a common project acros
 - Prepare high fidelity prototypes for sprint 1.
 
 **Sprint 2:**
-- Review and update sprint 0 deliverables.
+- Review and update sprint 1 deliverables.
 - Prepare high fidelity prototypes for sprint 2.
 
 **Sprint 3...** Same process here.
