@@ -32,7 +32,7 @@ The following graph shows the involvement of each team in a common project acros
 - Prepare high fidelity prototypes for sprint 1.
 
 **Sprint 2:**
-- Review and update sprint 0 deliverables.
+- Review and update sprint 1 deliverables.
 - Prepare high fidelity prototypes for sprint 2.
 
 **Sprint 3...** Same process here.
