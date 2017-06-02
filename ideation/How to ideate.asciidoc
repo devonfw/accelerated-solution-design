@@ -1,94 +1,79 @@
 
 
-# Establish Goals and Vision or Ideation:
+## Establish Goals and Vision, or How to Ideate:
 
-In this section actions and tools are described how to come up with a certain goal and vision.
-Choosing the right tools depends on how sophisticated the visions and ideas are already: do we have only a rough idea, is the vision already defined and approved by everybody involved in the project?
+In this section actions and tools are described how to come up with a goal & vision for your project/product and how to end this process with a product backlog to start development in an agile approach.
+Most phases, actions and tools are based on methods like Design Thinking or Googles Design Sprints. Which tools you should apply depends on your situation, for example how sophisticated the visions and ideas are already. In case a clear vision is already given, some of the steps at the beginning can be omitted and starting for example with impact mapping or user story mapping can be feasible.
+Most of the following tools are assigned to a certain phase. Although the application of most of them in other phases can makes sense as well. It depends on the situation, area and setup of our projects.
 
-In case the goals and visions are only roughly defined and quite open approaches like Design Thinking or Googles Design Sprints should be choosen.
-Most of the follwoing tools are assigned to a certain phase. Although the application of most of them in other phases can makes sense as well. It realy depends on the situation, area and setup of our projects.
+#### Remarks:
 
-Remark:
-1.) All tools and actions are more powerful when appraoched by multiple people together - and not on your own. This can be done in workshops or by sharing and pushing people to get feedback.
-2.) For all tools and actions it makes sense to follow a simple cycle: diverge and converge. What does it mean: use the diverge phase to open your mind, create new ideas, think loud. After that converge all your input together and filter all your input by considering the importance, the applicability or by simple summarizing.
-3.) all is a iterative process: In case you think it makes sense to repeat a task or redefine prior results, do it!
+1.) All tools and actions are more powerful when executed in a group - and not on your own. This can be done in workshops or by sharing and pushing people to get feedback.
+
+2.) For all phases and most tools it makes sense to follow a simple cycle: diverge and converge. What does it mean: use a diverge phase to open your mind, create new ideas, think loud. After that converge all your input together and filter all your input by considering the importance, the applicability or by simply summarizing your discussion. This cycle is repeated quite often during the different phases.
+
+3.) It is "iterative": In case you think it makes sense to repeat a task or redefine prior results, just do it!
+
+4.) Try to perform everything with an independent, (external) facilitator.
 
 #### Team
-Find a heterogeneous team: Product Owner, Engagement Manager, Tester, Developer, Business Analyst, Customer, people from outside (other projects, similar projects)
+Find a heterogeneous team: Product Owner, Engagement Manager, Tester, Developer, Business Analyst, Customer, people from outside (other projects, similar projects), ...
 
-### Set the stage
-Try to get as much information (by interviewing, observation, do it on you own, ask any export) about the topic, people, project and problems - just collect it.
-Define a Context Diagram (see the good old Structered System Analysis) or a Stakeholder Map to cover all aspects of involved systems and people.
-In case the idea is only defined roughly, setting up a Contextual Map (see xxx) also makes sense. At this stage the diverge phase shall be quite long and open in order to gather most of it. This can be done by simple brainstorming followins some rules:
-- one conversation at a time
-- encourage wild ideas
-- defer judgement
-- go for quantity
-- build on the ideas of others
-- be visual by using pen and paper
-- Do not judge! Support by „yes, and…“ and avoid "but..."
-- Mistakes are allowed!
+## Process
 
-#### Start with How-Might-We-Question (HMW)
+### 1. Set the stage (understand)
+Try to get as much information (by interviewing, observation, work with the current product, ask any expert) about the topic, people, project and problems - just collect it. Do everything to become an expert.
+Define a context diagram (see the good old Structured System Analysis by Tom DeMarco, http://www.bawiki.com/wiki/techniques/context-diagram/) or a Stakeholder Map to cover all aspects of involved systems and people. Try to get as much as information about the stakeholder or systems.
+In case the idea is only defined roughly, setting up a Context Map (http://designabetterbusiness.com/2016/05/12/how-to-understand-your-market-and-crush-the-competition/) also makes sense. At this stage the diverge phase shall be quite long and open in order to gather enough information. An easy way is simple brainstorming (http://www.visualistan.com/2016/05/how-to-have-better-brainstorming.html).
 
-A HMW-question is a question following a easy structure. It just asks How might we ... solve a situation or how to improve something or how to.... This question is quite short and powerful but quite hard to define. The reason for is that is is quite hard
-to find an appropriate balance between open and focused. It should not be to narrow (because then you miss something) and not to wide (because than you might drive away and are not focused on the real topic). But be patient, you can change it during the process and with the help of your team.
+### 2. Problem Statement - Define
+Start with a How-Might-We (HMW) Question (<<realtimeboard>> - HMW). A HMW-question is a question following an easy structure: It just asks How might we ... solve a situation or how to improve something or how to.... This question is quite short but powerful. Unfortunately, this question is quite hard to define. The reason is that it is quite hard to find an appropriate balance between open and focused question. It should not be to narrow (because then you miss something) and not to wide (because than you might drive away and are not focused on the real topic). But be patient - you can change the question during the process all the time and with the help of your team.
+The output of this phase should be the identification of a problem for that you'll find a solution. In case the problem is already given,  the HMW-question shall be used to ask whether the stated problem is the real problem.
+After the definition of this question it is not your job, to answer is right away. Instead, we should again diverge at this stage. This can be done quite easy by picking the most important nouns and verbs of your question, underline them and do some brainstorming about those terms (<<realtimeboard>> - Brainstroming).
+After the brainstorming converge and cluster the results in groups, like constraints, objectives, technology, customer, .... Afterwards add priorities and remove nonsense.
+Use the input from the prior actions (your new expert knowledge and all topics created by the brainstorming) and try to narrow it down to be more specific. Try to consider only the important stakeholder or systems or technology. In order to be sure to be on track, ask for feedback about your question as often as possible - inside your team and stakeholders.
 
-Depends on whether a certain problem is already given and known or not: In case not the question is much more open.
-The output of this phase should be identification of a problem for that you'll find a solution or in case the problem is given, to ask whether it is the real problem. Do this by summarizing your results:
+Have you find a real problem, „The problem!“? Good ideas need always a problem to solve. Any idea without a problem it solves is useless.
+In case you got it, take it and find a solution for this problem. Maybe this is the right moment to rephrase the HMW-question to be more specific and focused.
+In case any idea pops up in your head, try to identify the problem for this idea. Is it a real problem? Discuss it in your group.
+For all identified problems it makes sense to challenge them: makes use of the 5-whys: by asking 5 times why, try to find the real problem behind the problem.... Check afterwards whether you have to change your HMW-Question again.
 
-Examples:
+### 3. Ideate - Diverge
+After finding a problem we have to find a solution for it.
+In order to embellish your idea create a persona (https://www.pinterest.de/pin/512988213795806851/) with/or empathy map (https://www.pinterest.de/pin/568790627928275285/) for a person who has the previously identified problem.
 
-Use the input from the prior actions and try to narrow it down to be more specific. Try to consider only the important stakesholder or systems or technology. In order to be sure to be on track, ask for feedback about your question as often as possible.
+In order to come up with new idea, make use of the following methods to diverge again:
+  -    Brainstorming / Solostorming / Brainwriting
+  -    Power of ten
+  -    Pessimist vs. optimist: Start a conservation between optimistic and pessimistic point of view
+  -	   Six Thinking Heads (https://www.pinterest.de/pin/387239267939335766/)
+  -    Randomnes: take your topic plus any other, random thing/object. Describe "thing" with adjectives or associations, combine them together to new topics
+  -    Set or change constraints: How would our competitor solve the problem? What will happen when...? What will not happen when...? What would superman do in this situation...? What would happen in case we own endless money?
+  -    Disruption: what ...happens ...in case (not)....
+  -    As-Is Personas or As-Is User journey, transform them to Should-be Personas or Should-be- user Journeys.
 
-After the first definition of this questions it is not your job, to answer is right away. Instead, we should again diverge at this stage. This can be done quite easy by picking the most important nouns and verbs of your question, underline them and to again some brainstorming about those terms.
+Try to find ideas and solutions by drawing first prototypes on paper (or software-prototypes or using Lego bricks) or by creating and visualizing storyboard which explains the solution in mind showing the golden path from the beginning to the end step by step in a narrative way.
+In case you group is big enough apply Design Studio where separated groups design idea on their own which are presented shortly to each other. Afterwards each group works again on the solution ending with the next presentation. Per dot voting the group picks the best solution at the end.
+Iterate as much as possible. Be visual in order to share your thought with your group. Throw away your prototypes. Look for alternatives, follow The Rule of Three (A good decision is one for which you have evaluated three alternatives...).
+Write detailed scenarios with objectives and design screens on a whiteboard.
+In some cases it might make sense to apply also some tools from the prototyping phase already in this phase in order to understand and share a common understanding of your ideas and solution, e.g. creating a user story map could help everyone to understand and improve the idea. By presenting and discussing the ideas on whiteboard, with prototype or storyboard you can easily diverge by finding and adding new ideas to your solution, on the other hand you already converge by making the solution real and tangible.
 
-After the brainstorming cluster the results in groups, like constraints, objectives, technology, customer, .... Afterwards add prios and remove nonsense - always by consens in your group.
+### 4. Decide
+After creating multiple ideas/solutions summarizer and converge them by writing an elevator pitch (https://www.pinterest.de/pin/381469030911336677/), product vision canvas (http://thetoolkitproject.com/tool/vision-board#sthash.GhexTIbP.dpbs), business model canvas (http://diytoolkit.org/tools/business-model-canvas/), cover page (devon restaurant example:https://github.com/devonfw/devon-methodology/blob/master/ideation/MyThaiStar/Coverpage%20Relaunch%20Example.docx) or check it by 360 view (UX, technology, business value). Try to get your idea and the problem it solves crystal clear.
+Allways try to share your output in your group or with other to gain feedback.
+After that decide which is best and obtain the commitment of your key players.
 
+### 5. Prototype & Test
+In this phase take your idea and make it "real". Follow Capgemini's RDV Process (in short: create more detailed or new personas, build from your storyboards detailed scenarios covering the critical golden path of your idea, create Software-Prototypes for those scenarios by using tools like Axure (devon exmaple app:https://github.com/devonfw/devon-methodology/tree/master/ideation/MyThaiStar/prototype), balsamiq or invision; test and develop them with your users/business  (devon restaurant example: <<realtimeboard>>))
+In addition or before create a impact map in order to relate your solution to your problem and objectives (https://www.pinterest.de/pin/305541155956912513/).
+In order to come up with good scenarios and to build/understand the overall picture, create a user story map (http://jpattonassociates.com/wp-content/uploads/2015/03/story_mapping.pdf, devon exmaple app:<<realtimeboard>> - User Story Map). This tool combined with scenarios and prototyping can be quite powerful to find the best solution and to ideate again. By using only pen & paper for the user story map it is again very easy to diverge again.
+Repeat those steps with other scenarios, other personas, think about scenario variations. Add all information to your current user story map or create separate ones (depending on size, complexity).
 
+Try to get as much as possible feedback from your stakeholders by showing your scenarios, test the prototype or by discussing the user story map in joined sessions with them.
 
-Have you find „a real problem“, „The problem!“. Good ideas need always a problem to solve. In case you got it, take it and find a solution for this problem.
-In case an idea pops up in your head, try to identify the problem for this idea. Is it a real problem? Discuss it in your group.
-For all identified problems it makes sense to challenge them: makes use of the 5-whys: Try to find the real problem behind the problem....
-
-After finding a problme try to find a solution for it.
-In order to *embellish your idea* create a persona with/or empathy map for a person who owns the problem.
-
-Make use of the following methods to diverge again:
-  -	Brainstorming
-  -	Power of ten: Exaggerate and go underneath?
-  -	Pessimist vs optimist: Start a conservation between optimist and pessimist.
-  -	Randomnes: take your topic plus any other, random thing/object. Describe "thing" with adjectives or associations, combine them together to your topic
-  -	Set constraints: Wie würde das die Konkurennz machen? Was wäre wenn wir in der Küche sind? Was würde Superman machen? Wir haben unendlich Geld?
-  -	Distribution: what ...happens ...in case (not)....
-  -	As-Is Personas plus As-Is User journey
-
-Try to find ideas and soultion by drawing first prototypes on paper or by creating and visualizing storyboard which explains the solution step after step in a narrative way.
-In case you group is big enough apply SAP Design Studio where seperated groups design idea on their own which are presented shortly to each other. Afterwards each group works again on the solution ending with the next presentation. Per dot voting the group picks the best solution.
-Iterate as much as possible. Throw away your prototypes. Look for alternatives, follow The Rule of Three (A good decision is one for which you have evaluated three alternatives)
-
-In order , write detailed scenarios with objectives and design screens on a whiteboard.
-
-Idea solution found: converge it by wiritng an elevator pitch, product vision canvas, check it by 360 view (UX, technology, business value)
-usefull tools to get feedback from others and to ask/revise yourself whether you are on track, e.g. do we create any business value, to we differinate from others.....
-
+At the end you should have a detailed user story map containing the whole picture of your solution. It must contain items with enough details to start the development of a first release; ,but also vague content for later releases as we still diverge also in this phase to a certain extend. We converge at this phase by deciding which parts of our solution shall be released with our first shippable product - easily by moving all relevant items on our user story map to the slice for our first release. Take this as an input for your agile development and create your initial product backlog for the first release
+(devon restaurant example: https://seu.sdm.de/pu/icsdshows01/jira/projects/ICSDSHOW). Start the development by following Capgemini's CAF and Lean Startup Cycle to improve your MVP iteration for iteration (https://www.pinterest.de/pin/342414377892820347/).
 
 
-
-after you got a "go" create impact mapping
-user story map from your scenarios
-
-Create first user story map with notes for your scenarios. Repeat it with other scenarios, other personas, think about scenario variations. Add all information to current user story map or create seperate ones (depending on size, complexity).
-
-4. Sort your result and collect items which a required for a first *MVP* (Minimal Viable Product)
-
-
-
-5. Write down a vision of your product (Elevator Pitch, Product Vision Board, Innovation Board, Newspaper-Cover-Page). During the workshop or afterwards. Prepare it and the group should review it, collect the feedback and incorporate it to, clarify missunderstanding, different opinions.
-
-### ToDo:
-
-
-
-
-Preparation: be prepared. Easiest way is to perform the workshop on your own: Do some brainstorming/solostorming on your own, create a first user story map, a first persona, .... Every output must not be perfect, it only serves your preparation.
+[bibliography]
+[[[realtimeboard]]] https://realtimeboard.com/app/board/o9J_k0AUBis=/
