@@ -1,0 +1,95 @@
+Specification of the Restaurant Application
+===========================================
+Devon FW Team <icsddevonfwsupport.apps2@capgemini.com>
+:toc:
+:icons:
+:numbered:
+:website: https://www.de.capgemini.com/devonfw
+
+
+
+== Introduction ==
+
+
+[[XTermsDefs]]
+=== Terms and definitions ===
+
+[width="100%",options="header"]
+|====================
+| Term |  Definition
+| Product |  could be some drink, some meal or some side dish
+from the menu card.
+| Offer |  is combination of drink, meal and side dish with
+the corresponding prices.
+| Order |  is assigned to the table and includes all ordered
+offers/products by one or more persons of this table.
+|====================
+
+== Use Cases ==
+
+=== Actors and roles ===
+
+For terms and definitions, see Look here: <<XTermsDefs, Terms and Defs>>
+
+[width="100%",options="header", cols="v,a"]
+|====================
+| Role |  Description
+| Waiter |
+- assign a table to waiter
+- Book a table and cancel booking
+- Take an order
+  * Forward an order to kitchen for preparation
+  * cancel an order
+  * bring an order to table and mark it as “delivered”
+- payment
+|====================
+
+=== Business Component "Table Management" ===
+
+Description of the business component.
+
+image::business_component_table_management.svg[caption="Figure 1: ", title="Business Component Table Management", alt="Business Component Table Management"]
+
+==== Use Case "Assign a table" ====
+This use case assings a waiter to a specific table. This signifies his responsibility for the service of this table.
+
+
+[cols="v,v"]
+|====================
+|Actors |Waiter, Chief (TODO: Prefixes?)
+|Usage |Manual, many times per day
+|Preconditions a|- The user has selected a table (TODO: Ref to data model)
+|Postconditions a|- The selected table is assigned to a waiter (TODO: Ref to data model).
+- The table is not assigned to a waiter: The field waiter is empty
+|====================
+
+*Standard workflow*
+
+. The user chooses to assign a table (TODO: Ref. to datamodel)
+. The system reads and presents a list of the currently active waiters ( <<ETYStaffMember, StaffMember>> with role "waiter") and proposes to the user to cancel the assignment, to delete the current assignment or to assign a waiter. The deletion of an assignment is only proposed if a waiter is currently assigned to the table.
+. If the user cancelles the assignment: The system returns to the previous screen without changes. The use case is finished.
+. If the user deletes the current assignment of a waiter:
+.. The system removes the assigned waiter form the current table.
+.. The system shows the updated contents of the previous screen.
+. If the user selects a waiter and assigns him to the table:
+.. The system stores the ID of the waiter for the current table.
+.. The system returns to the previous screen
+. The use case is finished
+
+
+== Data model ==
+
+=== Model Component MCO_Static_Data ===
+image::datamodel_static_data.svg[caption="Figure 2: ", title="Model Component MCO_Static_Data", alt="Model Component MCO_Static_Data"]
+
+[[ETYStaffMember]]
+==== Entity-Type StaffMember ====
+
+[options="header", cols="v,v,v"]
+|====================
+| Attribute |  Type | Documentation
+| Role | RoleCategory | Role of the staff member. Can be cook, waiter, chief. Multiple roles are possible.
+| First Name | String |
+| Last Name | String |
+| Date of birth | Date |
+| Gender | GenderCategory |
