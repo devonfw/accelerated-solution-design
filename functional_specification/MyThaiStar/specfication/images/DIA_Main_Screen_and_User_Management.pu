@@ -1,0 +1,50 @@
+@startuml
+
+
+
+class SCR_Main_Screen <<Screen>> {
+}
+
+class SCR_User_Login <<Screen>> {
+}
+
+class SCR_User_Signup <<Screen>> {
+}
+
+package "DIA_Book_Table_and_Invite_Friends" #DDDDDD {
+
+  class SCR_Book_Table  <<Dialogue>> {
+  }
+}
+
+class DIA_Show_Menu_and_Create_Order  <<Dialogue>> {
+}
+
+
+
+SCR_Main_Screen --|> SCR_User_Login : "User Icon"
+
+SCR_User_Login --|> SCR_User_Signup : "Tab Signup"
+
+SCR_User_Signup --|> SCR_User_Login : "Tab Login"
+
+SCR_User_Login --|> SCR_Main_Screen : "Cancel / Register"
+
+SCR_User_Signup --|> SCR_Main_Screen : "Cancel / Register"
+
+SCR_Main_Screen --|> SCR_Book_Table : "Book table"
+
+DIA_Book_Table_and_Invite_Friends --|> SCR_Main_Screen : "Home"
+
+SCR_Main_Screen --|> DIA_Show_Menu_and_Create_Order : "Menu"
+
+DIA_Show_Menu_and_Create_Order --|> SCR_Main_Screen : "Home"
+
+
+class DIA_Supervise_Orders  <<Dialogue>> {
+}
+
+class DIA_Supervise_Reservations  <<Dialogue>> {
+}
+
+@enduml

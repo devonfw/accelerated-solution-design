@@ -1,0 +1,15 @@
+@startuml
+:ACR_Reserving_Guest: << Actor >> as ACR_Reserving_Guest
+:ACR_Invitee: << Actor >> as ACR_Invitee
+:ACR_Guest: << Actor >> as ACR_Guest
+
+:ACR_User: << Actor >> as ACR_User
+:ACR_Waiter: << Actor >> as ACR_Waiter
+:ACR_System_MyThaiStar: << Actor >> as ACR_System_MyThaiStar
+
+ACR_Guest <|-- ACR_Reserving_Guest
+ACR_Guest <|-- ACR_Invitee
+ACR_User <|--  ACR_Waiter
+ACR_User <|--  ACR_Guest
+
+@enduml

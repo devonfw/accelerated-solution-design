@@ -1,11 +1,16 @@
-Specification of the Restaurant Application
-===========================================
-Devon FW Team <icsddevonfwsupport.apps2@capgemini.com>
+= Specification of the Restaurant Application =
+
+Devon FW Team icsddevonfwsupport.apps2@capgemini.com
+
 :toc:
+:toclevels: 4
 :icons:
 :numbered:
 :website: https://www.de.capgemini.com/devonfw
-
+:imagesdir: ./images/
+:imagesUserManagement: /BCO_User_Management/images/
+:imagesTableManagement: /BCO_Table_Management/images/
+:imagesOrderManagement: /BCO_Order_Management/images/
 
 
 == Introduction ==
@@ -17,79 +22,178 @@ Devon FW Team <icsddevonfwsupport.apps2@capgemini.com>
 [width="100%",options="header"]
 |====================
 | Term |  Definition
-| Product |  could be some drink, some meal or some side dish
-from the menu card.
-| Offer |  is combination of drink, meal and side dish with
-the corresponding prices.
-| Order |  is assigned to the table and includes all ordered
-offers/products by one or more persons of this table.
+| .... | ....
 |====================
 
 == Use Cases ==
 
 === Actors and roles ===
 
-For terms and definitions, see Look here: <<XTermsDefs, Terms and Defs>>
+image::overview_actors.svg[caption="Figure 1: ", title="Actors", alt="Actors"]
 
 [width="100%",options="header", cols="v,a"]
 |====================
 | Role |  Description
-| Waiter |
-- assign a table to waiter
-- Book a table and cancel booking
-- Take an order
-  * Forward an order to kitchen for preparation
-  * cancel an order
-  * bring an order to table and mark it as “delivered”
-- payment
+| ACR_User |
+- a user of the MyThaiStar application
+| ACR_Guest |
+- a guest of the MyThaiStar Restaurant
+- it can bei either a "walk in" guest, a guest with a reservation or a guest having been invited by another guest.
+| ACR_Reserving_Guest |
+- a guest reserving a table using the MyThaiStar application
+| ACR_Invitee |
+- a guest that has been invited by a reserving guest.
+| ACR_Waiter |
+- a waiter managing the tables and orders using the MyThaiStar application
+| ACR_System_MyThaiStar |
+- The MyThaiStar application itself
 |====================
 
-=== Business Component "Table Management" ===
+include::BCO_User_Management/BCO_User_Management.adoc[tags=UseCases]
 
-Description of the business component.
+include::BCO_Order_Management/BCO_Order_Management.adoc[tags=UseCases]
 
-image::business_component_table_management.svg[caption="Figure 1: ", title="Business Component Table Management", alt="Business Component Table Management"]
+== Dialogue ==
 
-==== Use Case "Assign a table" ====
-This use case assings a waiter to a specific table. This signifies his responsibility for the service of this table.
+The description of the user interface is split into the following dialogues:
+
+- *DIA_Main_Screen_and_User_Management* to show the specifics
+- *DIA_Book_Table_and_Invite_Friends* to book a table and optionally directly send a mail to invited people.
+- *DIA_Show_Menu_and_Create_Order* to show the menu and to optionally create an order.
+- *DIA_Supervise_Orders* to show current orders
+- *DIA_Supervise_Reservations* to show current reservations
+
+=== Dialogue areas and mechanisms ===
+
+==== header area ====
+
+All screens of the dialogues are split into a header area and a content area. The header area looks like this:
+
+image::header_area.png[caption="Figure 3: ", title="Header area in dialogue screens", alt="Header area in dialogue screens"]
+
+It contains
+
+- a linked logo of MyThaiStar, which leads to SCR_Main_Screen, see DIA_Main_Screen_and_User_Management.
+- a _Home_ link also leading to SCR_Main_Screen, see DIA_Main_Screen_and_User_Management.
+- a _Menu_ link leading to SCR_Menu_Screen_TODO, see DIA_Show_Menu_and_Create_Order.
+- a _Book Table_ link leading to SCR_Book_Table, see DIA_Show_Menu_and_Create_Order.
+
+In the right, it allows a user to log in or sign up using the User icon, and to fade in the right marginal column using the shopping basket icon.
+
+==== right marginal column ====
+
+The right marginal column contains the dishes and drinks of the current order.
+
+.Right marginal column without orders
+
+If there is no current order, it looks like this:
+
+image::right_marginal_column.png[caption="Figure 3: ", title="Right marginal column", alt="Right marginal column"]
+
+Besides the links _Menu_ and _Book table_ (see header area), the right marginal column allows to enter a booking id received in an email. The steps for this are as follows:
+
+. The user enters the booking id received in the email, and klicks to accept the terms.
+. The application reads the order using the booking token (see IET_Find_Order in EIF_Manage_Booking).
+.. If the order could not be found, an error is displayed to the user.
+.. Otherwise, the contents of the order are displayed in the right marginal column.
+
+.Right marginal column with orders
+
+TODO
+
+==== Content area ====
+
+This area contains the main information of each screen and is described in the following dialogues.
+
+==== Banner messages ====
+
+Messages to the user, most often about the success or failure of an operation, are shown as a banner sliding in from the bottom of the screen.
+
+image::banner_message.png[caption="Figure 3: ", title="Banner message", alt="Banner message"]
+
+==== Modal dialogues ====
+
+Some screens are implemented not as a screen of their own, but as a modal dialogue rendered above the current screen. This is done for most input dialogues.
+
+image::Modal_dialogue.png[caption="Figure 3: ", title="Modal dialogue", alt="Modal dialogue"]
 
 
-[cols="v,v"]
-|====================
-|Actors |Waiter, Chief (TODO: Prefixes?)
-|Usage |Manual, many times per day
-|Preconditions a|- The user has selected a table (TODO: Ref to data model)
-|Postconditions a|- The selected table is assigned to a waiter (TODO: Ref to data model).
-- The table is not assigned to a waiter: The field waiter is empty
-|====================
+=== Dialogue DIA_Main_Screen_and_User_Management ===
 
-*Standard workflow*
+The dialogue flow of this dialogue is shown in the next image:
 
-. The user chooses to assign a table (TODO: Ref. to datamodel)
-. The system reads and presents a list of the currently active waiters ( <<ETYStaffMember, StaffMember>> with role "waiter") and proposes to the user to cancel the assignment, to delete the current assignment or to assign a waiter. The deletion of an assignment is only proposed if a waiter is currently assigned to the table.
-. If the user cancelles the assignment: The system returns to the previous screen without changes. The use case is finished.
-. If the user deletes the current assignment of a waiter:
-.. The system removes the assigned waiter form the current table.
-.. The system shows the updated contents of the previous screen.
-. If the user selects a waiter and assigns him to the table:
-.. The system stores the ID of the waiter for the current table.
-.. The system returns to the previous screen
-. The use case is finished
+image::DIA_Main_Screen_and_User_Management.svg[caption="Figure 3: ", title="DIA_Main_Screen_and_User_Management", alt="DIA_Main_Screen_and_User_Management"]
+
+The flows defined here for the links in the header area are relevant for each screen except the modular windows (see below).
+
+This is a fundamental dialogue flow and not associated with one of the client use cases.
+
+
+==== Screen SCR_Main_Screen ====
+
+image::SCR_Main_Screen.png[caption="Figure 3: ", title="Main Screen", alt="Main Screen"]
+
+TODO: The links to the supervision of orders and reservations currently do not work. This image has to updated once they work again.
+
+As this is the main screen, all other dialogues are entered from this screen:
+
+- DIA_Book_Table_and_Invite_Friends is reached using the link _BOOK TABLE_.
+- DIA_Show_Menu_and_Create_Order is reached using the link _MENU_.
+- DIA_Supervise_Orders and DIA_Supervise_Reservations are reached by their corresponding links for users with the role _WAITER_.
+
+The main screen itself can be reached from every other screen (except modal dialogues) using the MyThaiStar Icon in the upper left corner.
+
+==== Screen SCR_User_Login ====
+
+image::SCR_User_Login.png[caption="Figure 3: ", title="User Login", alt="User Login"]
+
+This screen allows a user to log in. All fields are mandatory, otherwise the LOGIN button will not be active.
+
+The Login is done using the following steps:
+
+. The user enters his username and password and selects Login
+. The system authenticates the user using *EIF_TODO*
+. The user data is stored in the client as ETY_TODO.
+. The result of the login as a banner message.
+
+==== Screen SCR_User_Signup ====
+
+image::SCR_User_Signup.png[caption="Figure 3: ", title="User Login", alt="User Login"]
+
+This screen allows a user to sign up to the MyThaiStar application.
+
+The field Email contains a format validator for an email address. All fields are mandatory, otherwise the REGISTER button will not be active.
+
+The signup is done using the following steps:
+
+. The user enters his email-address, selects a password, accepts the general conditions and selects REGISTER.
+. The system will currently show a banner explaining that the email-address is already in use.
+
+=== Dialogue DIA_Book_Table_and_Invite_Friends ===
+
+The dialogue flow of this dialogue is shown in the next image:
+
+image::DIA_Book_Table_and_Invite_Friends.svg[caption="Figure 3: ", title="DIA_Book_Table_and_Invite_Friends", alt="DIA_Book_Table_and_Invite_Friends"]
+
+TODO: Continue when corresponding use cases and interfaces are defined.
 
 
 == Data model ==
+This data model is primarily defined by diagrams. Textual documentation is added
+for the entity types, attributes and relations, for which the diagrams are not sufficient as documentation.
 
-=== Model Component MCO_Static_Data ===
-image::datamodel_static_data.svg[caption="Figure 2: ", title="Model Component MCO_Static_Data", alt="Model Component MCO_Static_Data"]
+include::BCO_User_Management/BCO_User_Management.adoc[tags=DataModel]
 
-[[ETYStaffMember]]
-==== Entity-Type StaffMember ====
+include::BCO_Order_Management/BCO_Order_Management.adoc[tags=DataModel]
 
-[options="header", cols="v,v,v"]
-|====================
-| Attribute |  Type | Documentation
-| Role | RoleCategory | Role of the staff member. Can be cook, waiter, chief. Multiple roles are possible.
-| First Name | String |
-| Last Name | String |
-| Date of birth | Date |
-| Gender | GenderCategory |
+
+== External Interfaces ==
+
+All services provided by the server application are documented here. Since most
+of the services are quite simple CRUD (Create, Read, Update, Delete) services,
+they will be defined in diagrams alone. Additional documentation is supplied where
+needed.
+
+include::BCO_User_Management/BCO_User_Management.adoc[tags=ExternalInterfaces]
+
+include::BCO_Order_Management/BCO_Order_Management.adoc[tags=ExternalInterfaces]

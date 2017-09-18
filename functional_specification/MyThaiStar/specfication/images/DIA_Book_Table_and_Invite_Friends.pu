@@ -1,0 +1,23 @@
+@startuml
+
+
+
+class SCR_Book_Table <<Screen>> {
+}
+
+class SCR_Invite_Friends <<Screen>> {
+}
+
+package "DIA_Main_Screen_and_User_Management" #DDDDDD {
+
+  class SCR_Main_Screen <<Screen>> {
+  }
+}
+
+
+SCR_Main_Screen --|> SCR_Book_Table : "BOOK TABLE"
+
+SCR_Invite_Friends --|> SCR_Book_Table : "Tab Invite Friends"
+SCR_Book_Table --|> SCR_Invite_Friends : "Tab Book Table"
+
+@enduml
