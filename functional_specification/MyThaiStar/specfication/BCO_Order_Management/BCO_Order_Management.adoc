@@ -1,9 +1,17 @@
-:imagesdir: ..
-:imagesOrderManagement: /BCO_Order_Management/images/
+= Specification of the Restaurant Application =
+
+Devon FW Team icsddevonfwsupport.apps2@capgemini.com
+
+:imagesOrderManagement: images/
+
+:toc:
+:toclevels: 4
+:icons:
+:numbered:
 
 == Use Cases ==
 
-tag::UseCases[]
+// tag::UseCases[]
 
 === Business Component BCO_Order_Management ===
 
@@ -85,9 +93,9 @@ NOTE: This should be documented as an artifact of type printout. However, we sho
 . The user chooses to submit the order.
 . The system stores the order in the system and sends a confirmation email to the user (UC_Manage_Order, Scenario "Save Order")
 
-end::UseCases[]
+//end::UseCases[]
 == Data Model ==
-tag::DataModel[]
+//tag::DataModel[]
 
 
 === Model Component MCO_Order ===
@@ -109,9 +117,9 @@ ETY_Ingredient contains the possible additional ingredients for the dishes.
 They can be displayed in the menu and associated to an ETY_Order_Line instance
 to define the selected extra ingredients.
 
-end::DataModel[]
+// end::DataModel[]
 == External Interfaces ==
-tag::ExternalInterfaces[]
+// tag::ExternalInterfaces[]
 
 
 === External Interface EIF_Manage_Order ===
@@ -124,4 +132,4 @@ interface entity types:
 - Delete Order: See _UC_Manage_Order_, Scenario _Delete Order_ .
 - Save Order: See _UC_Manage_Order_, Scenario _Save Order_ .
 
-end::ExternalInterfaces[]
+// end::ExternalInterfaces[]

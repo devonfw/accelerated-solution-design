@@ -22,7 +22,12 @@ Devon FW Team icsddevonfwsupport.apps2@capgemini.com
 [width="100%",options="header"]
 |====================
 | Term |  Definition
-| .... | ....
+| Product |  A drink, a meal or a side dish
+from the menu.
+| Offer |  Is a combination of drink, meal and side dish with
+the corresponding prices.
+| Order |  Is assigned to a table and includes all ordered
+offers/products by one or more persons of this table.
 |====================
 
 == Use Cases ==
