@@ -1,0 +1,52 @@
+= Rationales for the specification of the restaurant application =
+
+Devon FW Team icsddevonfwsupport.apps2@capgemini.com
+
+:toc:
+:toclevels: 4
+:icons:
+:numbered:
+:website: https://www.de.capgemini.com/devonfw
+:imagesdir: ./images/
+
+== Overall Goals ==
+
+The goal of the specification guide and the restaurant specification is to create a document that is:
+
+*post-documentation*::
+The documentation was done after the implementation: The implementation was governed by lean user stories created using the _user story mapping_ method.
+
+*Aligned to the implementation*::
+Structure, concepts and nomenclature should be close to the code.
+
+*Allow for compact design documentation*::
+Much of the structuring of components and data should be presented here and not need to be formally repeated in another documentation. The split of the application into components presented here should be present in the code.
+
+*Leanness*::
+The documentation should contain only the strictly needed information and should be very pragmatic.
+
+*Easy to maintain*::
+It should be versioned together with the code. A developer should be able to change it using only a text editor.
+
+== Rationales: Decisions because of this being a post-documentation ==
+
+_TODO_
+
+== Rationales: Level of proximity to the code ==
+
+_TODO_
+
+== Rationales: Creation of a ubiquitous language (DDD) ==
+
+_TODO_
+
+== Rationales: Level of detail of the documentation ==
+
+_TODO_
+
+== Rationales: Specifics of the specification methodology ==
+
+_TODO_
+
+== Rationales: Selection of the tools and the storage ==
+_TODO_
