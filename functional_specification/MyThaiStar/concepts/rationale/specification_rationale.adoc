@@ -30,19 +30,42 @@ It should be versioned together with the code. A developer should be able to cha
 
 == Rationales: Decisions because of this being a post-documentation ==
 
-_TODO_
+This documentation is not meant to be the basis of an implementation.
+
+* It shall provide understanding of the system for maintenance and further development
+* It shall refer to existing interface definitions wherever possible.
+
+The level of detail of the doumentation is meant to provide understanding, but not all details of the system.
+
+However, a certain level of detail was shown to be necessary for a thorugh understanding.
+Therefore, for example, the entities and their attributes are defined in the diagrams, but not in the tables below.
 
 == Rationales: Level of proximity to the code ==
 
-_TODO_
+The idea behind this documentation is to
+
+be close to the code:: The documentation should be stored together with the source code and should be versioned alongside the code.
+be modular:: The contents of the different documented components need to be edited seperately.
+be orientated at the structure of the business components:: The modules of the documentation shall not follow the package structure of the code, but the chapter structure of the documentation.
+
+The definition of the business components shall be close to the code: Components in this documentation should be represented as components in the code. This however, cannot be done in each case, especially not in the case of the angular gui.
+
+* The angular components are very technically oriented. Basing the specification on these components would not result in a comprehensive document. Therefore, the documentation differs at least in this regard from the implementation.
 
 == Rationales: Creation of a ubiquitous language (DDD) ==
 
-_TODO_
+The main goal of this documentation is to enhance the understanding between the business departments and the technical staff. The main way of doing this is be specifying a language that will be uniformly used from the specification to the interfaces, the implementation and the tests. This includes not only entities and attributes, but also component names, subsystem and system names etc.
+
+One difference is the usage of prefixes for the terms: These are only used in the business specification and not in the implementation itself.
 
 == Rationales: Level of detail of the documentation ==
 
-_TODO_
+The level of detail differs depending on the customer and his requirements for the documentation of the implemented systems. However, a certain level of detail has proven to be useful for the business analysts who do not have regular access to the code:
+
+* The attributes of entities should be present in the specification, both for interfaces and for database entities: The logic of the code often relies on these entities, and a specific reference to the required attributes is very beneficial for the precision of the documentation.
+* The attributes do not need to be defined in the text: They may also be presented as an image.
+* This image may also be technical, e.g. the export of a relational model in a database. Most readers can work with such diagrams, provided that some guidance is given for their interpretation. This is true both for database entities and for interface structures, e.g. for xml or json structures.
+* ...
 
 == Rationales: Specifics of the specification methodology ==
 
