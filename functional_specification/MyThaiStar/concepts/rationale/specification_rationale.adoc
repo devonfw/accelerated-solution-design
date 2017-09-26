@@ -69,7 +69,29 @@ The level of detail differs depending on the customer and his requirements for t
 
 == Rationales: Specifics of the specification methodology ==
 
-_TODO_
+The specification methodology is based on UML. It is based on the _Capgemini Specification Method_ and was tailored for the use as a post-documentation in agile projects. The usage of this method has led to a significant increase in in the quality and efficiency of the Capgemini software projects:
+
+* Ramp-up times are reduced since the specification method is up and running in less time.
+* The system specification can be completed quicker with fewer frictional losses.
+* The quality of the system specification increases.
+* The higher quality of the system specifications allows the depending disciplines design, implementation, test, etc. to be processed more quickly and efficiently and with higher quality.
+* The Specification Method provides a structuring of the system that supports the project setup and handling in total.
+
+The method is in detail described in the Specification Method manual. In the following list, the key points that were tailored or are of specific importance are described:
+
+* _TODO_
+
 
 == Rationales: Selection of the tools and the storage ==
-_TODO_
+
+The main focus of the tooling was
+
+* to enable each and every member of the development teams to create and update content of the specifications by using easy to use tools.
+* to keep the file sizes small in order to be able to version it together with the code.
+* to keep the specification modular and thereby to prevent huge monolithic files.
+* to keep the necessary installation effort as low as possible
+* to use only open source products.
+
+Because of this, asciidoc was selected for the creation of the document and plantuml was selected for the diagrams. Important aspects for the use of these tools are the following:
+
+* _TODO_
