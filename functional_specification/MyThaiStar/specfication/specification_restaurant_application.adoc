@@ -14,7 +14,13 @@ Devon FW Team icsddevonfwsupport.apps2@capgemini.com
 
 
 == Introduction ==
+This document contains the specification of a part of the _MyThaiStar_ restaurant application. This application is the main showcase for the devonfw framework and methodology.
 
+The goal of this document is to provide an example for the specification method that can be used for projects using devonfw. This method is in no way specific to devonfw, but is a tailored version of the main specification method developed by Capgemini (see _Capgemini Specification Method_).
+
+This example does not cover the whole application. The focus is to demonstrate the specification method for the different parts of the specification, not to provide a full specification document.
+
+This example is accompanied by a concept document discussing the rationales behind the selection and the tailoring of the specification method. It is important to review this document, since e.g. the level of detail defined in this document is depending heavily on it being a post-documentation for an already implemented system. 
 
 [[XTermsDefs]]
 === Terms and definitions ===
@@ -27,7 +33,7 @@ from the menu.
 | Offer |  Is a combination of drink, meal and side dish with
 the corresponding prices.
 | Order |  Is assigned to a table and includes all ordered
-offers/products by one or more persons of this table. 
+offers/products by one or more persons of this table.
 |====================
 
 == Use Cases ==
