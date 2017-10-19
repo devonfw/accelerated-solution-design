@@ -6,13 +6,12 @@ Devon FW Team icsddevonfwsupport.apps2@capgemini.com
 
 :toc:
 :toclevels: 4
-:icons:
 :numbered:
 
 
 == Use Cases ==
 
-//tag::UseCases[]
+// tag::UseCases[]
 
 === Business Component BCO_User_Management ===
 
@@ -52,9 +51,9 @@ _This is a a trivial use case._
 . The system searches for an ETY_User using IAT_User_ID.
 . The system deletes ETY_User.
 
-//end::UseCases[]
+// end::UseCases[]
 == Data Model ==
-//tag::DataModel[]
+// tag::DataModel[]
 
 
 === Model Component MCO_User ===
@@ -66,9 +65,9 @@ ETY_User contains the user data and is associated with the user roles.
 ==== Entity Type ETY_User_Role ====
 ETY_User_Role contains the user roles of the associated user.
 
-//end:::DataModel[]
+// end::DataModel[]
 == External Interfaces ==
-//tag::ExternalInterfaces[]
+// tag::ExternalInterfaces[]
 
 
 === External Interface EIF_Manage_User ===
@@ -81,4 +80,4 @@ interface entity types:
 - Delete User: See UC_Manage_User, scenario _Delete user_ .
 - Save User: See UC_Manage_User, scenario _Save user_ .
 
-//end::ExternalInterfaces[]
+// end::ExternalInterfaces[]

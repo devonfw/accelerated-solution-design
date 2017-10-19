@@ -6,7 +6,6 @@ Devon FW Team icsddevonfwsupport.apps2@capgemini.com
 
 :toc:
 :toclevels: 4
-:icons:
 :numbered:
 
 == Use Cases ==
@@ -93,9 +92,9 @@ NOTE: This should be documented as an artifact of type printout. However, we sho
 . The user chooses to submit the order.
 . The system stores the order in the system and sends a confirmation email to the user (UC_Manage_Order, Scenario "Save Order")
 
-//end::UseCases[]
+// end::UseCases[]
 == Data Model ==
-//tag::DataModel[]
+// tag::DataModel[]
 
 
 === Model Component MCO_Order ===
