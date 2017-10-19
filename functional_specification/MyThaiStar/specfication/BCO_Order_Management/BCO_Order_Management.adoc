@@ -59,7 +59,7 @@ Total Order cost: <Total Price of all dishes including extras>
 
 Link to cancel order: <Link to cancel order>
 ----
-NOTE: This should be documented as an artifact of type printout. However, we should reduce the number of indirections and therefore document it here.
+TIP: Normally, content like this should be documented as an artifact of type printout. However, in order to reduce the number of indirections, you may document it here.
 
 .Alternative workflow: Delete Order
 . The system searches for an ETY_Order using IAT_Order_ID.
