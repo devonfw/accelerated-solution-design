@@ -9,7 +9,7 @@ The whole specifiaction can be written and edited by using the atom editor with 
 [View MyThaiStar Specification on github](https://github.com/devonfw/devon-methodology/blob/master/functional_specification/MyThaiStar/specfication/specification_restaurant_application.adoc "MyThaiStar Specification")
 You will need a git client aditionally to commit and push your changes to the specification.
 
-### Installation for Visual Studio
+### Installation for Visual Studio Code
 
 To install **Visual Studio Code**, visit [code.visualstudio.com](https://code.visualstudio.com/docs/setup/setup-overview)
 
