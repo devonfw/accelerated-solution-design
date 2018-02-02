@@ -33,7 +33,7 @@ For getting the live-previews of the whole documentation as well as the uml-diag
 	    Chocolatey with this command `c:\>choco install graphviz`. If you do not have Chocolatey download it from here [chocolatey.org](https://chocolatey.org/install). If you want to install Graphviz manually, then go to [graphviz.org](http://www.graphviz.org/download/)
    - Install PlantUml on Visual Studio by pressing Ctrl + P to open the command line, search for "ext install plantuml" and install the version of "jebbs" (February 2018 v.2.5.2).
    
-5. To check if it worked, open a PlantUml file (extension .wsd) and press Alt + D.
+5. To check if it worked, open a PlantUml file (normally with extension .pu or .wsd) and press Alt + D.
 
 ### Installation for Atom
 
