@@ -16,7 +16,7 @@ To install **Visual Studio Code**, visit [code.visualstudio.com](https://code.vi
 For getting the live-previews of the whole documentation as well as the uml-diagram-preview working on Visual Studio, please follow these steps:
 
 1. You need to have AsciiDoctor installed on your computer, for installing it, follow the instructions [here](http://asciidoctor.org/docs/install-toolchain/).
-   > When installing Rubygem we recommend you the version 2.4.3-1. On the Rubygem installer, you **do not need** to install MSYS2 [ruby-lang.org](https://www.ruby-lang.org/en/downloads/) 
+   > If you do not have Rubygem we recommend you to install the version 2.4.3-1. On the Rubygem installer, you **do not need** to install MSYS2 [ruby-lang.org](https://www.ruby-lang.org/en/downloads/) 
    
 2. Install the AsciiDoctor plug-in on Visual Studio [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode)
    - Inside Visual Studio press Ctrl + P. That will open the command line.
