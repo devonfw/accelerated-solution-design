@@ -1,7 +1,0 @@
-@startuml
-left to right direction
-Chief << Actor >>
-rectangle checkout {
-:Chief: ..|> (Assign a table) <<Use Case>> : uses
-}
-@enduml
