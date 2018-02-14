@@ -1,0 +1,268 @@
+= Specification of the Restaurant Application =
+
+Devon FW Team icsddevonfwsupport.apps2@capgemini.com
+
+:toc:
+:toclevels: 4
+:numbered:
+:website: https://www.de.capgemini.com/devonfw
+:imagesdir: ./images/
+:imagesUserManagement: /BCO_User_Management/images/
+:imagesTableManagement: /BCO_Table_Management/images/
+:imagesOrderManagement: /BCO_Order_Management/images/
+
+
+== Introduction ==
+
+=== Target of the documentation as an example ===
+This document contains the specification of a part of the _MyThaiStar_ restaurant application. This application is the main showcase for the devonfw framework and methodology.
+
+The goal of this document is to provide an example for the specification method that can be used for projects using devonfw. This method is in no way specific to devonfw, but is a tailored version of the main specification method developed by Capgemini (see _Capgemini Specification Method_).
+
+This example does not cover the whole application. The focus is to demonstrate the specification method for the different parts of the specification, not to provide a full specification document.
+
+This example is accompanied by a concept document discussing the rationales behind the selection and the tailoring of the specification method. It is important to review this document, since e.g. the level of detail defined in this document is depending heavily on it being a post-documentation for an already implemented system.
+
+Throughout the document, the rationales behind different chapters and hints concerning the writing of these chapters are described as tips.
+
+TIP: While most of the functionality is described in a focused way as use cases, entity types etc., the first sections should provide an overview of the application and of the important concepts used in these applications. This information should enable the reader to comprehend the different artifacts that are described after that. There are no restrictions for these chapters.
+
+=== The MyThaiStar restaurant application ===
+The MyThaiStar application is the online presence of the MyThaiStar restaurant. It allows customers to
+
+- browse the menu
+- reserve tables and invite friends
+- automatically send invitation emails, containing links to order the dishes online.
+- order dishes online for their reservations
+- rate the dishes of the restaurant via twitter.
+
+It also allows the restaurant staff to monitor the reservations.
+
+
+== Use Cases ==
+
+This chapter contains the definition of the business logic of the application.
+
+TIP: The business logic is divided between the logic present in the services and the logic present in the client. If the logic implemented in the client is more complex than the dialogue flow, a simple service call or a confirmation dialogue, the logic may also be defined in a use case or a use case function. We differentiate between use cases in the client and service use cases using the stereotypes _Client UC_ and _Service UC_.
+
+=== Actors ===
+
+This chapter contains the actors using the MyThaiStar application. They may be either be technical systems or things like organizational units.
+
+TIP: Actors do not equal roles. Actors simply define the different organizational or business contexts in which the business logic is used. The roles and authorizations are defined seperateley, most often as part of the appendix.
+
+TIP: Note that each actor name contains a prefix _ACR_. Each artifact in the specification contains a prefix: This allows to easily identify the type of artifact referenced in any part of the specification.
+
+image::overview_actors.svg[caption="Figure 1: ", title="Actors", alt="Actors"]
+
+[width="100%",options="header", cols="v,a"]
+|====================
+| Actor |  Description
+| ACR_User |
+- a user of the MyThaiStar application
+| ACR_Guest |
+- a guest of the MyThaiStar Restaurant
+- it can bei either a "walk in" guest, a guest with a reservation or a guest having been invited by another guest.
+| ACR_Reserving_Guest |
+- a guest reserving a table using the MyThaiStar application
+| ACR_Invitee |
+- a guest that has been invited by a reserving guest.
+| ACR_Waiter |
+- a waiter managing the tables and orders using the MyThaiStar application
+| ACR_System_MyThaiStar |
+- The MyThaiStar application itself
+|====================
+
+In the next chapters, the busines logic is defined, separated in business components.
+
+TIP: The business components are not seperated into client components and service components. The distinction is handled using the stereotypes for the different use cases and use case functions.
+
+include::BCO_User_Management/BCO_User_Management.adoc[tags=UseCases]
+
+include::BCO_Order_Management/BCO_Order_Management.adoc[tags=UseCases]
+
+== Data model ==
+
+This chapter contains the data model of the application.
+
+TIP: This data model is primarily defined by diagrams. Textual documentation is added
+for the entity types, attributes and relations, for which the diagrams are not sufficient as documentation. This should be the exception.
+
+TIP: There is not only a data model for data stored in a database. If necessary, transient internal data models may also be defined in this chapter.
+
+include::BCO_User_Management/BCO_User_Management.adoc[tags=DataModel]
+
+include::BCO_Order_Management/BCO_Order_Management.adoc[tags=DataModel]
+
+
+== Dialogue ==
+
+The description of the user interface is split into the following dialogues:
+
+- *DIA_Main_Screen_and_User_Management* to show the specifics
+- *DIA_Book_Table_and_Invite_Friends* to book a table and optionally directly send a mail to invited people.
+- *DIA_Show_Menu_and_Create_Order* to show the menu and to optionally create an order.
+- *DIA_Supervise_Orders* to show current orders
+- *DIA_Supervise_Reservations* to show current reservations
+
+TIP: The client flows are specified as dialogues and screens. Dialogues contain the flow between the screens. In current clients, the same screens are used in very different forms for different purposes. In this case, one "dialogue screen" may be represented in multiple screens in the documentation.
+
+TIP: The screens can be documented mostly by mockups or screenshots. The different elements of the screens need to be documented if they are not self explanatory or invoke any kind of business functionality.
+
+=== Dialogue areas and mechanisms ===
+
+This chapter contains cross-sectional elements and mechanisms of the client.
+
+TIP: Cross-sectional topics do not need to be documented for each screen. They can be documented cross-sectional.
+
+==== header area ====
+
+All screens of the dialogues are split into a header area and a content area. The header area looks like this:
+
+image::header_area.png[caption="Figure 3: ", title="Header area in dialogue screens", alt="Header area in dialogue screens"]
+
+It contains
+
+- a linked logo of MyThaiStar, which leads to SCR_Main_Screen, see DIA_Main_Screen_and_User_Management.
+- a _Home_ link also leading to SCR_Main_Screen, see DIA_Main_Screen_and_User_Management.
+- a _Menu_ link leading to SCR_Menu_Screen, see DIA_Show_Menu_and_Create_Order.
+- a _Book Table_ link leading to SCR_Book_Table, see DIA_Show_Menu_and_Create_Order.
+
+In the right, it allows a user to log in or sign up using the User icon, and to fade in the right marginal column using the shopping basket icon.
+
+==== right marginal column ====
+
+The right marginal column contains the dishes and drinks of the current order.
+
+.Right marginal column without orders
+
+If there is no current order, it looks like this:
+
+image::right_marginal_column.png[caption="Figure 3: ", title="Right marginal column", alt="Right marginal column"]
+
+Besides the links _Menu_ and _Book table_ (see header area), the right marginal column allows to enter a booking id received in an email. The steps for this are as follows:
+
+. The user enters the booking id received in the email, and klicks to accept the terms.
+. The application reads the order using the booking token (see IET_Find_Order in EIF_Manage_Booking).
+.. If the order could not be found, an error is displayed to the user.
+.. Otherwise, the contents of the order are displayed in the right marginal column.
+
+.Right marginal column with orders
+
+This area will be further described as the implementation progresses.
+
+==== Content area ====
+
+This area contains the main information of each screen and is described in the following dialogues.
+
+==== Banner messages ====
+
+Messages to the user, most often about the success or failure of an operation, are shown as a banner sliding in from the bottom of the screen.
+
+image::banner_message.png[caption="Figure 3: ", title="Banner message", alt="Banner message"]
+
+==== Modal dialogues ====
+
+Some screens are implemented not as a screen of their own, but as a modal dialogue rendered above the current screen. This is done for most input dialogues.
+
+image::Modal_dialogue.png[caption="Figure 3: ", title="Modal dialogue", alt="Modal dialogue"]
+
+
+=== Dialogue DIA_Main_Screen_and_User_Management ===
+
+The dialogue flow of this dialogue is shown in the next image:
+
+image::DIA_Main_Screen_and_User_Management.svg[caption="Figure 3: ", title="DIA_Main_Screen_and_User_Management", alt="DIA_Main_Screen_and_User_Management"]
+
+The flows defined here for the links in the header area are relevant for each screen except the modular windows (see below).
+
+This is a fundamental dialogue flow and not associated with one of the client use cases.
+
+
+==== Screen SCR_Main_Screen ====
+
+image::SCR_Main_Screen.png[caption="Figure 3: ", title="Main Screen", alt="Main Screen"]
+
+// TODO: The links to the supervision of orders and reservations currently do not work. This image has to updated once they work again.
+
+As this is the main screen, all other dialogues are entered from this screen:
+
+- DIA_Book_Table_and_Invite_Friends is reached using the link _BOOK TABLE_.
+- DIA_Show_Menu_and_Create_Order is reached using the link _MENU_.
+- DIA_Supervise_Orders and DIA_Supervise_Reservations are reached by their corresponding links for users with the role _WAITER_.
+
+The main screen itself can be reached from every other screen (except modal dialogues) using the MyThaiStar Icon in the upper left corner.
+
+==== Screen SCR_User_Login ====
+
+image::SCR_User_Login.png[caption="Figure 3: ", title="User Login", alt="User Login"]
+
+This screen allows a user to log in. All fields are mandatory, otherwise the LOGIN button will not be active.
+
+The Login is done using the following steps:
+
+. The user enters his username and password and selects Login
+. The system authenticates the user using EIF_Manage_User and IET_User.
+. The user data is stored in the client as ETY_User.
+. The result of the login as a banner message.
+
+==== Screen SCR_User_Signup ====
+
+image::SCR_User_Signup.png[caption="Figure 3: ", title="User Login", alt="User Login"]
+
+This screen allows a user to sign up to the MyThaiStar application.
+
+The field Email contains a format validator for an email address. All fields are mandatory, otherwise the REGISTER button will not be active.
+
+The signup is done using the following steps:
+
+. The user enters his email-address, selects a password, accepts the general conditions and selects REGISTER.
+. The system will currently show a banner explaining that the email-address is already in use.
+
+=== Dialogue DIA_Book_Table_and_Invite_Friends ===
+
+The dialogue flow of this dialogue is shown in the next image:
+
+image::DIA_Book_Table_and_Invite_Friends.svg[caption="Figure 3: ", title="DIA_Book_Table_and_Invite_Friends", alt="DIA_Book_Table_and_Invite_Friends"]
+
+This content will be further defined as the project progresses.
+
+
+
+== External Interfaces ==
+This section defines the external interfaces required by the application or provided by the application.
+
+TIP: All services provided by the server application are documented here. Since most
+of the services are quite simple CRUD (Create, Read, Update, Delete) services,
+they will be defined in diagrams alone. Additional documentation is supplied where
+needed.
+
+TIP: If an external interface is already defined and documented (most probably in the sending or receiving system), it does not need to be documented again: A reference to the existing documentation is sufficient. This documentation may even be (within limits) technical. The benefit is, aside from the effort to document the interface, to have a single source of truth for the interface.
+
+include::BCO_User_Management/BCO_User_Management.adoc[tags=ExternalInterfaces]
+
+include::BCO_Order_Management/BCO_Order_Management.adoc[tags=ExternalInterfaces]
+
+TIP: Some chapters are omitted here, since they are not needed at the current time for this application. These include: +
+ +
+- printout definitions +
+- non functional requirements
+
+== Appendix ==
+
+TIP: The appendix contains information not provided in the introduction or the artifacts of the specification method. It may contain, among other contents: +
+ +
+- roles and authorization details +
+- business logging details +
+- static data +
+- business logging and protocol information +
+
+=== Terms and definitions ===
+
+[width="100%",options="header"]
+|====================
+| Term |  Definition
+| Booking |  A reservation, potentially already containing the orders of invited guests.
+| Order |  A number of ordered dishes
+| Order-Line |  An ordered dish, including ordered extra ingredients.
+|====================
