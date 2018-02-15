@@ -319,7 +319,7 @@ This set of documents includes all UX designs (visual guides, types, colors, sty
 [[design-process]]
 = *Design Process*
 
-The design Process is part of the Accelerated Solution Design.  However, due to the big extension of this section, it has been described as a separated section which can be consulted file:///C:\display\ACM\Design+Process[here].
+The design Process is part of the Accelerated Solution Design.  However, due to the big extension of this section, it has been described as a separated section which can be consulted link:design_process.adoc[here].
 
 [[architecture-process]]
 = *Architecture Process*
