@@ -1,0 +1,401 @@
+[[case-study-jump-the-queue]]
+= Case Study: Jump the Queue
+
+[[introduction]]
+= *Introduction*
+
+As Jump The Queue is the application that will be used as tutorial for the following Backend and Frontend technologies, we have choiced this project as the case of study for introduce Acelerate Solution Design practices.
+
+In our case, we have applied all practices to original project to develop the new Jump the Queue version. 
+
+*The new version is in http://gitlab-val.es.capgemini.com/gitlab/jorubios/jump-the-queue-v2*
+
+The original project can be found at _https://github.com/oasp/oasp-tutorial-sources/wiki/JumpTheQueueDesign._
+
+[[sprint-0-studio]]
+= *Sprint 0 (Studio)*
+
+_Sprint 0_ is a _Studio Sprint_, i.e. Analysis and Design sprint, and is consequently initiated by the _Studio_ _team_. _Sprint 0_ starts with the "Explore and Define" stage. Then, the "Ideate and Prototype" stage will be executed. Once that phase is completed, the current sprint would be closed, thus allowing next _Studio_ _Sprint_, i.e. _"Studio Sprint 1"_, to start.
+
+In this section, the different steps taken at the Case Study _Jump the Queue_ to complete _Sprint 0_ are described.
+
+[[stage-1-explore-and-define]]
+== Stage 1: Explore and Define
+
+[[actors]]
+=== Actors
+
+_a) Customer_
+
+_b) Studio team:_
+
+* UX Designer
+* Business Analyst
+* Architect
+
+[[activities]]
+=== Activities
+
+_Studio_ had an initial *meeting with customer* to get an overview of the *purpose* of the project, the *objectives*, the *business requirements* and the *customer needs*. This is the start point for _Sprint 0_.
+
+The material collected, together with the Project Charter, was used by _Studio_ to start building the *Glossary of Terms*, which would be updated throughout the project. The first draft of the Glossary of Terms looked like this:
+
+[cols=",",options="header",]
+|==========================================================================================================================================
+a|
+______
+*Term*
+______
+
+ a|
+_____________
+*Description*
+_____________
+
+a|
+_____________
+*Access code*
+_____________
+
+ a|
+_____________________________________________
+This is the turn number assigned to a person.
+_____________________________________________
+
+a|
+_________________
+*Validation code*
+_________________
+
+ a|
+_______________________________________________________________________________________________
+It is a code used to confirm the validity of the email or telephone number informed by the user
+_______________________________________________________________________________________________
+
+a|
+________________
+*Estimated time*
+________________
+
+ a|
+____________________________________________________________________________________________
+Stands for the time that the system calculates when the person in the queue will be attended
+____________________________________________________________________________________________
+
+a|
+________________
+*Attention time*
+________________
+
+ a|
+___________________________________________________________________________________________________________________________________________
+This is the time that it takes for a user to be attended. It is calculated as the difference between the start and the end of the attention
+___________________________________________________________________________________________________________________________________________
+
+a|
+_________________
+*Priority access*
+_________________
+
+ a|
+____________________________________________________________________________
+It is the access granted to privileged users so they can be attended earlier
+____________________________________________________________________________
+
+|==========================================================================================================================================
+
+Building the Glossary of terms was an important milestone in the project, as it establishes a shared language among the team members and avoids any misunderstanding.
+
+Then, _Studio_ held further meetings with customer to *understand the business needs* and *customer expectations*,** **and *state the purpose* and *objectives* of the project. The documented Statement of Purpose and Project Objectives were the following:
+
+[[statement-of-purpose]]
+==== Statement of purpose
+
+Existing systems to manage queues and turns consists only in the assignation of a number without any associated logic that improves user experience and give value to user and to queue owner. 
+
+Classic systems do not allow to know at what time will be each turn. In addition, clients only can consult queue status if he stays at the queue location. This provoke a bad user experience because he must to stay in the queue all waiting time. Besides, in an amount of cases, this causes that some users leave the queue because the long waiting time, provoking the loss of the sales.
+
+Ideally the users of the queue have to be able to know at what hour could be its turn. It is very important because he can improve its time and he will need to wait in the queue and only go when its time reaches.
+
+Besides, to facilitate that the user has not to be in the queue waiting its turn, he can consult the queue status at any device that he can have. (for example a mobile phone, tablet,  ..)
+
+As value added, queue owners will be able to prioritize users at the queue to have the possibility of creating marketing campaigns.
+
+A successful solution would be to improve user experience facilitating that the user has not to be in the queue waiting its turn.
+
+*Objectives*
+
+Eliminate the needed of stay waiting in a queue.
+
+Improve user experience, easing the access to the queue.
+
+The system has to be simple and easily escalable and extensible
+
+This information is essential because it is neccesary that the entire team understand the business needs. Later, it was essential to avoid misundestandings, to promote improvements and involve the team in the needs of the customer.
+
+The information  collected in these meetings was documented in the *Analysis Overview document*
+
+[[stage-2-ideate-and-prototype]]
+== Stage 2: Ideate and Prototype
+
+[[actors-1]]
+=== Actors
+
+_a) Customer_
+
+_b) Studio_ _team_:
+
+* UX Designer
+* Business Analyst
+* Architect 
+
+[[activities-1]]
+=== Activities
+
+_Studio_ held further meetings with customer to define all the *Epic and User stories* to be developed. _Studio_ used the *User Story mapping* technique to fulfill this task, define the *Minimum Viable Product* (MVP) and *prioritize* the functionality that would be developed in the next _Yard sprint_, i.e. the user stories to be included in the development sprint backlog.
+
+An important item of this stage is the identification of the types of users, which were called Actors. The main actors that were identified to interact with Jump the Queue component were:
+
+[cols=",",options="header",]
+|===================================================================================================================
+a|
+________
+*Actors*
+________
+
+ a|
+_____________
+*Description*
+_____________
+
+a|
+______
+*User*
+______
+
+ a|
+____________________________________________________________________________________________________________________
+It is an internal user of the external system that creates the queue and it will have privilege access to the queue.
+____________________________________________________________________________________________________________________
+
+a|
+_________
+*Visitor*
+_________
+
+ a|
+______________________________________________________________________________________________
+User of the queue component that does not exist in the external system that created the queue.
+______________________________________________________________________________________________
+
+a|
+_______
+*Owner*
+_______
+
+ a|
+____________________________
+User that manages the queue.
+____________________________
+
+|===================================================================================================================
+
+In this point is important to clarify with the customer the needed of define and agree a Minimum viable product (MVP). This is essential to ensure that the propossed solution will cover the expectations of the customer.
+
+A minimum viable product (MVP) is the the most pared down version of a product that can still be released. An MVP has three key characteristics: 
+
+*•It has enough value that people are willing to use it or buy it initially.* +
+*•It demonstrates enough future benefit to retain early adopters.* +
+*•It provides a feedback loop to guide future development.*
+
+The catch to this development technique is that it assumes that early adopters can see the vision or promise of the final product and provide the valuable feedback needed to guide developers forward.
+
+Once the MVP for the incoming __Yard Sprint __was validated with customer, _Studio_ created the *Accelerated Solution Design*, *Style Guide and Assets* and *UATs* documents that were going to be used by _Yard_ in their sprint.
+
+*The MVP agreed at the end of Sprint 0 was as follows: *
+
+image:extracted-media/mediaJump/image1.tmp[]
+
+Some of the mock-ups designed by the UX Designer for an initial validation with customer of the Look&Feel and required functionality were the following:
+
+[cols=",,,",options="header",]
+|======================================================================================================================================================================================================================================================================================================================================================================================================
+|*Request/Insert code Screen* |*Terms & Conditions Popup* |*Assigned Order / Show queue Screen* |*Show/Serve Queue Screen*
+|image:extracted-media/mediaJump/image2.tmp[] |image:extracted-media/mediaJump/image3.tmp[] |image:extracted-media/mediaJump/image4.tmp[] |image:extracted-media/mediaJump/image5.tmp[]
+|======================================================================================================================================================================================================================================================================================================================================================================================================
+
+We generated the file:///C:\download\attachments\4328080\171124_%20ADCenter_JTQ_First_Steps_Analysis_Document_V1_3.pptx%3fversion=1&modificationDate=1516900968234&api=v2[*First Steps Analysis*] to present and explain our understanding of the Epic and User Stories and behaviour of the future solution to customer and **refine **and* validate* them.
+
+[[studio-and-yard-sprints-1..n]]
+= *Studio and Yard Sprints 1,..,n*
+
+In this section, the different steps taken at the Case Study _Jump the Queue_ to complete _Yard Sprints_ are described.
+
+[[stage-1-ideate-and-prototype]]
+== Stage 1: Ideate and Prototype
+
+[[actors-2]]
+=== Actors
+
+_a) Customer_
+
+_b) Yard team:_
+
+* Developers
+
+\c) _Studio team:_
+
+* UX Designer
+* Business Analyst
+* Architect 
+
+[[activities-2]]
+=== Activities
+
+__Studio wa__s in constant communication with both customer and _Yard_ during the development of the prototype, in order to clarify any concerns or doubts regarding the user stories and business requirements. These channnels were also used to give **feedback **about the *expected behaviour* of the product and *identified constraints*.
+
+In this stage, _Studio_ documented the requirements collected at the previous stage and detailed enough user stories for _Yard_. In this way, _Yard_ could start as soon as possible to develop a first prototype.
+
+This information was collected at the *Accelerate solution design document.*
+
+In this document, _Studio_ detailed each user story and defined all required analysis and design information to ensure that the needs were understood by _Yard_. At following points we can found the details of the analysis and design information:
+
+*Details of the user stories*
+
+*Epic 1. Get a number*
+
+This epic contains all needed functions that allow users to get a number for entering in the queue.
+
+As part of the process, the epic must implement:
+
+1º Accept terms & conditions.
+
+2º Register in the queue. As part of this process the component must validate the information.
+
+3º Obtain the code to access the queue.
+
+The user stories that define this are:
+
+User story 1. Accept terms & conditions
+
+[cols=",,,",options="header",]
+|==================================================================================
+|*Story Narrative* |*Accept terms & conditions* |*Priority* |*5*
+|*As* |visitor |*Size* |
+|*I need to* |accept terms and conditions |*Dependency* |
+|*So that* |I can access jump the queue system | |
+|*Acceptance Criteria* a|
+- Terms and conditions will be configurable and the system must show this text.
+
+- The system will ask to accept terms and conditions before getting an access code.
+
+ | |
+|==================================================================================
+
+User story 2. Verify information
+
+[cols=",,,",options="header",]
+|================================================================================
+|*Story Narrative* |*Verify information* |*Priority* |*5*
+|*As* |visitor |*Size* |
+|*I want to* |my telephone number or email to be verified |*Dependency* |
+|*So that* |their validity will be confirmed | |
+|*Acceptance Criteria* a|
+- User has to received and email or and SMS with a validation code.
+
+- The system will only allow the access to users that input this validation code.
+
+ | |
+|================================================================================
+
+*Entities that support the user stories*
+
+[cols="",options="header",]
+|======================================================================================
+|*Visitor Information*
+|It contains the personal information of the visitors who gave the permission to use it
+|Name |String
+|Telephone |TelephoneType
+|Email |EmailType
+|======================================================================================
+
+[cols="",options="header",]
+|================================================================================
+|*Terms and conditions*
+|It describes the Terms and conditions that the user must accept to use the queue
+|Description |String
+|================================================================================
+
+[cols="",options="header",]
+|============================================================
+|*Queue owner*
+|It contains information for the users that can manage queues
+|User |userIdType
+|Name |String
+|Email |EmailType
+|Password |PasswordType
+|============================================================
+
+[cols="",options="header",]
+|==================================================
+|*Queue*
+|It contains the information that describes a queue
+|Description |String
+|Logo |Image
+|==================================================
+
+[cols="",options="header",]
+|===============================================================================================
+|*Access code*
+|It contains the list people that are in the queue and their information.
+|Id_code |String. Assigned code. PK
+|Name |String
+|Email |EmailType
+|Telephone |TelephoneType
+|CreationTime |Time (HH:MM). The hour when the user got the turn
+|StartTime |Time (HH:MM). The hour when the attendance of the user starts
+|EndTime |Time (HH:MM). The hour when the attendance of the user ends
+|EstimatedTime |Time (HH:MM). The hour which the system estimated when the user will be attended
+|===============================================================================================
+
+*Bounded context that modelizes the solution*.
+
+It is very important to drive the development to each domain of the solution.
+
+[[section]]
+==
+
+_Yard_ used the Accelerated Solution Design, Style Guide and Assets, UATs** **and related documentation prepared in the preceding _Studio_ S_print_ to *plan the sprint backlog* and execute the _Yard_ sprint.
+
+__Yard __followed agile and scrum practices to *develop* the software solution and produce a *prototype*, which is the expected outcome of this stage.
+
+[[stage-2-empathize-and-test]]
+== Stage 2: Empathize and Test
+
+[[actors-3]]
+=== Actors
+
+_a) Customer_
+
+_b) Yard team:_
+
+* Developers
+
+b) _Studio team:_
+
+* UX Designer
+* Business Analyst
+* Architect
+
+[[activities-3]]
+=== Activities
+
+In this stage, *__Yard, Studio and customer __tested* the new prototype developed in the Prototyping phase and validated the release.
+
+Also, It is necessary to gain an empathic understanding of the problem we are trying to solve. This help us to promote new improvements and changes in the prototype.
+
+Then, *customer* run the *UATs* and *validated* that the provided prototype fulfilled the requirements.
+
+As in the previous stage, both customer and _Yard_ kept a *fluent communication* with _Studio_ to clarify any open issue or missunderstanding and report the results of the tests.
+
+*_Yard Sprint_ cycles* were repeated until *solution* was completed and *accepted* by the customer.
