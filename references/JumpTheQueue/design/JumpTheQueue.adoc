@@ -36,7 +36,7 @@ This is the link:///171124_ADCenter_JTQ_First_Steps_Analysis_Document_V1_3.pptx[
 [[user-stories]]
 = *4. User Stories*
 
-As the first objective of Jump the Queue component is to improve the time management of the user, providing the needed functionalities to do so.
+The first objective of Jump the Queue component is to improve the time management of the user, providing the needed functionalities to do so.
 
 The solution focus on this premise and has to facilitate the process of accessing and consulting to the queue.
 
