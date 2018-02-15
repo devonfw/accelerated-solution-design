@@ -1,28 +1,8 @@
+:toc: macro
+toc::[]
+
 [[accelerated-solution-design---ad-center--]]
 = Accelerated Solution Design - AD Center -
-
-* link:#AcceleratedSolutionDesign-ADCenter--Pur[Purpose]
-* link:#AcceleratedSolutionDesign-ADCenter--Key[Key principles]
-** link:#AcceleratedSolutionDesign-ADCenter--1.I[ 1. Intersection of industry standard practices ]
-** link:#AcceleratedSolutionDesign-ADCenter--2.L[2. Lean]
-** link:#AcceleratedSolutionDesign-ADCenter--3.A[3. Agile requirements flow]
-* link:#AcceleratedSolutionDesign-ADCenter--Way[Ways of Working]
-** link:#AcceleratedSolutionDesign-ADCenter--Exp[Explore and Define]
-** link:#AcceleratedSolutionDesign-ADCenter--Ide[Ideate + prototype]
-** link:#AcceleratedSolutionDesign-ADCenter--Emp[Empathize + Test]
-* link:#AcceleratedSolutionDesign-ADCenter--Rel[Relationship with project Kick-off phase]
-* link:#AcceleratedSolutionDesign-ADCenter--Del[Deliverables and RACI]
-** link:#AcceleratedSolutionDesign-ADCenter--Ana[Analysis Overview]
-** link:#AcceleratedSolutionDesign-ADCenter--Fir[First Steps Analysis]
-** link:#AcceleratedSolutionDesign-ADCenter--Acc[Accelerated Solution Design]
-** link:#AcceleratedSolutionDesign-ADCenter--UAT[UAT]
-** link:#AcceleratedSolutionDesign-ADCenter--Sty[Style guides, assets, … (UX docs.)]
-* link:#AcceleratedSolutionDesign-ADCenter--UXP[UX Process]
-* link:#AcceleratedSolutionDesign-ADCenter--Too[Tools]
-** link:#AcceleratedSolutionDesign-ADCenter--Con[Confluence]
-** link:#AcceleratedSolutionDesign-ADCenter--Jir[Jira]
-** link:#AcceleratedSolutionDesign-ADCenter--Ent[Enterprise Architect]
-** link:#AcceleratedSolutionDesign-ADCenter--Ado[Adobe Creative Cloud]
 
 [[purpose]]
 = *Purpose*
@@ -83,7 +63,7 @@ The practices adopted at the AD Center to apply those principles are:
 Next, those three practices are explained.
 
 [[intersection-of-industry-standard-practices]]
-== * 1. Intersection of industry standard practices *
+==  *1. Intersection of industry standard practices*
 
 The ASD process will combine and apply the following industry standard practices:
 
@@ -242,7 +222,7 @@ As first steps, BA’s, UX and architect work together with project stakeholders
 This information will be necessary at project kick-off phase to describe among other the following information:
 
 * Project Scope and out of scope.
-*  Work packages and its planning.
+* Work packages and its planning.
 * Required resources (as human as technical)
 * Project risks.
 
@@ -336,10 +316,113 @@ This set of documents includes all UX designs (visual guides, types, colors, sty
 
  image:extracted-media/mediaASD/image8.tmp[]
 
-[[ux-process]]
-= *UX Process*
+[[design-process]]
+= *Design Process*
 
-The UX Process is part of the Accelerated Solution Design.  However, due to the big extension of this section, it has been described as a separated section which can be consulted file:///C:\display\ACM\Design+Process[here].
+The design Process is part of the Accelerated Solution Design.  However, due to the big extension of this section, it has been described as a separated section which can be consulted file:///C:\display\ACM\Design+Process[here].
+
+[[architecture-process]]
+= *Architecture Process*
+
+[[overall-goals]]
+== *Overall Goals*
+
+The goal of the Accelerated Solution Design is to create a document that is:
+
+*post-documentation*
+
+The documentation was updated during and after the implementation: The implementation was governed by lean user stories created using the user story mapping method.
+
+*Aligned to the implementation*
+
+Structure, concepts and nomenclature should be close to the code.
+
+*Allow for compact design documentation*
+
+Much of the structuring of components and data should be presented at the Accelerated Solution Design deliverable and not need to be formally repeated in another documentation. The split of the application into components should be present in the code.
+
+*Leanness*
+
+The documentation should contain only the strictly needed information and should be very pragmatic.Easy to maintainIt should be versioned together with the code. A developer should be able to change it using only a text editor.
+
+[[rationals]]
+== *Rationals*
+
+[[decisions-about-because-of-thisaccelerated-solution-design-deliverable]]
+=== *Decisions about because of this accelerated solution design deliverable*
+
+Accelerated solution design deliverable is not meant to be the basis of an implementation.
+
+* It shall provide understanding of the system for maintenance and further development
+* It shall refer to existing interface definitions wherever possible.
+
+The level of detail of the doumentation is meant to provide understanding, but not all details of the system.
+
+However, a certain level of detail was shown to be necessary for a thorugh understanding. Therefore, for example, the entities and their attributes are defined in the diagrams, but not in the tables below.
+
+[[level-of-proximity-to-the-code]]
+=== *Level of proximity to the code*
+
+The idea behind this documentation is to:
+
+*be close to the code*
+
+The documentation should be stored together with the source code and should be versioned alongside the code.
+
+*be modular*
+
+The contents of the different documented components need to be edited seperately.
+
+*be orientated at the structure of the business components*
+
+The modules of the documentation shall not follow the package structure of the code, but the chapter structure of the documentation.
+
+The definition of the business components shall be close to the code: Components in this documentation should be represented as components in the code. This however, cannot be done in each case, especially not in the case of the angular gui.
+
+* The angular components are very technically oriented. Basing the specification on these components would not result in a comprehensive document. Therefore, the documentation differs at least in this regard from the implementation.
+
+[[creation-of-a-ubiquitous-language-ddd]]
+=== *Creation of a ubiquitous language (DDD)*
+
+The main goal is to enhance the understanding between the business departments and the technical staff. The main way of doing this is be specifying a language that will be uniformly used from the specification to the interfaces, the implementation and the tests. This includes not only entities and attributes, but also component names, subsystem and system names etc.
+
+One difference is the usage of prefixes for the terms: These are only used in the business specification and not in the implementation itself.
+
+[[level-of-detail-of-the-documentation]]
+=== *Level of detail of the documentation*
+
+The level of detail differs depending on the customer and his requirements for the documentation of the implemented systems. However, a certain level of detail has proven to be useful for the business analysts who do not have regular access to the code:
+
+* The attributes of entities should be present in the specification, both for interfaces and for database entities: The logic of the code often relies on these entities, and a specific reference to the required attributes is very beneficial for the precision of the documentation.
+* The attributes do not need to be defined in the text: They may also be presented as an image.
+* This image may also be technical, e.g. the export of a relational model in a database. Most readers can work with such diagrams, provided that some guidance is given for their interpretation. This is true both for database entities and for interface structures, e.g. for xml or json structures.
+* …
+
+[[specifics-of-the-specification-methodology]]
+=== *Specifics of the specification methodology* 
+
+The specification methodology is based on UML. It is based on the _Capgemini Specification Method_ and was tailored for the use as a post-documentation in agile projects. The usage of this method has led to a significant increase in in the quality and efficiency of the Capgemini software projects:
+
+* Ramp-up times are reduced since the specification method is up and running in less time.
+* The system specification can be completed quicker with fewer frictional losses.
+* The quality of the system specification increases.
+* The higher quality of the system specifications allows the depending disciplines design, implementation, test, etc. to be processed more quickly and efficiently and with higher quality.
+* The Specification Method provides a structuring of the system that supports the project setup and handling in total.
+
+The method is in detail described in the Specification Method manual.
+
+[[selection-of-the-tools-and-the-storage]]
+=== *Selection of the tools and the storage*
+
+The main focus of the tooling was
+
+* to enable each and every member of the development teams to create and update content of the specifications by using easy to use tools.
+* to keep the file sizes small in order to be able to version it together with the code.
+* to keep the specification modular and thereby to prevent huge monolithic files.
+* to keep the necessary installation effort as low as possible
+* to use only open source products.
+
+Because of this, asciidoc was selected for the creation of the document and plantuml was selected for the diagrams.
 
 [[tools]]
 = *Tools*
