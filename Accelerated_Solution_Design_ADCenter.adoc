@@ -272,9 +272,7 @@ The required content is:
 * Details of the requirements that fulfill the business needs, in the form of Epics and User Stories
 * Site map and sketches of the user interfaces that shall meet the requirements
 
- The powerpoint template can be found at following link:
-
- image:extracted-media/mediaASD/image7.png[]
+ The powerpoint template can be found at following https://github.com/jdiazgon/devon-methodology/blob/ASD_Practices/extracted-media/mediaASD/ADCenter_First_Steps_Analysis_Document_TEMPLATE.potx[link]:
 
 [[accelerated-solution-design]]
 == *Accelerated Solution Design*
