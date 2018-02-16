@@ -142,7 +142,7 @@ The main outputs of this phase will be the following set of documents:
 
 At this stage, the solution is designed and developed. To achieve that, each functionality, which are required to perform the required design and development sprints, will be prioritized.
 
-As previously described, the AD Center will follow an agile requirement flow to analyze and design the solution (See link:#AcceleratedSolutionDesign-ADCenter--Agi[agile requirements flow]).
+As previously described, the AD Center will follow an agile requirement flow to analyze and design the solution (See link:#agile-requirements-flow[agile requirements flow]).
 
 To do this, the following sprints are proposed:
 
@@ -259,9 +259,7 @@ This document shall provide the following information:
 * Constraints.
 *   …
 
-The following document show sample content of this document.
-
-image:extracted-media/mediaASD/image6.png[]
+The following https://github.com/jdiazgon/devon-methodology/blob/ASD_Practices/extracted-media/mediaASD/%5BProject%20Code%5D__%5BProject%20Name%5D_Analysis_Overview_v%5B1.0%5D_YYYYMMDD.dotx[document] shows sample content of this document.
 
 [[first-steps-analysis]]
 == *First Steps Analysis*
