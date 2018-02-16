@@ -52,9 +52,9 @@ image:extracted-media/mediaDesign/image1.png[]
 [[how-we-do-the-steps-to-follow-1]]
 = How we do | the steps to follow
 
-image:extracted-media/mediaDesign/image2.tmp[]
+image:extracted-media/mediaDesign/image2.png[]
 
-image:extracted-media/mediaDesign/image3.tmp[]
+image:extracted-media/mediaDesign/image3.png[]
 
 *                    Sprint Design / RDV* +
  +
@@ -62,13 +62,13 @@ First of all, we need a couple of days to prepare all the material, templates an
 It's also important to create the multidisciplinary team who is going to work in the process, setting an initial schedule and a due date if we know it.
 
 This way of working works well remotely with the use of skype meetings and agile documents interchange in the main touch points of the process, but we strongly recommend that the first two steps being as face-to-face as possible, to get a complete immersion into the project and to achieve an optimal communication, often disrupted for things such as the language, bad connections and lack of visual acknowledgment. +
-image:extracted-media/mediaDesign/image4.tmp[]
+image:extracted-media/mediaDesign/image4.png[]
 
 [[explore-define-1]]
 ==  +
 *1) Explore & Define*
 
-image:extracted-media/mediaDesign/image5.tmp[]
+image:extracted-media/mediaDesign/image5.png[]
 
 *End result* +
 The end result of this phase is a clear definition of the problem and a framework for the solution. +
@@ -91,7 +91,7 @@ The UX designer and Business Analyst have to ask questions (about specifications
 
 *Team Shared Deliverables*: Requirements Document
 
-image:extracted-media/mediaDesign/image6.tmp[]
+image:extracted-media/mediaDesign/image6.png[]
 
 [[research-1]]
 === 1.2) Research
@@ -103,7 +103,7 @@ We also need to know the client's business. We need to know their business goals
 
 *Team Shared Deliverables*: Review Report
 
-image:extracted-media/mediaDesign/image7.tmp[]
+image:extracted-media/mediaDesign/image7.png[]
 
 [[analysis-1]]
 === 1.3) Analysis
@@ -120,12 +120,12 @@ With the information obtained in these three phases, we will complete the High L
 
 *Team Shared Deliverables*: Estimation & Analysis Report
 
-image:extracted-media/mediaDesign/image8.tmp[]
+image:extracted-media/mediaDesign/image8.png[]
 
 [[conceptualize-1]]
 == 2) Conceptualize
 
-image:extracted-media/mediaDesign/image9.tmp[] +
+image:extracted-media/mediaDesign/image9.png[] +
  +
 *End result* +
 The end result of this phase is a validated concept with brand/visual design vision, content strategy, interaction design guidelines and a proven technical solution to accelerate development. These deliverables help with the progress of designing the digital service. +
@@ -142,7 +142,7 @@ Studio, client and user.
 In this step we´ll start conceptualizing and drafting the solution. First, we need to get inspired to come up with ideas that are innovative and let customers be amazed (sparkle). We design the optimal flow for the customer within an app and/or web site that meets their needs and exceeds their expectations. +
 Besides involving end users and clients in every phase, it's important that we do this together with the client. The process itself should also be a good experience to them, so that they enjoy working together with us to create the best digital part of their service.
 
-image:extracted-media/mediaDesign/image10.tmp[]
+image:extracted-media/mediaDesign/image10.png[]
 
 [[brain-storming-1]]
 ==== 2.1.1) Brain Storming
@@ -151,7 +151,7 @@ image:extracted-media/mediaDesign/image10.tmp[]
 *Process*: After the project requirements are finalized, the UX team should have a brainstorming session, which is a deep thought process, where they will find the solution for 'how to convert the user requirements to a design'. In this stage, the UX designer will come up with set of solutions for converting/visualizing the project requirements to design interfaces for user interaction. +
 *Output*: The set of ideas which helps to transform the requirements into a design.
 
-image:extracted-media/mediaDesign/image11.tmp[]
+image:extracted-media/mediaDesign/image11.png[]
 
 [[create-1]]
 === 2.2) Create
@@ -159,7 +159,7 @@ image:extracted-media/mediaDesign/image11.tmp[]
 When the best idea has been chosen, the sketching starts together with business, technology and customers. Together we can translate an idea to a high-level concept on Interaction, Branding and Content, which everybody agrees on. +
 *Output*: Concept description, sketches, card sorting (task work flows and information architecture).
 
-image:extracted-media/mediaDesign/image12.tmp[]
+image:extracted-media/mediaDesign/image12.png[]
 
 [[sketching-1]]
 ==== 2.2.1) Sketching
@@ -167,7 +167,7 @@ image:extracted-media/mediaDesign/image12.tmp[]
 *Process*: In this stage, the initial sketching of the design is done. The output can be traced using a pencil and paper or using some rough sketching tools. The UX designers can work on different design styles to give multiple options. +
 *Output*: Initial sketching of the interface.
 
-image:extracted-media/mediaDesign/image13.tmp[]
+image:extracted-media/mediaDesign/image13.png[]
 
 [[card-sorting-defining-an-information-architecture-1]]
 ==== 2.2.2) Card Sorting: Defining an Information Architecture
@@ -175,7 +175,7 @@ image:extracted-media/mediaDesign/image13.tmp[]
 *Process*: In a card sorting session, participants organize topics into categories that make sense to them and they may also help you label these groups. To conduct a card sort, you can use actual cards or pieces of paper. The purpose of Information Architecture is to structure, label, and organize the content. The UX designer has to do the story boarding/documenting the solutions obtained from brainstorming session. Through the information architecture, a UX designer finds out not only how each piece of the site fits together, but also how each item relates to all the other items within this structure. +
 *Output*: The hierarchy, information architecture, structure of each element of the interface for the user to interact.
 
-image:extracted-media/mediaDesign/image14.tmp[]
+image:extracted-media/mediaDesign/image14.png[]
 
 [[task-work-flow-1]]
 ==== 2.2.3) Task Work Flow
@@ -183,7 +183,7 @@ image:extracted-media/mediaDesign/image14.tmp[]
 *Process*:Task analysis identifies the actions and cognitive processes required for a user to complete a task or achieve a particular goal. In this stage, the tasks the user can perform on this interface and the tasks the system can perform should be identified. +
 *Output*: Task analysis report.
 
-image:extracted-media/mediaDesign/image15.tmp[]
+image:extracted-media/mediaDesign/image15.png[]
 
 [[iterate-1]]
 === 2.3) Iterate
@@ -198,7 +198,7 @@ When the concept is clear we will create low fidelity wireframes and prototypes 
 *Process*: The wireframing is the elaborated/detailed sketching of the design, it enables to deeper enter into the UX process and define in detail the user journeys before delivering the visual design part. The design also depends on the platform, so consideration needs to be made for different devices, operating systems, cultural behavioral differences (if it's a global job). Mockup tools like Axure RP, iRise, Sketch or Adobe XD can be used to create wireframes. Several iterations can happen on this stage. +
 *Output*: Detailed wireframes of different pages.
 
-image:extracted-media/mediaDesign/image16.tmp[]
+image:extracted-media/mediaDesign/image16.png[]
 
 [[prototyping-1]]
 ==== 2.3.2) Prototyping
@@ -207,7 +207,7 @@ image:extracted-media/mediaDesign/image16.tmp[]
 *Process*: The final version is detailed enough to start the detailing and development phase. Not everything will be described in a prototype but the most important flows, screens and the elements on the screen are defined, interaction and visual design. The details of each element are not final and will be defined in next phase, besides the rest of the screens and all alternative flows. This prototype is validated by customer. +
 *Output*: Low fidelity Wireframes, customer validated low fidelity prototype and high level information architecture.
 
-image:extracted-media/mediaDesign/image17.tmp[]
+image:extracted-media/mediaDesign/image17.png[]
 
 [[validate-1]]
 === 2.4) Validate
@@ -222,12 +222,12 @@ Prototyping also enables us to test the app or website with end- users in an ear
 *Process*: User testing / Usability testing refers to evaluating a product or service by testing it with real users. Users are asked to complete tasks, typically while they are being observed by a researcher, to see where they encounter problems and experience confusion. Usability testing lets the design and development teams identify problems before they are coded. The earlier issues are identified and fixed, the less expensive the fixes will be in terms of both staff time and possible impact to the schedule. +
 *Output*: User/Usability testing results and solutions for fixing the problems found.
 
-image:extracted-media/mediaDesign/image18.tmp[]
+image:extracted-media/mediaDesign/image18.png[]
 
 [[design-and-develop-1]]
 == 3) Design and Develop
 
-image:extracted-media/mediaDesign/image19.tmp[]
+image:extracted-media/mediaDesign/image19.png[]
 
 *End result* +
 The end result of this phase is the digital service itself. This can be in different variants. It can be an improved version of the existing channel, a Beta version or a Minimum Viable Product to start with. +
@@ -243,7 +243,7 @@ We combined the detailed design with the development, because all that you devel
 Business involvement (customer meeting) is important at this stage as well, because the devil is in the details and a lot of questions and decisions will be made during detailing the design. Working closely together with business and development in this stage, is needed to offer the best digital service to the customer. +
 *Craft Output*: High fidelity wireframes and Analytics implementation plan.
 
-image:extracted-media/mediaDesign/image20.tmp[]
+image:extracted-media/mediaDesign/image20.png[]
 
 [[visual-design-1]]
 ==== 3.1.1) Visual Design
@@ -252,7 +252,7 @@ image:extracted-media/mediaDesign/image20.tmp[]
 *Process*: In this stage designers convert the wireframes to actual design. The specifications and branding guidelines from client has to be followed when creating visual design. This is the final design of the product and which will give an idea about how the final product will actually look like. Tools like Photoshop, Sketch or Adobe XD can be used to create visual design. +
 *Output*: Final, detailed and Hi fi Visual design and (if clients wants) microinteractions.
 
-image:extracted-media/mediaDesign/image21.tmp[]
+image:extracted-media/mediaDesign/image21.png[]
 
 [[ui-testing-1]]
 ==== 3.1.2) UI Testing
@@ -261,7 +261,7 @@ image:extracted-media/mediaDesign/image21.tmp[]
 *Process*: After creating the visual design, a user interface testing has to be performed. The design validation has to be done to check whether the design guidelines and specifications are followed properly and ensure the consistency and uniformity of the design of different pages. +
 *Output*: UI testing results of the visual design has to be documented. Changes or recommendations has to be noted and implemented as applicable.
 
-image:extracted-media/mediaDesign/image22.tmp[]
+image:extracted-media/mediaDesign/image22.png[]
 
 [[build-1]]
 === 3.2) Build
@@ -276,7 +276,7 @@ When we know the concept works, we will start designing the details with a multi
 *Process*: In this step designers create the assets required for development. It includes cropping of images and creating icons with proper specifications. Designers has to create design instructions for the developers to develop the page in line with the visual design. +
 *Output*: The assets required for development (cropped images, icons, design instructions etc.)
 
-image:extracted-media/mediaDesign/image23.tmp[]
+image:extracted-media/mediaDesign/image23.png[]
 
 [[style-guides-1]]
 ==== 3.2.2) Style Guides
@@ -284,7 +284,7 @@ image:extracted-media/mediaDesign/image23.tmp[]
 *Input*: The final visual design screens, branding guidelines and front-end documentation. +
 *Process*: UI/UX designers need to deliver specs about each component of the project (buttons, menu, colors, typography etc.). They will explain animations, grid structures, interactions and component states, so that the developers can deliver the right outcome as efficiently as possible. +
 *Output*: Style guide with design specifications, guidelines and CSS description. +
-image:extracted-media/mediaDesign/image24.tmp[]
+image:extracted-media/mediaDesign/image24.png[]
 
 [[front-end-develop-1]]
 ==== 3.2.3) Front-End Develop
@@ -293,12 +293,12 @@ image:extracted-media/mediaDesign/image24.tmp[]
 *Process*: Front-end system integration to develop the user interface with the latest technologies. Working with HTML, CSS and JavaScript, also we use frameworks to speed up development construction. +
 *Output*: HTML/CSS Layout, themes and templates development.
 
-image:extracted-media/mediaDesign/image25.tmp[]
+image:extracted-media/mediaDesign/image25.png[]
 
 [[continuous-improvement-1]]
 == 4) Continuous Improvement
 
-image:extracted-media/mediaDesign/image26.tmp[]
+image:extracted-media/mediaDesign/image26.png[]
 
 *End result* +
 The end result of this phase is an optimized version of the digital service based on data continuously. +
@@ -324,21 +324,21 @@ Complete testing can help address issues and help the team to improvement the ap
 Monitor the project throughout the development stage and give instructions and support to the developers. +
 *Output:* Design bugs report.
 
-image:extracted-media/mediaDesign/image27.tmp[]
+image:extracted-media/mediaDesign/image27.png[]
 
 [[ui-fixeschanges-1]]
 === 4.3) UI Fixes/Changes
 
 There are possibilities of UI bugs when implementing the design in development process, UI/UX designer should find out the issues and fix it.
 
-image:extracted-media/mediaDesign/image28.tmp[]
+image:extracted-media/mediaDesign/image28.png[]
 
 [[manage-change-request-1]]
 === 4.4) Manage Change Request
 
 When a change request comes from client, the UX designer has to follow the design steps to implement the new changes without affecting the development process. Mockups and style guides has to be updated accordingly.
 
-image:extracted-media/mediaDesign/image29.tmp[]
+image:extracted-media/mediaDesign/image29.png[]
 
 [[recommendations-1]]
 === 4.5) Recommendations
