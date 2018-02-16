@@ -118,20 +118,20 @@ At this stage of the development life cycle, it is necessary that the Business A
 
 These are mainly analysis activities and are the starting point for Sprint 0, which is an Analysis and Design sprint.
 
-*Tasks*
+=== Tasks
 
 The main tasks of this phase are:
 
 * _Define_. Understand and describe the customer needs.
 
-*Inputs*
+=== Inputs
 
 Some inputs to perform the above tasks are:
 
 * Project charter.
 * Meetings held with main stakeholders.
 
-*Output*
+=== Output 
 
 The main outputs of this phase will be the following set of documents:
 
@@ -149,14 +149,14 @@ To do this, the following sprints are proposed:
 * *Sprint 0* (Analysis & Design): Analysis and Design sprint that contains the requirements to be developed in the incoming development sprint. The duration of the sprint should not be more than two, three weeks and the expected output is the User Story mapping with the user stories to be developed.  +
 The tasks involved in this sprint are:
 
-* ** Conceptualize Analysis and Design
+** Conceptualize Analysis and Design
 ** Design
 
 * *Sprint 1* (Development): The Development team will use the User Stories and related documentation prepared in the preceding Analysis & Design sprint to plan and execute the Development sprint.
 
 Sprint 0 and 1 will be repeated until solution is completed and accepted by customer. The following iterations of Sprint 0 and 1 will be called n and n+1.
 
-*Tasks*
+=== Tasks
 
 The main tasks of this phase are:
 
@@ -164,13 +164,13 @@ The main tasks of this phase are:
 * *Design*. Once the First Steps Analysis document is validated by customer, the members of Studio will work together to make a solution design document (Accelerated Solution Design), which covers user needs that were identied in Ideate + Prototype phase. Additionally, the whole team will work together with customer to document the user acceptance tests (UATs) to be fulfilled by the solution. This UAT document should be finished before the development task starts, so that it can be used by the Development team to understand what is the expected behavior of the application. And finally, the Style Guide and Assets shall be documented as well. All these documents will be the main input material for the Develop task.
 * *Develop*. The Development team will start its sprint with the details collected in the previous tasks.
 
-*Inputs*
+=== Inputs
 
 * Analysis Overview
 * Meetings held with Customer.
 * Meetings involving different members of the Development team (UX Designer, Business Analyst, Architect and Developers).
 
-*Output*
+=== Output
 
 * First Steps Analysis
 * Accelerated Solution Design
@@ -189,18 +189,18 @@ In this phase, the development will be validated by using some techniques:
 * Regression Tests. Tests that validates that existing functionality of the system works and was not broken by the new change. They can be automated using an external software.
 * UATs. User acceptance tests, they are used for validating that the solution fulfills the requirements. They describe the minimum criteria the customer will use to accept the solution. They are usually executed by the customer.
 
-*Tasks*
+=== Tasks
 
 * Validate Development Sprint.
 * Empathize and propose improvements for the next Ideate + prototype sprint.
 
-*Inputs*
+=== Inputs
 
 * UAT definition.
 * Tests definitions.
 * Meeting with customer, Business Analyst, UX Designer, Architect and development team.
 
-*Output*
+=== Output
 
 * UAT results
 * Test status
@@ -235,8 +235,7 @@ This information will be necessary at project kick-off phase to describe among o
 
 [cols=",,,,,",options="header",]
 |============================================================================================================
-|* +
- * |*ROLES*
+| |*ROLES*
 |*DELIVERABLE* |*CUSTOMER* |*BUSINESS ANALYST* |*UX DESIGNER* |*ARCHITECT* |*DEVELOPER TEAM*
 |*Analysis overview* |Consulted |Responsible, Accountable |Responsible |Responsible,Consulted |
 |*First steps Analysis* |Consulted, Informed |Responsible, Accountable |Responsible, Accountable |Consulted |
