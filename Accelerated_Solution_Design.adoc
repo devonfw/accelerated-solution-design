@@ -1,8 +1,8 @@
 :toc: macro
 toc::[]
 
-[[accelerated-solution-design---ad-center--]]
-= Accelerated Solution Design - AD Center -
+[[accelerated-solution-design]]
+= Accelerated Solution Design
 
 [[purpose]]
 = *Purpose*
@@ -324,7 +324,7 @@ The design Process is part of the Accelerated Solution Design.  However, due to
 
 The goal of the Accelerated Solution Design is to create a document that is:
 
-*post-documentation*
+*Pre- and post-documentation*
 
 The documentation was updated during and after the implementation: The implementation was governed by lean user stories created using the user story mapping method.
 
@@ -340,20 +340,20 @@ Much of the structuring of components and data should be presented at the Accele
 
 The documentation should contain only the strictly needed information and should be very pragmatic.Easy to maintainIt should be versioned together with the code. A developer should be able to change it using only a text editor.
 
-[[rationals]]
-== *Rationals*
+[[rationales]]
+== *Rationales*
 
-[[decisions-about-because-of-thisaccelerated-solution-design-deliverable]]
-=== *Decisions about because of this accelerated solution design deliverable*
+[[purpose-of-the-accelerated-solution-design-deliverables]]
+=== *Purpose of the accelerated solution design deliverables*
 
-Accelerated solution design deliverable is not meant to be the basis of an implementation.
+The Accelerated Solution Design deliverables are not meant to be the basis of an implementation.
 
-* It shall provide understanding of the system for maintenance and further development
-* It shall refer to existing interface definitions wherever possible.
+* They shall provide understanding of the system for maintenance and further development
+* They shall refer to existing interface definitions wherever possible.
 
 The level of detail of the doumentation is meant to provide understanding, but not all details of the system.
 
-However, a certain level of detail was shown to be necessary for a thorugh understanding. Therefore, for example, the entities and their attributes are defined in the diagrams, but not in the tables below.
+However, a certain level of detail was shown to be necessary for a thorugh understanding. Therefore, for example, the entities and their attributes are defined in the diagrams, but not in the tables.
 
 [[level-of-proximity-to-the-code]]
 === *Level of proximity to the code*
