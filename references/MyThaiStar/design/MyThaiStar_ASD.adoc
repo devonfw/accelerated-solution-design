@@ -119,15 +119,15 @@ The solution focus on this premise and should facilitate the process of making a
 
 Roughly, the entire process that a user will follow to make a reservation with or without friends will be:
 
-image:extracted-media/media/image4.jpg[image,width=680,height=730]
+image:media/image4.jpg[image,width=680,height=730]
 
 Once the order is done, a digital menu can be ordered and the process will be:
 
-image:extracted-media/media/image5.jpg[image,width=680,height=305]
+image:media/image5.jpg[image,width=680,height=305]
 
 And as extra functionality, the user can create a profile and link it with twitter.
 
-image:extracted-media/media/image6.jpg[image,width=680,height=550]
+image:media/image6.jpg[image,width=680,height=550]
 
 The main actors that will interact with MyThaiStar will be the following:
 
@@ -141,11 +141,11 @@ In the next points, we can see the details of the user stories that define the m
 
 We can see the proposed user story map at the following figure.
 
-image:extracted-media/media/image7.jpg[image,width=409,height=184] image:extracted-media/media/image8.jpg[image,width=226,height=169]
+image:media/image7.jpg[image,width=409,height=184] image:media/image8.jpg[image,width=226,height=169]
 
-image:extracted-media/media/image9.jpg[image,width=641,height=147]
+image:media/image9.jpg[image,width=641,height=147]
 
-image:extracted-media/media/image10.jpg[image,width=150,height=160] image:extracted-media/media/image11.jpg[image,width=137,height=154]
+image:media/image10.jpg[image,width=150,height=160] image:media/image11.jpg[image,width=137,height=154]
 
 [[epic-1.-access]]
 ==================== Epic 1. Access
@@ -657,56 +657,56 @@ We proposed the following sitemap and screens structures to support the requirem
 
 The user and waiter Site Map
 
-image:extracted-media/media/image12.jpg[image,width=343,height=300] image:extracted-media/media/image13.jpg[image,width=154,height=241]
+image:media/image12.jpg[image,width=343,height=300] image:media/image13.jpg[image,width=154,height=241]
 
 1º Home screen. This screen will be the one the users should see always when they enter the site.
 
-image:extracted-media/media/image14.jpg[image,width=326,height=273]
+image:media/image14.jpg[image,width=326,height=273]
 
 2º Book a table/Invite Friends. This functionality represents the process that a user must follow to book a table. In a more advance status, the invite friend screen will be a tab from book table window.
 
-image:extracted-media/media/image15.jpg[image,width=329,height=299]
+image:media/image15.jpg[image,width=329,height=299]
 
 3º Select Date Time. Here, the user will select the date from a calendar and the time from a clock.
 
 4º View Menu. Here, the user will select the dishes. The dishes can be filtered and the user will see the rates of the dishes in twitter.
 
-image:extracted-media/media/image16.jpg[image,width=330,height=276]
+image:media/image16.jpg[image,width=330,height=276]
 
 5º Order Menu. Here, the user will finalize the process of ordering the menu.
 
-image:extracted-media/media/image17.jpg[image,width=330,height=276]
+image:media/image17.jpg[image,width=330,height=276]
 
 6º Log In. Here, the user will log in in the application.
 
-image:extracted-media/media/image18.jpg[image,width=330,height=276]
+image:media/image18.jpg[image,width=330,height=276]
 
 7º Sing Up. Here, the user will sing up in in the application for having a profile and also can link it with twitter.
 
-image:extracted-media/media/image19.jpg[image,width=330,height=276]
+image:media/image19.jpg[image,width=330,height=276]
 
 8º The waiter can view all the reservations.
 
-image:extracted-media/media/image20.jpg[image,width=330,height=263]
+image:media/image20.jpg[image,width=330,height=263]
 
 9º The waiter can view the reservation detail.
 
-image:extracted-media/media/image21.jpg[image,width=330,height=298]
+image:media/image21.jpg[image,width=330,height=298]
 
 10º The waiter can view all the Orders.
 
-image:extracted-media/media/image22.jpg[image,width=330,height=263]
+image:media/image22.jpg[image,width=330,height=263]
 
 11º The waiter can view the order detail.
 
-image:extracted-media/media/image23.jpg[image,width=330,height=262]
+image:media/image23.jpg[image,width=330,height=262]
 
 [[entity-relationship-diagram]]
 = Entity relationship diagram
 
 Starting from the list of user stories, we found the below entities to support them.
 
-image:extracted-media/media/image24.png[image,width=224,height=187] image:extracted-media/media/image26.png[image,width=218,height=319]
+image:media/image24.png[image,width=224,height=187] image:media/image26.png[image,width=218,height=319]
 
 Each entity will content the following information:
 
