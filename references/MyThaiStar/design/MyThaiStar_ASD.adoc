@@ -72,9 +72,9 @@ link:#site-map[4. Site Map 17]
 
 link:#entity-relationship-diagram[5. Entity relationship diagram 22]
 
-link:#bounded-context[6. Bounded context 22]
+link:#bounded-context[6. Bounded context 24]
 
-link:#glossary-of-terms[7. Glossary of terms 23]
+link:#glossary-of-terms[7. Glossary of terms 24]
 
 [[project-introduction.-statement-of-purpose]]
 = Project introduction. Statement of purpose
@@ -706,12 +706,102 @@ image:extracted-media/media/image23.jpg[image,width=330,height=262]
 
 Starting from the list of user stories, we found the below entities to support them.
 
+image:extracted-media/media/image24.png[image,width=224,height=187] image:extracted-media/media/image26.png[image,width=218,height=319]
+
 Each entity will content the following information:
+
+[cols="",options="header",]
+|==================
+|User
+|Contains user data
+|ID |Integer
+|UserName |String
+|Password |String
+|Email |String
+|==================
+
+[cols="",options="header",]
+|=======================
+|User Role
+|Contains user role data
+|ID |Integer
+|Name |String
+|Active |Boolean
+|=======================
+
+[cols="",options="header",]
+|===========================================================
+|Booking
+|Contains booking data, like amount of people in the booking
+|ID |Integer
+|Amount |Number
+|Password |String
+|Email |String
+|===========================================================
+
+[cols="",options="header",]
+|===================
+|Order
+|Contains order data
+|ID |Integer
+|===================
+
+[cols="",options="header",]
+|======================================
+|Order Line
+|Contains the detailed info of an order
+|ID |Integer
+|Amount |Number
+|Comment |String
+|======================================
+
+[cols="",options="header",]
+|===================================
+|Dish
+|Contains dish info of an order line
+|Name |String
+|Description |String
+|Price |Decimal
+|===================================
+
+[cols="",options="header",]
+|=========================================
+|Ingredient
+|Contains ingredient info of an order line
+|ID |Integer
+|Name |Number
+|Description |String
+|Price |Decimal
+|=========================================
 
 [[bounded-context]]
 = Bounded context
 
 In this point, we will define the bounded context of the final solution.
+
+* Booking/Invite Friends domain. As we saw in the epic chapter this domain contains the required logic for the booking process. The related entities are:
+
+* User
+* User Role
+* Booking
+
+* Map Interaction sub-domain. This sub-domain is within the Reservation domain and contains the logic needed for the interaction with the maps i.e. – Display the map, Zoom the map and Move the map. The concerned entity is Map and it is shared with Administration domain.
+
+* Management domain. It has the logic for the creation of teams and assigning employees to them and long term reservation process.
+
+* User: it is shared with the Reservation domain.
+* Reservation: also shared with the Reservation domain.
+* Seat: shared between the 3 domains.
+* Team.
+* Pool: this entity is shared with the Administration domain.
+
+* Administration domain. This domain has the logic that allows the configuration of the buildings, floors, maps and pools with seats. The related entities are :
+
+* Building.
+* Floor.
+* Map: shared with Map interaction sub-domain
+* Pool: shared with the Management domain.
+* Seat: shared with the other 2 domains.
 
 [[glossary-of-terms]]
 = Glossary of terms
