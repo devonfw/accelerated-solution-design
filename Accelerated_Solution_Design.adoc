@@ -448,6 +448,53 @@ As confluence and Jira are developed by Atlassian, the tools have native integra
 
  image:extracted-media/mediaASD/image9.png[]
 
+[[plantuml]]
+== *PlantUML*
+
+PlantUML is an open-source tool allowing users to create UML diagrams from a plain text language. It allows to quickly write:
+
+* Sequence diagram
+* Usecase diagram
+* Class diagram
+* Activity diagram (here is the legacy syntax)
+* Component diagram
+* State diagram
+* Object diagram
+* Deployment diagram 
+* Timing diagram 
+
+A PlantUML example:
+
+....
+@startuml
+:user: --> (Use case 1)
+:user: -> (Use case 2)
+@enduml
+....
+
+And the result:
+
+image:extracted-media/mediaASD/useCaseDiagramPlantUML.png[]
+
+More documentation about it link:http://plantuml.com/[here].
+
+[[github]]
+== *GitHub*
+
+GitHub is a web-based hosting service for version control using git (git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people). 
+
+GitHub offers all of the distributed version control and source code management (SCM) 
+functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
+
+GitHub also handles *asciidoc* documents, so normally the documentation is either in asciidoc format or in .md (MarkDown). For example, this document uses asciidoc syntax. 
+
+[[gitlab]]
+== *GitLab*
+
+GitLab is a web-based Git repository manager (Git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people) with wiki and issue tracking features, using an open source license, developed by GitLab Inc.
+
+We currently use it because its repositories are *private*, while in GitHub everybody can see our code and projects.
+
 [[enterprise-architect]]
 == *Enterprise Architect*
 
