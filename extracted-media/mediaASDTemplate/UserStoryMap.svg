@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="350px" preserveAspectRatio="none" style="width:474px;height:350px;" version="1.1" viewBox="0 0 474 350" width="474px" zoomAndPan="magnify"><defs><filter height="300%" id="f10ykjfiwqlxss" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--entity epic1--><rect fill="#FFA500" filter="url(#f10ykjfiwqlxss)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="121" x="10" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="101" x="20" y="32.5332">&lt;Epic_Name1&gt;</text><!--entity epic2--><rect fill="#FFA500" filter="url(#f10ykjfiwqlxss)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="121" x="174" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="101" x="184" y="32.5332">&lt;Epic_Name2&gt;</text><!--entity epic3--><rect fill="#FFA500" filter="url(#f10ykjfiwqlxss)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="121" x="338" y="8"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="101" x="348" y="32.5332">&lt;Epic_Name3&gt;</text><!--entity UseCase_Name1--><rect fill="#FEFECE" filter="url(#f10ykjfiwqlxss)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="129" x="6" y="106"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="16" y="130.5332">UseCase_Name1</text><!--entity UseCase_Name2--><rect fill="#FEFECE" filter="url(#f10ykjfiwqlxss)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="129" x="6" y="204"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="16" y="228.5332">UseCase_Name2</text><!--entity UseCase_Name3--><rect fill="#FEFECE" filter="url(#f10ykjfiwqlxss)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="129" x="170" y="106"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="180" y="130.5332">UseCase_Name3</text><!--entity UseCase_Name4--><rect fill="#FEFECE" filter="url(#f10ykjfiwqlxss)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="129" x="170" y="204"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="180" y="228.5332">UseCase_Name4</text><!--entity UseCase_Name5--><rect fill="#FEFECE" filter="url(#f10ykjfiwqlxss)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="129" x="170" y="302"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="180" y="326.5332">UseCase_Name5</text><!--entity UseCase_Name6--><rect fill="#FEFECE" filter="url(#f10ykjfiwqlxss)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="129" x="334" y="106"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="344" y="130.5332">UseCase_Name6</text><!--entity UseCase_Name7--><rect fill="#FEFECE" filter="url(#f10ykjfiwqlxss)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="129" x="334" y="204"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="109" x="344" y="228.5332">UseCase_Name7</text><!--link epic1 to UseCase_Name1--><path d="M70.5,46.057 C70.5,63.112 70.5,88.563 70.5,105.698 " fill="none" id="epic1-UseCase_Name1" style="stroke: #A80036; stroke-width: 1.0;"/><!--link UseCase_Name1 to UseCase_Name2--><path d="M70.5,144.057 C70.5,161.112 70.5,186.563 70.5,203.698 " fill="none" id="UseCase_Name1-UseCase_Name2" style="stroke: #A80036; stroke-width: 1.0;"/><!--link epic2 to UseCase_Name3--><path d="M234.5,46.057 C234.5,63.112 234.5,88.563 234.5,105.698 " fill="none" id="epic2-UseCase_Name3" style="stroke: #A80036; stroke-width: 1.0;"/><!--link UseCase_Name3 to UseCase_Name4--><path d="M234.5,144.057 C234.5,161.112 234.5,186.563 234.5,203.698 " fill="none" id="UseCase_Name3-UseCase_Name4" style="stroke: #A80036; stroke-width: 1.0;"/><!--link UseCase_Name4 to UseCase_Name5--><path d="M234.5,242.0569 C234.5,259.1115 234.5,284.5631 234.5,301.6977 " fill="none" id="UseCase_Name4-UseCase_Name5" style="stroke: #A80036; stroke-width: 1.0;"/><!--link epic3 to UseCase_Name6--><path d="M398.5,46.057 C398.5,63.112 398.5,88.563 398.5,105.698 " fill="none" id="epic3-UseCase_Name6" style="stroke: #A80036; stroke-width: 1.0;"/><!--link UseCase_Name6 to UseCase_Name7--><path d="M398.5,144.057 C398.5,161.112 398.5,186.563 398.5,203.698 " fill="none" id="UseCase_Name6-UseCase_Name7" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+
+Rectangle  "**<Epic_Name1>**" as epic1  #orange{
+}
+
+Rectangle "**<Epic_Name2>**" as epic2 #orange{
+}
+
+Rectangle "**<Epic_Name3>**" as epic3 #orange {
+}
+
+Rectangle "UseCase_Name1"
+Rectangle "UseCase_Name2"
+
+Rectangle "UseCase_Name3"
+Rectangle "UseCase_Name4"
+Rectangle "UseCase_Name5"
+
+Rectangle "UseCase_Name6"
+Rectangle "UseCase_Name7"
+
+epic1 - - UseCase_Name1
+UseCase_Name1 - - UseCase_Name2
+
+epic2 - - UseCase_Name3
+UseCase_Name3 - - UseCase_Name4
+UseCase_Name4 - - UseCase_Name5
+
+epic3 - - UseCase_Name6
+UseCase_Name6 - - UseCase_Name7
+
+@enduml
+
+PlantUML version 1.2017.20(Mon Dec 11 17:57:05 CET 2017)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_74-b02
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

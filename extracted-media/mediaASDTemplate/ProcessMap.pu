@@ -1,0 +1,5 @@
+@startuml
+actor "<Actor_Name1>"
+actor "<Actor_Name2>"
+storage "<UserStory_Name>"
+@enduml

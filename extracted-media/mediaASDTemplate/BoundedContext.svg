@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="533px" preserveAspectRatio="none" style="width:527px;height:533px;" version="1.1" viewBox="0 0 527 533" width="527px" zoomAndPan="magnify"><defs><filter height="300%" id="f10k4xqzb76l0c" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--cluster Domain_Name1--><rect fill="#FFFFFF" filter="url(#f10k4xqzb76l0c)" height="188" rx="35" ry="35" style="stroke: #000000; stroke-width: 1.5;" width="314" x="22" y="24"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="123" x="117.5" y="45.5332">&lt;Domain_Name1&gt;</text><!--cluster Domain_Name2--><rect fill="#FFFFFF" filter="url(#f10k4xqzb76l0c)" height="188" rx="35" ry="35" style="stroke: #000000; stroke-width: 1.5;" width="314" x="22" y="236"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="123" x="117.5" y="257.5332">&lt;Domain_Name2&gt;</text><!--cluster Domain_Name3--><rect fill="#FFFFFF" filter="url(#f10k4xqzb76l0c)" height="188" rx="35" ry="35" style="stroke: #000000; stroke-width: 1.5;" width="156" x="360" y="334"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="123" x="376.5" y="355.5332">&lt;Domain_Name3&gt;</text><!--entity Entity_Name1--><rect fill="#FFFFFF" filter="url(#f10k4xqzb76l0c)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="123" x="38.5" y="60"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="48.5" y="84.5332">&lt;Entity_Name1&gt;</text><!--entity Entity_Name2--><rect fill="#FFFFFF" filter="url(#f10k4xqzb76l0c)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="123" x="196.5" y="60"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="206.5" y="84.5332">&lt;Entity_Name2&gt;</text><!--entity Entity_Name3--><rect fill="#FFA500" filter="url(#f10k4xqzb76l0c)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="123" x="38.5" y="158"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="48.5" y="182.5332">&lt;Entity_Name3&gt;</text><!--entity Entity_Name4--><rect fill="#ADD8E6" filter="url(#f10k4xqzb76l0c)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="123" x="196.5" y="158"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="206.5" y="182.5332">&lt;Entity_Name4&gt;</text><!--entity Entity_Name3.2--><rect fill="#FFA500" filter="url(#f10k4xqzb76l0c)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="123" x="38.5" y="272"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="48.5" y="296.5332">&lt;Entity_Name3&gt;</text><!--entity Entity_Name4.2--><rect fill="#ADD8E6" filter="url(#f10k4xqzb76l0c)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="123" x="196.5" y="272"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="206.5" y="296.5332">&lt;Entity_Name4&gt;</text><!--entity Entity_Name5--><rect fill="#FFFFFF" filter="url(#f10k4xqzb76l0c)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="123" x="196.5" y="370"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="206.5" y="394.5332">&lt;Entity_Name5&gt;</text><!--entity Entity_Name6--><rect fill="#90EE90" filter="url(#f10k4xqzb76l0c)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="123" x="38.5" y="370"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="48.5" y="394.5332">&lt;Entity_Name6&gt;</text><!--entity Entity_Name4.3--><rect fill="#ADD8E6" filter="url(#f10k4xqzb76l0c)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="123" x="376.5" y="370"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="386.5" y="394.5332">&lt;Entity_Name4&gt;</text><!--entity Entity_Name6.3--><rect fill="#90EE90" filter="url(#f10k4xqzb76l0c)" height="37.6094" style="stroke: #000000; stroke-width: 1.5;" width="123" x="376.5" y="468"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="386.5" y="492.5332">&lt;Entity_Name6&gt;</text><!--link Entity_Name1 to Entity_Name2--><path d="M161.719,79 C173.252,79 184.786,79 196.32,79 " fill="none" id="Entity_Name1-Entity_Name2" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Entity_Name3 to Entity_Name4--><path d="M161.719,177 C173.252,177 184.786,177 196.32,177 " fill="none" id="Entity_Name3-Entity_Name4" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Entity_Name2 to Entity_Name4--><path d="M258,98.057 C258,115.112 258,140.563 258,157.698 " fill="none" id="Entity_Name2-Entity_Name4" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Entity_Name3 to Entity_Name3.2--><path d="M100,196.495 C100,217.371 100,251.116 100,271.85 " fill="none" id="Entity_Name3-Entity_Name3.2" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Entity_Name4 to Entity_Name4.2--><path d="M258,196.495 C258,217.371 258,251.116 258,271.85 " fill="none" id="Entity_Name4-Entity_Name4.2" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Entity_Name4.2 to Entity_Name5--><path d="M258,310.057 C258,327.112 258,352.563 258,369.698 " fill="none" id="Entity_Name4.2-Entity_Name5" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Entity_Name6 to Entity_Name5--><path d="M161.719,389 C173.252,389 184.786,389 196.32,389 " fill="none" id="Entity_Name6-Entity_Name5" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Entity_Name4 to Entity_Name4.3--><path d="M292.98,196.015 C307.346,204.48 323.504,215.473 336,228 C379.97,272.08 414.612,338.283 429.732,369.916 " fill="none" id="Entity_Name4-Entity_Name4.3" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Entity_Name4.2 to Entity_Name4.3--><path d="M302.217,310.038 C313.381,314.928 325.248,320.421 336,326 C361.936,339.457 390.245,356.899 410.444,369.853 " fill="none" id="Entity_Name4.2-Entity_Name4.3" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Entity_Name4.3 to Entity_Name6.3--><path d="M438,408.057 C438,425.112 438,450.5631 438,467.6977 " fill="none" id="Entity_Name4.3-Entity_Name6.3" style="stroke: #A80036; stroke-width: 1.0;"/><!--link Entity_Name6 to Entity_Name6.3--><path d="M129.094,408.021 C143.633,416.354 161.764,425.765 179,432 C244.437,455.6714 323.131,470.2375 376.474,478.1851 " fill="none" id="Entity_Name6-Entity_Name6.3" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+
+storage <Domain_Name1> as Domain_Name1{
+    Rectangle "<Entity_Name1>" as Entity_Name1 #white
+    Rectangle "<Entity_Name2>" as Entity_Name2 #white
+    Rectangle "<Entity_Name3>" as Entity_Name3 #orange
+    Rectangle "<Entity_Name4>" as Entity_Name4 #lightblue
+
+
+    Entity_Name1 -right- Entity_Name2
+    Entity_Name3 -right- Entity_Name4
+    Entity_Name2 - - Entity_Name4
+    
+}
+
+storage <Domain_Name2> as Domain_Name2{
+    Rectangle "<Entity_Name3>" as Entity_Name3.2 #orange
+    Rectangle "<Entity_Name4>" as Entity_Name4.2 #lightblue
+    Rectangle "<Entity_Name5>" as Entity_Name5 #white
+    Rectangle "<Entity_Name6>" as Entity_Name6 #lightgreen
+
+    Entity_Name3 - - Entity_Name3.2
+    Entity_Name4 - - Entity_Name4.2
+    Entity_Name4.2 - - Entity_Name5
+    Entity_Name5 -left- Entity_Name6
+}
+
+storage <Domain_Name3> as Domain_Name3{
+    Rectangle "<Entity_Name4>" as Entity_Name4.3 #lightblue
+    Rectangle "<Entity_Name6>" as Entity_Name6.3 #lightgreen
+
+    Entity_Name4 - - Entity_Name4.3
+    Entity_Name4.2 - - Entity_Name4.3
+    Entity_Name4.3 - - Entity_Name6.3
+    Entity_Name6 - - Entity_Name6.3
+}
+
+@enduml
+
+PlantUML version 1.2017.20(Mon Dec 11 17:57:05 CET 2017)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_74-b02
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>

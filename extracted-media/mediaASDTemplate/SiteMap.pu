@@ -1,0 +1,12 @@
+@startuml
+
+[*] --> Screen_Name1
+Screen_Name1 --> Screen_Name2
+Screen_Name2 --> Screen_Name3
+Screen_Name3 --> Screen_Name4 
+Screen_Name4 --> Screen_Name1 : <User interaction description>
+
+note left of Screen_Name1 : this is a short\nnote
+
+
+@enduml

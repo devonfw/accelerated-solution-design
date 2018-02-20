@@ -1,0 +1,32 @@
+@startuml
+
+Rectangle  "**<Epic_Name1>**" as epic1  #orange{
+}
+
+Rectangle "**<Epic_Name2>**" as epic2 #orange{
+}
+
+Rectangle "**<Epic_Name3>**" as epic3 #orange {
+}
+
+Rectangle "UseCase_Name1"
+Rectangle "UseCase_Name2"
+
+Rectangle "UseCase_Name3"
+Rectangle "UseCase_Name4"
+Rectangle "UseCase_Name5"
+
+Rectangle "UseCase_Name6"
+Rectangle "UseCase_Name7"
+
+epic1 -- UseCase_Name1
+UseCase_Name1 -- UseCase_Name2
+
+epic2 -- UseCase_Name3
+UseCase_Name3 -- UseCase_Name4
+UseCase_Name4 -- UseCase_Name5
+
+epic3 -- UseCase_Name6
+UseCase_Name6 -- UseCase_Name7
+
+@enduml

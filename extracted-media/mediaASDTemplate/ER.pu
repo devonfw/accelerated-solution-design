@@ -1,0 +1,59 @@
+@startuml
+' uncomment the line below if you're using computer with a retina display
+' skinparam dpi 300
+!define Table(name,desc) class name as "desc" << (E,#FFAAAA) >>
+' we use bold for primary key
+' green color for unique
+' and underscore for not_null
+!define primary_key(x) <b>x</b>
+!define unique(x) <color:green>x</color>
+!define not_null(x) <u>x</u>
+' other tags available:
+' <i></i>
+' <back:COLOR></color>, where color is a color name or html color code
+' (#FFAACC)
+' see: http://plantuml.com/classes.html#More
+hide methods
+hide stereotypes
+
+' entities
+
+Table(Entity_Name1, "Entity_Name1\n(Entity description)") {
+primary_key(id) INTEGER
+not_null(unique(<UniqueAttribute>)) <Type_Name1>
+not_null(<NotNullAttribute>>) <Type_Name1>
+<Attribute_Name1> <Type_Name2>
+}
+
+Table(Entity_Name2, "Entity_Name2\n(Entity description)") {
+primary_key(id) INTEGER
+not_null(<NotNullAttribute>>) <Type_Name3>
+<Attribute_Name1> <Type_Name1>
+<Attribute_Name2> <Type_Name2>
+<Attribute_Name3> <Type_Name3>
+}
+
+Table(Entity_Name3, "Entity_Name3\n(Entity description)") {
+primary_key(id) INTEGER
+<Attribute_Name1> <Type_Name2>
+}
+
+Table(Entity_Name4, "Entity_Name4\n(Entity description)") {
+primary_key(id) INTEGER
+not_null(<NotNullAttribute>>) <Type_Name1>
+<Attribute_Name5> <Type_Name3>
+}
+
+Table(Entity_Name5, "Entity_Name5\n(Entity description)") {
+primary_key(id) INTEGER
+not_null(unique(<UniqueAttribute>)) <Type_Name1>
+not_null(<NotNullAttribute>>) <Type_Name1>
+<Attribute_Name1> <Type_Name2>
+}
+
+Entity_Name3 "0...1" -down- "1...*" Entity_Name2
+Entity_Name3 "0...*" -up- "1" Entity_Name1
+Entity_Name3 "1...*" -right- "0...*" Entity_Name4
+Entity_Name3 "1" -left- "1" Entity_Name5
+
+@enduml

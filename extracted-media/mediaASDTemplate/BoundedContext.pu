@@ -1,0 +1,38 @@
+@startuml
+
+storage <Domain_Name1> as Domain_Name1{
+    Rectangle "<Entity_Name1>" as Entity_Name1 #white
+    Rectangle "<Entity_Name2>" as Entity_Name2 #white
+    Rectangle "<Entity_Name3>" as Entity_Name3 #orange
+    Rectangle "<Entity_Name4>" as Entity_Name4 #lightblue
+
+
+    Entity_Name1 -right- Entity_Name2
+    Entity_Name3 -right- Entity_Name4
+    Entity_Name2 -- Entity_Name4
+    
+}
+
+storage <Domain_Name2> as Domain_Name2{
+    Rectangle "<Entity_Name3>" as Entity_Name3.2 #orange
+    Rectangle "<Entity_Name4>" as Entity_Name4.2 #lightblue
+    Rectangle "<Entity_Name5>" as Entity_Name5 #white
+    Rectangle "<Entity_Name6>" as Entity_Name6 #lightgreen
+
+    Entity_Name3 -- Entity_Name3.2
+    Entity_Name4 -- Entity_Name4.2
+    Entity_Name4.2 -- Entity_Name5
+    Entity_Name5 -left- Entity_Name6
+}
+
+storage <Domain_Name3> as Domain_Name3{
+    Rectangle "<Entity_Name4>" as Entity_Name4.3 #lightblue
+    Rectangle "<Entity_Name6>" as Entity_Name6.3 #lightgreen
+
+    Entity_Name4 -- Entity_Name4.3
+    Entity_Name4.2 -- Entity_Name4.3
+    Entity_Name4.3 -- Entity_Name6.3
+    Entity_Name6 -- Entity_Name6.3
+}
+
+@enduml

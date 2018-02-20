@@ -1,0 +1,50 @@
+@startuml
+
+
+
+class SCR_Main_Screen <<Screen>> {
+}
+
+class SCR_Screen_Name1<<Screen>> {
+}
+
+class SCR_Screen_Name2 <<Screen>> {
+}
+
+package "DIA_Dialogue_Name2" #DDDDDD {
+
+  class SCR_Screen_Name3  <<Dialogue>> {
+  }
+}
+
+class DIA_Dialogue_Name1  <<Dialogue>> {
+}
+
+
+
+SCR_Main_Screen --|> SCR_Screen_Name1: "Action"
+
+SCR_Screen_Name1--|> SCR_Screen_Name2 : "Action"
+
+SCR_Screen_Name2 --|> SCR_Screen_Name1: "Action"
+
+SCR_Screen_Name1--|> SCR_Main_Screen : "Action"
+
+SCR_Screen_Name2 --|> SCR_Main_Screen : "Action"
+
+SCR_Main_Screen --|> SCR_Screen_Name3 : "Action"
+
+DIA_Dialogue_Name2 --|> SCR_Main_Screen : "Action"
+
+SCR_Main_Screen --|> DIA_Dialogue_Name1 : "Action"
+
+DIA_Dialogue_Name1 --|> SCR_Main_Screen : "Action"
+
+
+class DIA_Dialogue_Name3 <<Dialogue>> {
+}
+
+class DIA_Dialogue_Name4  <<Dialogue>> {
+}
+
+@enduml
