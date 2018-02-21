@@ -1,0 +1,141 @@
+:toc: macro
+toc::[]
+
+= Specification of the JumpTheQueue Application =
+
+:toc:
+:toclevels: 4
+:numbered:
+:website: https://www.de.capgemini.com/devonfw
+:imagesdir: ./media
+:imagesComponentNameManagement: /extracted-media/mediaSpecificationTemplate/BCO_ComponentName_Managament_Images
+
+
+WARNING: This specification document is still on progress, please do not take it as data source until finished.
+link:https://github.com/jdiazgon/devon-methodology/blob/ASD_Practices/Specification_Template.adoc[Here] you will find a complete template of the specification document.  
+
+== Introduction ==
+
+When visiting public (free) or private (paid) events there are often large queues creating significant waiting times. Ideally the organizer 
+of the event would like to streamline the entry of people. That would be possible by allowing people privileged access or, alternatively, 
+offer an incentive for people to arrive in time or to get into line more efficiently. A way of doing this would be to have a website or 
+application which would allow visitors to "Jump the Queue". 
+
+Ideally the users of the queue have to be able to know at which time could be their turn. It is really important because they can improve their time and they will only need to be in the queue on the right time.
+
+Furthermore, to facilitate that the user does not have to be in the queue waiting its turn, he can consult the queue status at any device that he may have. (for example a mobile phone, tablet,  ..)
+
+This document describes the design for such an application: “JumpTheQueue”.
+
+
+=== The JumpTheQueue application ===
+The JumpTheQueue application allows users to:
+
+- Eliminate the need of waiting in a queue.
+- Improve user experience, easing the access to the queue.
+- Manage queues.
+
+== Use Cases ==
+
+
+=== Actors ===
+
+image::overview_actors.svg[caption="Figure 1: ", title="Actors", alt="Actors"]
+
+[width="100%",options="", cols="v,a"]
+|====================
+| ACR_User a|
+- It is an internal user of the external system that creates the queue and it will have privilege access to the queue.
+| ACR_Visitor |
+- User of the queue component that does not exist in the external system that created the queue.
+| ACR_Owner |
+- User that manages the queue.
+|====================
+
+// tag::UseCases[]
+
+
+
+== Data Model ==
+// tag::DataModel[]
+
+=== Model Component MCO_Queue ===
+
+image::ER.png[caption="Figure 3: ", title="Model Component MCO_Queue", alt="Model Component MCO_<Component_Name>"]
+
+==== Entity Type ETY_Visitor_Information ====
+
+.Visitor Information
+It contains the personal information of the visitors who gave the permission to use it.
+[cols="",options="header",]
+|======================================================================================
+| Attribute| Type
+|ATT_Name | String
+|ATT_Telephone | TelephoneType
+|ATT_Email | EmailType
+|======================================================================================
+
+==== Entity Type ETY_Terms_And_Conditions ====
+
+.Terms and conditions
+It describes the Terms and conditions that the user must accept to use the queue.
+[cols="",options="header",]
+|================================================================================
+| Attribute| Type
+|ATT_Description | String
+|================================================================================
+
+==== Entity Type ETY_Queue_Owner ====
+
+.Queue owner
+It contains information for the users that can manage queues.
+[cols="",options="header",]
+|================================================================================
+| Attribute| Type
+|ATT_User |userIdType
+|ATT_Name |String
+|ATT_Email |EmailType
+|ATT_Password |PasswordType
+|================================================================================
+
+==== Entity Type ETY_Queue ====
+
+.Queue
+It contains the information that describes a queue.
+[cols="",options="header",]
+|================================================================================
+| Attribute| Type
+|ATT_Description |String
+|ATT_Logo |Image
+|================================================================================
+
+==== Entity Type ETY_Access_Code ====
+
+.Access code
+It contains the list people that are in the queue and their information..
+[cols="",options="header",]
+|================================================================================
+| Attribute| Type
+|ATT_Id_code |String. Assigned code. PK
+|ATT_Name |String
+|ATT_Email |EmailType
+|ATT_Telephone |TelephoneType
+|ATT_CreationTime |Time (HH:MM). The hour when the user got the turn
+|ATT_StartTime |Time (HH:MM). The hour when the attendance of the user starts
+|ATT_EndTime |Time (HH:MM). The hour when the attendance of the user ends
+|ATT_EstimatedTime |Time (HH:MM). The hour which the system estimated when the user will be attended
+|================================================================================
+// end::DataModel[]
+
+
+=== Terms and definitions ===
+
+[cols=",",options="header",]
+|===========================================================================================================================================================
+|Term |Description
+|Access code |This is the turn number assigned to a person.
+|Validation code |It is a code used to confirm the validity of the email or telephone number informed by the user
+|Estimated time |Stands for the time that the system calculates when the person in the queue will be attended
+|Attention time |This is the time that it takes for a user to be attended. It is calculated as the difference between the start and the end of the attention
+|Priority access |It is the access granted to privileged users so they can be attended earlier
+|===========================================================================================================================================================

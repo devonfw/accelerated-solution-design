@@ -1,0 +1,10 @@
+@startuml
+:ACR_Visitor: << Actor >> as Actor_Name3
+
+:ACR_User: << Actor >> as Actor_Parent
+:ACR_Owner: << Actor >> as Actor_Name4
+
+Actor_Parent <|--  Actor_Name4
+Actor_Parent <|--  Actor_Name3
+
+@enduml
