@@ -55,12 +55,8 @@ image:extracted-media/mediaDesign/image1.png[]
 [[how-we-do-the-steps-to-follow-1]]
 = How we do | the steps to follow
 
-image:extracted-media/mediaDesign/image2.png[]
+image:extracted-media/mediaDesign/Sprint_Design.PNG[]
 
-image:extracted-media/mediaDesign/image3.png[]
-
-*                    Sprint Design / RDV* +
- +
 First of all, we need a couple of days to prepare all the material, templates and presentations we need to set the basis of our work. They can be physical assets like stationery, templates, continuous paper, etc. or online docs like PDF, Word and PowerPoint templates or videos. Adaption for every project is needed depending on the type of project, objective, budget, planning, and customer maturity. 
 It's also important to create the multidisciplinary team who is going to work in the process, setting an initial schedule and a due date if we know it.
 
@@ -87,7 +83,7 @@ The Project Manager, Studio, Client and User.
 
 *Global Documents*
 
-*High Level Analysis * _(it can be a document or a group of documents)_
+*High Level Analysis* _(it can be a document or a group of documents)_
 
 [[kick-off-meeting-1]]
 === 1.1) Kick Off Meeting
@@ -129,9 +125,9 @@ Analysis stage includes creating personas, customer journeys maps, etc. In this 
 
 The Persona is the representation of type of end user, who can belong to the customer organization or come from external user groups. The user research can be done by conducting online surveys, user interviews within or outside the organization; the market research can be done using online reviews and social media.
 
-With the information obtained in these three phases, we will complete the High Level Analysis document together with the Business Analyst.* *
+With the information obtained in these three phases, we will complete the High Level Analysis document together with the Business Analyst.
 
-*Output: Personas, Customer Journey, Stakeholder Map, ­High Level Roadmap, Estimation & Analysis Report *
+*Output: Personas, Customer Journey, Stakeholder Map, ­High Level Roadmap, Estimation & Analysis Report*
 
 *Team Shared Deliverables*: Estimation & Analysis Report
 
@@ -140,8 +136,8 @@ image:extracted-media/mediaDesign/image8.png[]
 [[conceptualize-1]]
 == 2) Conceptualize
 
-image:extracted-media/mediaDesign/image9.png[] +
- +
+image:extracted-media/mediaDesign/image9.png[]+
+
 *End result* 
 
 The end result of this phase is a validated concept with brand/visual design vision, content strategy, interaction design guidelines and a proven technical solution to accelerate development. These deliverables help with the progress of designing the digital service. 
