@@ -4,9 +4,22 @@
 
 # Introduction
 
-The purpose of this space is to give an overview of the Devon methodology and how we can apply the Accelerated Solution Design practices to model and build the solution with the use of Devon framework.
+The purpose of this space is to give an overview of the Devon methodology or Accelerated Solution Design and how we can apply this model to build the solution with the use of Devon framework.
 
 # Accelerated Solution Design
+
+One of the prime challenges in Distributed Agile Delivery is the maintenance of a common understanding and unity of intent among all participants in the process of creating a product. That is: how can you guarantee that different parties in the client, different providers, all in different locations and time zones during a particular period of time actually understand the requirements of the client, the proposed solution space and the state of implementation. 
+
+The Accelerated Solution Design is a possible answer to these challenges: 
+
+  - It contains the definition of a “Design process” which aligns the concept of software design with modern software development in the context of Distributed Agile Delivery and a highly automated life cycle. 
+  - It reinstates “The Design” as a tangible artifact. The design is not just the “instruction manual” for the development team. More importantly, it’s a communication medium: the mirror which should reflect the common understanding among all parties of requirements, functional design and architecture of the proposed solution. 
+  - The Design is a working model for application design based on Industry Standards and done as an intersection of UX, Architecture and Business Analysis. 
+  - This artifact is an “evolving Design”. It begins as design, evolves into system specification and ends as documentation
+  - It focuses on “Design thinking”. This refers to creative strategies designers used during the process of designing. Design thinking in business uses the designer's sensibility and methods to match people's needs with what is technologically feasible and what a viable business strategy can convert into customer value and market opportunity. 
+  - It builds on a solid foundation of User Focus and Scalable Architecture as provided for and supported by our Digital Platform
+
+# A practical model and guideline
 
 The ASD is carefully designed to be a practical guideline that fosters and ensures the collaboration and communication among all team members.
 The members of the team involved in the ASD will be:
