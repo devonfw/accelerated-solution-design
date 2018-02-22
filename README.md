@@ -24,5 +24,6 @@ We can access to the whole specification at [View Accelerated Solution Design](h
 # Showcases
 
 We will introduce the required techniques, practices and methologies with two showcases:
-- [Jump the Queue](https://github.com/devonfw/devon-methodology/tree/ASD_Practices/references/JumpTheQueue). Sample application to support the management of queues.
-- [My Thai Star](https://github.com/devonfw/devon-methodology/tree/ASD_Practices/references/MyThaiStar). Sample application that supports the online presence of the MyThaiStar restaurant.
+- [Jump the Queue](https://github.com/devonfw/devon-methodology/blob/master/references/JumpTheQueue/JumpTheQueue). Sample application to offer companies and institutions to offer people a jumpstart in a ticket queue.
+
+- [My Thai Star](https://github.com/devonfw/devon-methodology/blob/master/references/JumpTheQueue/MyThaiStar). Sample application that supports the online presence of the MyThaiStar restaurant.
