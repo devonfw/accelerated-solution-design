@@ -12,7 +12,7 @@ toc::[]
 
 
 WARNING: This specification document is still on progress, please do not take it as data source until finished.
-link:https://github.com/jdiazgon/devon-methodology/blob/ASD_Practices/Specification_Template.adoc[Here] you will find a complete template of the specification document.  
+link:https://github.com/devonfw/devon-methodology/blob/ASD_Practices/Specification_Template.adoc[Here] you will find a complete template of the specification document.  
 
 == Introduction ==
 

@@ -6,7 +6,7 @@ This is the design for the devon application reference called **Jump the Queue**
 ## Prerequisites
 
 The whole design can be written and edited by using the atom editor with according plugins.
-[View Jump the Queue Accelerated Solution Desing on github](https://github.com/jdiazgon/devon-methodology/blob/ASD_Practices/references/JumpTheQueue/design/JumpTheQueue.adoc "Jump the Queue ASD")
+[View Jump the Queue Accelerated Solution Desing on github](https://github.com/devonfw/devon-methodology/blob/ASD_Practices/references/JumpTheQueue/design/JumpTheQueue.adoc "Jump the Queue ASD")
 You will need a git client aditionally to commit and push your changes to the specification.
 
 ### Installation for Visual Studio Code

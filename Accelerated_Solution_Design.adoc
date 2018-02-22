@@ -259,7 +259,7 @@ This document shall provide the following information:
 * Constraints.
 *   …
 
-The following https://github.com/jdiazgon/devon-methodology/blob/ASD_Practices/extracted-media/mediaASD/%5BProject%20Code%5D__%5BProject%20Name%5D_Analysis_Overview_v%5B1.0%5D_YYYYMMDD.dotx[document] shows sample content of this document.
+The following https://github.com/devonfw/devon-methodology/blob/ASD_Practices/extracted-media/mediaASD/%5BProject%20Code%5D__%5BProject%20Name%5D_Analysis_Overview_v%5B1.0%5D_YYYYMMDD.dotx[document] shows sample content of this document.
 
 [[first-steps-analysis]]
 == *First Steps Analysis*
@@ -272,7 +272,7 @@ The required content is:
 * Details of the requirements that fulfill the business needs, in the form of Epics and User Stories
 * Site map and sketches of the user interfaces that shall meet the requirements
 
- The powerpoint template can be found at following https://github.com/jdiazgon/devon-methodology/blob/ASD_Practices/extracted-media/mediaASD/ADCenter_First_Steps_Analysis_Document_TEMPLATE.potx[link]:
+ The powerpoint template can be found at following https://github.com/devonfw/devon-methodology/blob/ASD_Practices/extracted-media/mediaASD/ADCenter_First_Steps_Analysis_Document_TEMPLATE.potx[link]:
 
 [[accelerated-solution-design]]
 == *Accelerated Solution Design*
