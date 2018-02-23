@@ -6,7 +6,7 @@
 
 The purpose of this space is to give an overview of the Devon methodology or Accelerated Solution Design and how we can apply this model to build the solution with the use of Devon framework.
 
-For a presentation about this topic see [Accelerated Solution Design (pdf version)]  (https://github.com/devonfw/devon-methodology/blob/master/ASD_Presentation.pdf) or [the Powerpoint version]  (https://github.com/devonfw/devon-methodology/blob/master/ASD_Presentation.pptx).
+For a presentation about this topic see [Accelerated Solution Design - pdf version](https://github.com/devonfw/devon-methodology/blob/master/ASD_Presentation.pdf) or [the Powerpoint version](https://github.com/devonfw/devon-methodology/blob/master/ASD_Presentation.pptx)
 
 # Accelerated Solution Design
 
