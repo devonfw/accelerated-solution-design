@@ -6,6 +6,8 @@
 
 The purpose of this space is to give an overview of the Devon methodology or Accelerated Solution Design and how we can apply this model to build the solution with the use of Devon framework.
 
+For a presentation about this topic see [Accelerated Solution Design (pdf version)]  (https://github.com/devonfw/devon-methodology/blob/master/ASD_Presentation.pdf) or [the Powerpoint version]  (https://github.com/devonfw/devon-methodology/blob/master/ASD_Presentation.pptx).
+
 # Accelerated Solution Design
 
 One of the prime challenges in Distributed Agile Delivery is the maintenance of a common understanding and unity of intent among all participants in the process of creating a product. That is: how can you guarantee that different parties in the client, different providers, all in different locations and time zones during a particular period of time actually understand the requirements of the client, the proposed solution space and the state of implementation. 
@@ -32,7 +34,7 @@ The Accelerated Solution Design introduces a new type of team, which is broader,
   - The team shall be flexible enough to adapt to unexpected changes, such as new requirements or the introduction of more roles in the development of the solution.
  - Finally, each team member shall be self-organized. In other words, self-aware of their capacity and area of responsibility, able to organize their work and committed to ensure an efficient communication within the team.
 
-We can access to the whole specification at [View Accelerated Solution Design](https://github.com/devonfw/devon-methodology/blob/master/Accelerated_Solution_Design.adoc)
+We can access to the whole specification at [Accelerated Solution Design](https://github.com/devonfw/devon-methodology/blob/master/Accelerated_Solution_Design.adoc)
 
 # Showcases
 
