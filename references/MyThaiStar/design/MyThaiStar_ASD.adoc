@@ -1,93 +1,8 @@
-Table of Contents
-
-link:#project-introduction.-statement-of-purpose[1. Project introduction. Statement of purpose 3]
-
-link:#objectives[2. Objectives 3]
-
-link:#user-stories[3. User Stories 3]
-
-link:#epic-1.-access[Epic 1. Access 6]
-
-link:#user-story-1.-display-home-screen[User story 1. Display Home Screen 7]
-
-link:#epic-2.-manage-booking[Epic 2. Manage Booking 7]
-
-link:#user-story-2.-select-action-book-table-or-invite-friends[User story 2. Select Action Book Table or Invite Friends 7]
-
-link:#user-story-3.-select-date-and-time[User story 3. Select date and time 8]
-
-link:#user-story-4.-create-booking[User story 4. Create Booking 8]
-
-link:#user-story-5.-invite-friends[User story 5. Invite friends 9]
-
-link:#user-story-6.-cancel-booking[User story 6. Cancel Booking 9]
-
-link:#epic-3.-manage-invitations[Epic 3. Manage invitations 9]
-
-link:#user-story-7.-accept-invitation[User story 7. Accept invitation 10]
-
-link:#user-story-8.-decline-invitation[User story 8. Decline invitation 10]
-
-link:#user-story-9.-revoke-invitation[User story 9. Revoke invitation 10]
-
-link:#epic-4.-digital-menu[Epic 4. Digital Menu 11]
-
-link:#user-story-10.-filter-dish[User story 10. Filter Dish 11]
-
-link:#user-story-11.-select-dish[User story 11. Select Dish 11]
-
-link:#user-story-12.-delete-dish[User story 12. Delete Dish 12]
-
-link:#user-story-13.-create-order[User story 13. Create Order 12]
-
-link:#user-story-14.-cancel-order[User story 14. Cancel Order 12]
-
-link:#user-story-15.-read-twitter-rating[User story 15. Read twitter rating 13]
-
-link:#epic-5.-profile[Epic 5. Profile 13]
-
-link:#user-story-16.-login[User story 16. Login 13]
-
-link:#user-story-17.-sing-up[User story 17. Sing Up 14]
-
-link:#user-story-18.-link-twitter-account[User story 18. Link twitter account 14]
-
-link:#user-story-19.-auto-login-in-twitter[User story 19. Auto login in twitter 14]
-
-link:#user-story-20.-rate-menu[User story 20. Rate Menu 14]
-
-link:#epic-6.-calculate-best-table[Epic 6. Calculate Best Table 15]
-
-link:#user-story-21.-assign-table-to-booking[User story 21. Assign table to booking 15]
-
-link:#user-story-22.-delete-booking[User story 22. Delete Booking 15]
-
-link:#epic-7.-waiter-cockpit[Epic 7. Waiter Cockpit 16]
-
-link:#user-story-23.-find-order[User story 23. Find Order 16]
-
-link:#user-story-24.-see-all[User story 24. See All 16]
-
-link:#site-map[4. Site Map 17]
-
-link:#entity-relationship-diagram[5. Entity relationship diagram 22]
-
-link:#bounded-context[6. Bounded context 23]
-
-link:#architecture[7. Architecture 25]
-
-link:#goal-of-the-client-architecture[Goal of the Client Architecture 25]
-
-link:#architecture-views[Architecture Views 25]
-
-link:#oasp-reference-client-architecture[OASP Reference Client Architecture 26]
-
-link:#client-architecture[Client Architecture 26]
-
-link:#glossary-of-terms[8. Glossary of terms 30]
+:toc: macro
+toc::[]
 
 [[project-introduction.-statement-of-purpose]]
-= Project introduction. Statement of purpose
+== Project introduction. Statement of purpose
 
 MyThaiStar restaurant wants to improve his presence online, not only providing the menu, also offering the customers a full interactive experience with the new MyThaiStar application.
 
@@ -106,7 +21,7 @@ In the application the user will be able to:
 It also allows the restaurant staff to monitor the reservations.
 
 [[objectives]]
-= Objectives
+=== Objectives
 
 The objectives of the project are:
 
@@ -121,7 +36,7 @@ Track the more/less popular meals.
 Communicate with clients with customized messages.
 
 [[user-stories]]
-= User Stories
+=== User Stories
 
 As the first objective of MyThaiStar component is to improve the time management of the user, providing the needed functionalities to do so.
 
@@ -158,7 +73,7 @@ image:media/image9.jpg[image,width=641,height=147]
 image:media/image10.jpg[image,width=150,height=160] image:media/image11.jpg[image,width=137,height=154]
 
 [[epic-1.-access]]
-== Epic 1. Access
+==== Epic 1. Access
 
 This epic contains all needed functions that allow users to access the system.
 
@@ -169,7 +84,7 @@ As part of the process, the epic must implement:
 The user stories that define this are:
 
 [[user-story-1.-display-home-screen]]
-=== User story 1. Display Home Screen
+===== User story 1. Display Home Screen
 
 As a user I want to see the home screen so that I could see my menu bar where I can choose between the options the application offers.
 
@@ -185,7 +100,7 @@ As a user I want to see the home screen so that I could see my menu bar where I 
 *Dependency: *
 
 [[epic-2.-manage-booking]]
-== Epic 2. Manage Booking
+==== Epic 2. Manage Booking
 
 It contains all functions that permit to book a table, invite friends and cancel a booking.
 
@@ -204,7 +119,7 @@ As part of the process, the epic must implement:
 The user stories that define this are:
 
 [[user-story-2.-select-action-book-table-or-invite-friends]]
-=== User story 2. Select Action Book Table or Invite Friends
+===== User story 2. Select Action Book Table or Invite Friends
 
 As a user I want to reserve a table, so I chose the _Book Table_ or _Invite Friends_ link on the menu application bar or in the direct access area in the middle of the screen.
 
@@ -219,7 +134,7 @@ As a user I want to reserve a table, so I chose the _Book Table_ or _Invite Frie
 *Dependency: user story 1*
 
 [[user-story-3.-select-date-and-time]]
-=== User story 3. Select date and time
+===== User story 3. Select date and time
 
 As a user of MyThaiStar I want to select a date time so that I could proceed with the reservation of the table.
 
@@ -238,7 +153,7 @@ As a user of MyThaiStar I want to select a date time so that I could proceed wit
 *Dependency: user story 4,5*
 
 [[user-story-4.-create-booking]]
-=== User story 4. Create Booking
+===== User story 4. Create Booking
 
 As a user of MyThaiStar I want to create a booking with table reservation.
 
@@ -257,7 +172,7 @@ As a user of MyThaiStar I want to create a booking with table reservation.
 *Dependency: user story 1*
 
 [[user-story-5.-invite-friends]]
-=== User story 5. Invite friends
+===== User story 5. Invite friends
 
 As a user of MyThaiStar I want to create a booking with table reservation and invite friends to such booking.
 
@@ -279,7 +194,7 @@ As a user of MyThaiStar I want to create a booking with table reservation and in
 *Dependency: user story 1*
 
 [[user-story-6.-cancel-booking]]
-=== User story 6. Cancel Booking
+===== User story 6. Cancel Booking
 
 As a user of MyThaiStar I want to cancel a booking previously made by me, with or without friends.
 
@@ -296,7 +211,7 @@ As a user of MyThaiStar I want to cancel a booking previously made by me, with o
 *Dependency: user story 4,5*
 
 [[epic-3.-manage-invitations]]
-== Epic 3. Manage invitations
+==== Epic 3. Manage invitations
 
 It contains all functions to handle the invitations sent by the system.
 
@@ -309,7 +224,7 @@ The user stories that define this are:
 3º Revoke Invitation
 
 [[user-story-7.-accept-invitation]]
-=== User story 7. Accept invitation
+===== User story 7. Accept invitation
 
 As a guest of MyThaiStar I want to accept an invitation confirming my attendance.
 
@@ -324,7 +239,7 @@ As a guest of MyThaiStar I want to accept an invitation confirming my attendance
 *Dependency: user story 5*
 
 [[user-story-8.-decline-invitation]]
-=== User story 8. Decline invitation
+===== User story 8. Decline invitation
 
 As a guest of MyThaiStar I want to decline an invitation confirming my no attendance.
 
@@ -339,7 +254,7 @@ As a guest of MyThaiStar I want to decline an invitation confirming my no attend
 *Dependency: user story 5*
 
 [[user-story-9.-revoke-invitation]]
-=== User story 9. Revoke invitation
+===== User story 9. Revoke invitation
 
 As a guest of MyThaiStar I want to revoke a confirmed invitation.
 
@@ -356,7 +271,7 @@ As a guest of MyThaiStar I want to revoke a confirmed invitation.
 *Dependency: user story 5*
 
 [[epic-4.-digital-menu]]
-== Epic 4. Digital Menu
+==== Epic 4. Digital Menu
 
 It contains all functions to create and manage a menu order
 
@@ -375,7 +290,7 @@ The user stories that define this are:
 6º Read twitter rating
 
 [[user-story-10.-filter-dish]]
-=== User story 10. Filter Dish
+===== User story 10. Filter Dish
 
 As a guest of MyThaiStar I want to filter the menu so that I only see the dishes I am interested in.
 
@@ -402,7 +317,7 @@ As a guest of MyThaiStar I want to filter the menu so that I only see the dishes
 *Dependency: user story 4,5*
 
 [[user-story-11.-select-dish]]
-=== User story 11. Select Dish
+===== User story 11. Select Dish
 
 As a guest of MyThaiStar I want to define my order by selecting dishes from the menu.
 
@@ -419,7 +334,7 @@ As a guest of MyThaiStar I want to define my order by selecting dishes from the 
 *Dependency: user story 4,5*
 
 [[user-story-12.-delete-dish]]
-=== User story 12. Delete Dish
+===== User story 12. Delete Dish
 
 As a guest of MyThaiStar I want to define my order by removing dishes from my ongoing order.
 
@@ -434,7 +349,7 @@ As a guest of MyThaiStar I want to define my order by removing dishes from my on
 *Dependency: user story 4,5*
 
 [[user-story-13.-create-order]]
-=== User story 13. Create Order
+===== User story 13. Create Order
 
 As a guest of MyThaiStar I want to cancel my order.
 
@@ -450,7 +365,7 @@ As a guest of MyThaiStar I want to cancel my order.
 *Dependency: user story 4,5*
 
 [[user-story-14.-cancel-order]]
-=== User story 14. Cancel Order
+===== User story 14. Cancel Order
 
 As a guest of MyThaiStar I want to order my selected dishes (order).
 
@@ -466,7 +381,7 @@ As a guest of MyThaiStar I want to order my selected dishes (order).
 *Dependency: user story 13*
 
 [[user-story-15.-read-twitter-rating]]
-=== User story 15. Read twitter rating
+===== User story 15. Read twitter rating
 
 As a guest of MyThaiStar I want to read for all dishes the rating done be twitter because I would like to know the opinion of others.
 
@@ -480,7 +395,7 @@ As a guest of MyThaiStar I want to read for all dishes the rating done be twitte
 *Dependency: user story ?*
 
 [[epic-5.-profile]]
-== Epic 5. Profile
+==== Epic 5. Profile
 
 It contains all functions to create and manage a user profile
 
@@ -497,7 +412,7 @@ The user stories that define this are:
 5º Auto login in twitter
 
 [[user-story-16.-login]]
-=== User story 16. Login
+===== User story 16. Login
 
 As a user of MyThaiStar I want to sign in with my MyThaiStar user name and password so that I’m allowed to modify my profile.
 
@@ -517,7 +432,7 @@ As a user of MyThaiStar I want to sign in with my MyThaiStar user name and passw
 *Dependency: user story 1*
 
 [[user-story-17.-sing-up]]
-=== User story 17. Sing Up
+===== User story 17. Sing Up
 
 As a user of MyThaiStar I want to register myself as a user of MyThaiStar application.
 
@@ -537,7 +452,7 @@ As a user of MyThaiStar I want to register myself as a user of MyThaiStar applic
 *Dependency: user story 1*
 
 [[user-story-18.-link-twitter-account]]
-=== User story 18. Link twitter account
+===== User story 18. Link twitter account
 
 As a user of MyThaiStar I want to link my user of MyThaiStar application with my twitter user so I can rate the dishes from the application.
 
@@ -550,7 +465,7 @@ As a user of MyThaiStar I want to link my user of MyThaiStar application with my
 *Dependency: user story 16*
 
 [[user-story-19.-auto-login-in-twitter]]
-=== User story 19. Auto login in twitter
+===== User story 19. Auto login in twitter
 
 As a user with profile of MyThaiStar I want to use my twitter account for rate a dish without having to log in manually.
 
@@ -564,7 +479,7 @@ As a user with profile of MyThaiStar I want to use my twitter account for rate a
 *Dependency: user story 16*
 
 [[user-story-20.-rate-menu]]
-=== User story 20. Rate Menu
+===== User story 20. Rate Menu
 
 As a user of MyThaiStar I want to add a comment or a like via my twitter account for a dish.
 
@@ -580,7 +495,7 @@ As a user of MyThaiStar I want to add a comment or a like via my twitter account
 *Dependency: user story 19*
 
 [[epic-6.-calculate-best-table]]
-== Epic 6. Calculate Best Table
+==== Epic 6. Calculate Best Table
 
 It contains all functions the system must implement to calculate best table for a booking.
 
@@ -591,13 +506,13 @@ The user stories that define this are:
 2º Delete booking
 
 [[user-story-21.-assign-table-to-booking]]
-=== User story 21. Assign table to booking
+===== User story 21. Assign table to booking
 
 As MyThaiStar I want to assign the best table possible to a booking one hour before the booking takes place.
 
 *Acceptance Criteria:*
 
-* The system must find a table for a given date and time where seats of guests >= Count of invited guests plus one. In case of no results, decline booking and send error message to the booking owner. In case of any result, make a reservation for table.
+* The system must find a table for a given date and time where seats of guests >=== Count of invited guests plus one. In case of no results, decline booking and send error message to the booking owner. In case of any result, make a reservation for table.
 * For each decline of a guest done after the assignation, remove guest and search with reduced number for new table. In case table is found, reserve it and remove reservation from previous table. In case not, do not change the reservation.
 
 *Priority: Low*
@@ -605,7 +520,7 @@ As MyThaiStar I want to assign the best table possible to a booking one hour bef
 *Dependency: user story 4,5*
 
 [[user-story-22.-delete-booking]]
-=== User story 22. Delete Booking
+===== User story 22. Delete Booking
 
 As MyThaiStar I want to delete the bookings that have been declined because there is no space in the restaurant.
 
@@ -619,7 +534,7 @@ As MyThaiStar I want to delete the bookings that have been declined because ther
 *Dependency: user story 4,5,21*
 
 [[epic-7.-waiter-cockpit]]
-== Epic 7. Waiter Cockpit
+==== Epic 7. Waiter Cockpit
 
 It contains the functions a waiter can do with a reservation and or order.
 
@@ -630,7 +545,7 @@ The user stories that define this are:
 2º See all
 
 [[user-story-23.-find-order]]
-=== User story 23. Find Order
+===== User story 23. Find Order
 
 As waiter I want to find an order or booking and the associated table.
 
@@ -643,7 +558,7 @@ As waiter I want to find an order or booking and the associated table.
 *Dependency: user story 4,5,21*
 
 [[user-story-24.-see-all]]
-=== User story 24. See All
+===== User story 24. See All
 
 As waiter I want to get a list with all the orders and bookings to be able to organize the restaurant duties.
 
@@ -661,7 +576,7 @@ As waiter I want to get a list with all the orders and bookings to be able to or
 *Dependency: user story 4,5,21*
 
 [[site-map]]
-= Site Map
+=== Site Map
 
 We proposed the following sitemap and screens structures to support the requirements that must fulfill the solution.
 
@@ -712,7 +627,7 @@ image:media/image22.jpg[image,width=330,height=263]
 image:media/image23.jpg[image,width=330,height=262]
 
 [[entity-relationship-diagram]]
-= Entity relationship diagram
+=== Entity relationship diagram
 
 Starting from the list of user stories, we found the below entities to support them.
 
@@ -778,7 +693,7 @@ Each entity will content the following information:
 |=====================================================
 
 [[bounded-context]]
-= Bounded context
+=== Bounded context
 
 In this point, we will define the bounded context of the final solution.
 
@@ -811,15 +726,15 @@ In this point, we will define the bounded context of the final solution.
 image:media/image28.jpg[image,width=518,height=457]
 
 [[architecture]]
-= Architecture
+=== Architecture
 
 [[goal-of-the-client-architecture]]
-== Goal of the Client Architecture
+==== Goal of the Client Architecture
 
 The goal of the client architecture is to support the non-functional requirements for the client, i.e. mostly maintainability, scalability, efficiency and portability. As such it provides a component-oriented architecture following the same principles listed already in the OASP architecture overview. Furthermore it ensures a homogeneity regarding how different concrete UI technologies are being applied in the projects, solving the common requirements in the same way.
 
 [[architecture-views]]
-== Architecture Views
+==== Architecture Views
 
 As for the server we distinguish between the business and the technical architecture. Where the business architecture is different from project to project and relates to the concrete design of dialog components given concrete requirements, the technical architecture can be applied to multiple projects.
 
@@ -828,7 +743,7 @@ The focus of this document is to provide a technical reference architecture on t
 The technical infrastructure architecture is out of scope for this document and although it needs to be considered, the concepts of the reference architecture should work across multiple TI architecture, i.e. native or web clients.
 
 [[oasp-reference-client-architecture]]
-== OASP Reference Client Architecture
+==== OASP Reference Client Architecture
 
 The following gives a complete overview of the proposed reference architecture. It will be built up incrementally in the following sections.
 
@@ -837,7 +752,7 @@ image:media/image29.jpg[image,width=624,height=266]
 Figure 1 Overview
 
 [[client-architecture]]
-== Client Architecture
+==== Client Architecture
 
 On the highest level of abstraction we see the need to differentiate between dialog components and their container they are managed in, as well as the access to the application server being the backend for the client (e.g. an OASP4J instance). This section gives a summary of these components and how they relate to each other. Detailed architectures for each component will be supplied in subsequent sections
 
@@ -846,7 +761,7 @@ image:media/image30.jpg[image,width=429,height=260]
 Figure 2 Overview of Client Architecture
 
 [[dialog-component]]
-=== Dialog Component
+===== Dialog Component
 
 A dialog component is a logical, self-contained part of the user interface. It accepts user input and actions and controls communication with the user. Dialog components use the services provided by the dialog container in order to execute the business logic. They are self-contained, i.e. they possess their own user interface together with the associated logic, data and states.
 
@@ -854,7 +769,7 @@ A dialog component is a logical, self-contained part of the user interface. It a
 * Dialog components can interact with each other. This includes communication of a parent to its children, but also between components independent of each other regarding the hierarchy.
 
 [[dialog-container]]
-=== Dialog Container
+===== Dialog Container
 
 Dialog components need to be managed in their lifecycle and how they can be coupled to each other. The dialog container is responsible for this along with the following:
 
@@ -871,12 +786,12 @@ Dialog components need to be managed in their lifecycle and how they can be coup
 * Shutdown of the application
 
 [[application-server-access]]
-=== Application Server Access
+===== Application Server Access
 
 Dialogs will require a backend application server in order to execute their business logic. Typically in an OASP application the service layer will provide interfaces for the functionality exposed to the client. These business oriented interfaces should also be present on the client backed by a proxy handling the concrete call of the server over the network. This component provides the set of interfaces as well as the proxy.
 
 [[dialog-container-architecture]]
-=== Dialog Container Architecture
+===== Dialog Container Architecture
 
 The dialog container can be further structured into the following components with their respective tasks described in own sections:
 
@@ -885,22 +800,22 @@ image:media/image31.jpg[image,width=481,height=270]
 Figure 3 Dialog Container Architecture
 
 [[application]]
-=== Application
+===== Application
 
 The application component represents the overall client in our architecture. It is responsible for bootstrapping all other components and connecting them with each other. As such it initializes the components below and provides an environment for them to work in.
 
 [[configuration-management]]
-=== Configuration Management
+===== Configuration Management
 
 The configuration management manages the configuration of the client, so the client can be deployed in different environments. This includes configuration of the concrete application server to be called or any other environment-specific property.
 
 [[dialog-management]]
-=== Dialog Management
+===== Dialog Management
 
 The Dialog Management component provides the means to define, create and destroy dialog components. It therefore offers basic lifecycle capabilities for a component. In addition it also allows composition of dialog components in a hierarchy. The lifecycle is then managed along the hierarchy, meaning when creating/destroying a parent dialog, this affects all child components, which are created/destroyed as well.
 
 [[service-registry]]
-=== Service Registry
+===== Service Registry
 
 Apart from dialog components, a client application also consists of services offered to these. A service can thereby encompass among others:
 
@@ -914,7 +829,7 @@ The service registry offers the possibility to define, register and lookup these
 Services should be defined as interfaces allowing for different implementations and thus loose coupling.
 
 [[dialog-component-architecture]]
-=== Dialog Component Architecture
+===== Dialog Component Architecture
 
 A dialog component has to support all or a subset of the following tasks:
 
@@ -935,7 +850,7 @@ image:media/image32.jpg[image,width=605,height=417]
 Figure 4 Overview of dialog component architecture
 
 [[presentation-layer]]
-=== Presentation Layer
+===== Presentation Layer
 
 The presentation layer generates and displays the user interface, accepts user input and user actions and binds these to the dialog core layer (T1-5). The tasks of the presentation layer fall into two categories:
 
@@ -945,7 +860,7 @@ The presentation layer generates and displays the user interface and accepts use
 The presentation layer itself does not contain any dialog logic. The data or actions entered by the user are then processed in the dialog core layer. There are three aspects to the binding to the dialog core layer. We refer to “data binding”, “state binding” and “action binding”. Syntactical and (to a certain extent) semantic validations are performed during data binding (e.g. cross-field plausibility checks). Furthermore, the formatted, localized data in the presentation layer is converted into the presentation-independent, neutral data in the dialog core layer (parsing) and vice versa (formatting).
 
 [[dialog-core-layer]]
-=== Dialog Core Layer
+===== Dialog Core Layer
 
 The dialog core layer contains the business logic, the control logic, and the logical state of the dialog. It therefore covers tasks T5-9:
 
@@ -959,7 +874,7 @@ The dialog core layer calls the interfaces of the application server via the app
 The dialog core layer should not depend on the presentation layer enforcing a strict layering and thus minimizing dependencies.
 
 [[interactions-between-dialog-components]]
-=== Interactions between dialog components
+===== Interactions between dialog components
 
 Dialog components can interact in the following ways:
 
@@ -975,7 +890,7 @@ Apart from the embedding of dialog components representing a tight coupling, dia
 When interacting, dialog components should interact only between the same or lower layers, i.e. the dialog core should not access the presentation layer of another dialog component.
 
 [[glossary-of-terms]]
-= Glossary of terms
+=== Glossary of terms
 
 [cols=",",options="header",]
 |======================================================================
@@ -989,6 +904,6 @@ When interacting, dialog components should interact only between the same or low
 
 About Capgemini
 
-A global leader in consulting, technology services and digital transformation, Capgemini is at the forefront of innovation to address the entire breadth of clients’ opportunities in the evolving world of cloud, digital and platforms. Building on its strong 50-year heritage and deep industry-specific expertise, Capgemini enables organizations to realize their business ambitions through an array of services from strategy to operations. Capgemini is driven by the conviction that the business value of technology comes from and through people. It is a multicultural company of 200,000 team members in over 40 countries. The Group reported 2016 global revenues of EUR 12.5 billion.
+A global leader in consulting, technology services and digital transformation, Capgemini is at the forefront of innovation to address the entire breadth of clients’ opportunities in the evolving world of cloud, digital and platforms. Building on its strong 50-year heritage and deep industry-specific expertise, Capgemini enables organizations to realize their business ambitions through an array of services from strategy to operations. Capgemini is driven by the conviction that the business value of technology comes from and through people. It is a multicultural company of 200,000 team members in over 40 countries. The Group reported 2016 global revenues of EUR 12.5 billion.
 
 Learn more about us at http://www.capgemini.com[www.capgemini.com]
