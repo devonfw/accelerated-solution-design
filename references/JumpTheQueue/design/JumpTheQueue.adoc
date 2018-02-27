@@ -5,7 +5,7 @@ toc::[]
 = Jump The Queue Project
 
 [[project-introduction.-statement-of-purpose]]
-= *1. Project Introduction. Statement of Purpose*
+== *1. Project Introduction. Statement of Purpose*
 
 Existing systems to manage queues and turns consists only in the assignation of a number without any associated logic that improves user experience and give value to user and to queue owner.
 
@@ -13,14 +13,14 @@ Classic systems do not allow to know at what time will be each turn. In addition
 
 Ideally the users of the queue have to be able to know at what hour could be its turn. It is very important because he can improve its time and he will need to wait in the queue and only go when its time reaches.
 
-Besides, to facilitate that the user has not to be in the queue waiting its turn, he can consult the queue status at any device that he can have. (for example a mobile phone, tablet,  ..)
+Besides, to facilitate that the user has not to be in the queue waiting its turn, he can consult the queue status at any device that he can have. (for example a mobile phone, tablet,  ..)
 
 As value added, queue owners will be able to prioritize users at the queue to have the possibility of creating marketing campaigns.
 
 A successful solution would be to improve user experience facilitating that the user has not to be in the queue waiting its turn.
 
 [[objectives]]
-= *2. Objectives*
+== *2. Objectives*
 
 The objectives of the project are:
 
@@ -29,12 +29,12 @@ The objectives of the project are:
 * The system has to be simple and easily scalable and extensible
 
 [[first-steps-analysis]]
-= *3. First Steps Analysis*
+== *3. First Steps Analysis*
 
-This is the link:///171124_ADCenter_JTQ_First_Steps_Analysis_Document_V1_3.pptx[First Steps Analysis] presentation used to present and validate our understanding of the User Stories and behaviour of the future solution with customer.
+This is the link:///171124_ADCenter_JTQ_First_Steps_Analysis_Document_V1_3.pptx[First Steps Analysis] presentation used to present and validate our understanding of the User Stories and behaviour of the future solution with customer.
 
 [[user-stories]]
-= *4. User Stories*
+== *4. User Stories*
 
 The first objective of Jump the Queue component is to improve the time management of the user, providing the needed functionalities to do so.
 
@@ -46,11 +46,11 @@ image:media/ProcessMap.png[]
 
 The main actors that will interact with jump the queue component will be the following:
 
--      User: It is an internal user of the external system that creates the queue and it will have privilege access to the queue.
+-      User: It is an internal user of the external system that creates the queue and it will have privilege access to the queue.
 
--      Visitor: User of the queue component that does not exist in the external system that created the queue.
+-      Visitor: User of the queue component that does not exist in the external system that created the queue.
 
--      Owner: User that manages the queue.
+-      Owner: User that manages the queue.
 
 In the next points, we can see the details of the user stories that define the minimum functionality of Jump the Queue component.
 
@@ -59,7 +59,7 @@ We can see the proposed user story map at the following figure.
 image:media/UserStoryMap.png[]
 
 [[epic-1.-get-a-number]]
-== *Epic 1. Get a number*
+=== *Epic 1. Get a number*
 
 This epic contains all needed functions that allow users to get a number for entering in the queue.
 
@@ -74,12 +74,12 @@ As part of the process, the epic must implement:
 The user stories that define this are:
 
 [[user-story-1.-accept-terms-conditions]]
-=== User story 1. Accept terms & conditions
+==== User story 1. Accept terms & conditions
 
 [cols=",,,",options="header",]
 |==================================================================================
 |Story Narrative |Accept terms & conditions |Priority |5
-|As |visitor  |Size |
+|As |visitor  |Size |
 |I need to |accept terms and conditions |Dependency |
 |So that |I can access jump the queue system | |
 |Acceptance Criteria a|
@@ -91,12 +91,12 @@ The user stories that define this are:
 |==================================================================================
 
 [[user-story-2.-verify-information]]
-=== User story 2. Verify information
+==== User story 2. Verify information
 
 [cols=",,,",options="header",]
 |================================================================================
 |Story Narrative |Verify information |Priority |5
-|As |visitor  |Size |
+|As |visitor  |Size |
 |I need |my telephone number or email to be verified |Dependency |
 |So that |their validity will be confirmed | |
 |Acceptance Criteria a|
@@ -108,12 +108,12 @@ The user stories that define this are:
 |================================================================================
 
 [[user-story-3.-consent-information]]
-=== User story 3. Consent information
+==== User story 3. Consent information
 
 [cols=",,,",options="header",]
 |==================================================================================
 |Story Narrative |Consent information |Priority |1
-|As |visitor  |Size |
+|As |visitor  |Size |
 |I want to |give my permission for the use of my personal information |Dependency |
 |So that |I can received commercial notices | |
 |Acceptance Criteria a|
@@ -125,12 +125,12 @@ The user stories that define this are:
 |==================================================================================
 
 [[user-story-4.-register]]
-=== User story 4. Register
+==== User story 4. Register
 
 [cols=",,,",options="header",]
 |======================================================================================================
 |Story Narrative |Register |Priority |10
-|As |visitor  |Size |
+|As |visitor  |Size |
 |I want to |register to obtain an access code for the queue |Dependency |
 |So that |I get an access code | |
 |Acceptance Criteria a|
@@ -152,13 +152,13 @@ The user stories that define this are:
 |======================================================================================================
 
 [[user-story-5.-priority-access]]
-=== User story 5. Priority access
+==== User story 5. Priority access
 
 [cols=",,,",options="header",]
 |======================================================================================================
 |Story Narrative |Priority access |Priority |5
-|As |internal user  |Size |
-|I want to |get priority access code to the queue  |Dependency |
+|As |internal user  |Size |
+|I want to |get priority access code to the queue  |Dependency |
 |So that |I will be attended earlier | |
 |Acceptance Criteria a|
 
@@ -170,14 +170,14 @@ The user stories that define this are:
 |======================================================================================================
 
 [[epic-2.-consult-the-queue]]
-== *Epic 2. Consult the queue*
+=== *Epic 2. Consult the queue*
 
 It contains all functions that permit to order and to consult the status of the queue.
 
 The user stories that define this are:
 
 [[user-story-6.-consult-queue]]
-=== User story 6. Consult Queue
+==== User story 6. Consult Queue
 
 [cols=",,,",options="header",]
 |===============================================================================================================================================================================
@@ -198,7 +198,7 @@ The user stories that define this are:
 |===============================================================================================================================================================================
 
 [[user-story-7.-waiting-time]]
-=== User story 7. Waiting time
+==== User story 7. Waiting time
 
 [cols=",,,",options="header",]
 |==================================================================================================================================================================================================================
@@ -217,14 +217,14 @@ The user stories that define this are:
 |==================================================================================================================================================================================================================
 
 [[epic-3.-manage-queue]]
-== *Epic 3. Manage queue*
+=== *Epic 3. Manage queue*
 
 It contains all functions that allow to manage the queue in order to configure and attend active turn.
 
 The user stories that define this are:
 
 [[user-story-8.-configure-queue]]
-=== User story 8. Configure queue
+==== User story 8. Configure queue
 
 [cols=",,,",options="header",]
 |=============================================================================
@@ -241,7 +241,7 @@ The user stories that define this are:
 |=============================================================================
 
 [[user-story-9.-attend-queue]]
-=== User story 9. Attend queue
+==== User story 9. Attend queue
 
 [cols=",,,",options="header",]
 |================================================================
@@ -262,7 +262,7 @@ The user stories that define this are:
 |================================================================
 
 [[site-map]]
-= *5. Site Map*
+== *5. Site Map*
 
 We proposed the following sitemap and screens structures to support the requirements that must fulfill the solution.
 
@@ -283,7 +283,7 @@ Finally, the owner of the queue can consult and pass the turn with the consult s
 image:media/ServeQueue.png[]
 
 [[entity-relationship-diagram]]
-= *6. Entity relationship diagram*
+== *6. Entity relationship diagram*
 
 Starting from the list of user stories, we found the below entities to support them.
 
@@ -347,7 +347,7 @@ It contains the list people that are in the queue and their information..
 
 
 [[bounded-context]]
-= *7. Bounded context*
+== *7. Bounded context*
 
 In this point, we will define the bounded context of the final solution.
 
@@ -374,7 +374,7 @@ In the figure below we have three domains, one for each related Epic.
 image:media/BoundedContext.png[]
 
 [[glossary-of-terms]]
-= *8. Glossary of terms*
+== *8. Glossary of terms*
 
 [cols=",",options="header",]
 |===========================================================================================================================================================
