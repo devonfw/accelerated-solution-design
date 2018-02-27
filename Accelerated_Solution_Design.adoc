@@ -291,7 +291,7 @@ It can optionally contain the following data:
 
 * Class diagrams and anyother diagrams that help documenting the solution.
 
-Click to access to link:https://confluence.s2-eu.capgemini.com/display/ACM/Jump+The+Queue+Project[Accelerate Solution Design] sample
+Click link:https://github.com/devonfw/devon-methodology/blob/ASD_Pracices/references/JumpTheQueue/design/JumpTheQueue.adoc[here] to access a sample in GitHub and link:https://confluence.s2-eu.capgemini.com/display/ACM/Jump+The+Queue+Project[here] on Confluence
 
 [[uat]]
 === *UAT*
