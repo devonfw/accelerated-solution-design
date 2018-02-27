@@ -5,7 +5,7 @@ toc::[]
 = Accelerated Solution Design
 
 [[purpose]]
-= *Purpose*
+== *Purpose*
 
 The *purpose* of this Space is to *give a full overview of the set of activities, deliverables, tools and methods used at the AD Center to realize the Accelerated Solution Design (ASD) paradigm*.
 
@@ -44,7 +44,7 @@ Summarizing, the Accelerated Solution Design is:
 * Guided by prototypes
 
 [[key-principles]]
-= *Key principles*
+== *Key principles*
 
 The core principles of the Accelerated Solution Design are the following:
 
@@ -63,7 +63,7 @@ The practices adopted at the AD Center to apply those principles are:
 Next, those three practices are explained.
 
 [[intersection-of-industry-standard-practices]]
-==  *1. Intersection of industry standard practices*
+===  *1. Intersection of industry standard practices*
 
 The ASD process will combine and apply the following industry standard practices:
 
@@ -76,14 +76,14 @@ The final design (or rather “growing design”) emerges from the intersection 
 image:extracted-media/mediaASD/image2.png[] 
 
 [[lean]]
-== *2. Lean*
+=== *2. Lean*
 
 Using Lean discovery and design process model, the UX Designer, the Business Analyst and the Architect will work together to model and specify the design of the system and deliver to customer a product he desires much faster.
 
 image:extracted-media/mediaASD/image3.png[]
 
 [[agile-requirements-flow]]
-== *3. Agile requirements flow*
+=== *3. Agile requirements flow*
 
 The Business Analyst and UX Designer will follow the agile requirements flow below to perform the analysis of the required solution which shall fulfill the business needs.
 
@@ -96,7 +96,7 @@ Each business need will be documented as one or more Epic Story. Each Epic Story
 The Business Analyst will discuss with the Project Owner and the Architect the modelling of the solution, using the User Stories as input for the discussion. At this point, the solution can be detailed with use cases, E-R, domain modelling, etc.
 
 [[ways-of-working]]
-= *Ways of Working*
+== *Ways of Working*
 
 This chapter describes in detail the process to be followed at the AD Center to deliver the solution.
 
@@ -105,7 +105,7 @@ image:extracted-media/mediaASD/image5.png[]
 Following points explain in detail each phase.
 
 [[explore-and-define]]
-== *Explore and Define*
+=== *Explore and Define*
 
 To ensure the success of the project, the team must understand the needs of the customer, why they are necessary and what is the Minimum Viable Product (MVP) that the solution should deliver. 
 
@@ -118,27 +118,27 @@ At this stage of the development life cycle, it is necessary that the Business A
 
 These are mainly analysis activities and are the starting point for Sprint 0, which is an Analysis and Design sprint.
 
-=== Tasks
+==== Tasks
 
 The main tasks of this phase are:
 
 * _Define_. Understand and describe the customer needs.
 
-=== Inputs
+==== Inputs
 
 Some inputs to perform the above tasks are:
 
 * Project charter.
 * Meetings held with main stakeholders.
 
-=== Output 
+==== Output 
 
 The main outputs of this phase will be the following set of documents:
 
 * Analysis Overview.
 
 [[ideate-prototype]]
-== *Ideate + prototype*
+=== *Ideate + prototype*
 
 At this stage, the solution is designed and developed. To achieve that, each functionality, which are required to perform the required design and development sprints, will be prioritized.
 
@@ -156,7 +156,7 @@ The tasks involved in this sprint are:
 
 Sprint 0 and 1 will be repeated until solution is completed and accepted by customer. The following iterations of Sprint 0 and 1 will be called n and n+1.
 
-=== Tasks
+==== Tasks
 
 The main tasks of this phase are:
 
@@ -164,13 +164,13 @@ The main tasks of this phase are:
 * *Design*. Once the First Steps Analysis document is validated by customer, the members of Studio will work together to make a solution design document (Accelerated Solution Design), which covers user needs that were identied in Ideate + Prototype phase. Additionally, the whole team will work together with customer to document the user acceptance tests (UATs) to be fulfilled by the solution. This UAT document should be finished before the development task starts, so that it can be used by the Development team to understand what is the expected behavior of the application. And finally, the Style Guide and Assets shall be documented as well. All these documents will be the main input material for the Develop task.
 * *Develop*. The Development team will start its sprint with the details collected in the previous tasks.
 
-=== Inputs
+==== Inputs
 
 * Analysis Overview
 * Meetings held with Customer.
 * Meetings involving different members of the Development team (UX Designer, Business Analyst, Architect and Developers).
 
-=== Output
+==== Output
 
 * First Steps Analysis
 * Accelerated Solution Design
@@ -178,7 +178,7 @@ The main tasks of this phase are:
 * Style guide, assets, … (UX docs.)
 
 [[empathize-test]]
-== *Empathize + Test*
+=== *Empathize + Test*
 
 This is the final stage of our model, but in an agile process, the results generated during the testing phase are used to redefine one or more problems and inform the understanding of the user, the conditions of use, how people think, behave, and feel, and to _empathize_.
 
@@ -189,25 +189,25 @@ In this phase, the development will be validated by using some techniques:
 * Regression Tests. Tests that validates that existing functionality of the system works and was not broken by the new change. They can be automated using an external software.
 * UATs. User acceptance tests, they are used for validating that the solution fulfills the requirements. They describe the minimum criteria the customer will use to accept the solution. They are usually executed by the customer.
 
-=== Tasks
+==== Tasks
 
 * Validate Development Sprint.
 * Empathize and propose improvements for the next Ideate + prototype sprint.
 
-=== Inputs
+==== Inputs
 
 * UAT definition.
 * Tests definitions.
 * Meeting with customer, Business Analyst, UX Designer, Architect and development team.
 
-=== Output
+==== Output
 
 * UAT results
 * Test status
 * List of proposed changes
 
 [[relationship-with-project-kick-off-phase]]
-= *Relationship with project Kick-off phase*
+== *Relationship with project Kick-off phase*
 
 Accelerated solution design defines how we must work at AD Center to develop the solution that support the project scope.
 
@@ -229,13 +229,11 @@ This information will be necessary at project kick-off phase to describe among o
 *As we can see, there is a strong dependency between kick-off phase and the initial task of Accelerated Solution Design*. For this, kick-off phase will be the trigger the starting of ASD sprint zero and its *explore & define* step.  In this step, we will complete all required information of kick-off phase and when kick-off phase will be completed, Ad Center team should continue with the activities of Accelerated Solution Design. In parallel, project manager should supply the required resources, that were identifying at kick-off phase, to be able to continue with Accelerated Solution Design and the development of the solution.
 
 [[deliverables-and-raci]]
-= *Deliverables and RACI*
+== *Deliverables and RACI*
 
-* *
-
-[cols=",,,,,",options="header",]
+[options="header",]
 |============================================================================================================
-| |*ROLES*
+| 5+^|*ROLES*
 |*DELIVERABLE* |*CUSTOMER* |*BUSINESS ANALYST* |*UX DESIGNER* |*ARCHITECT* |*DEVELOPER TEAM*
 |*Analysis overview* |Consulted |Responsible, Accountable |Responsible |Responsible,Consulted |
 |*First steps Analysis* |Consulted, Informed |Responsible, Accountable |Responsible, Accountable |Consulted |
@@ -245,7 +243,7 @@ This information will be necessary at project kick-off phase to describe among o
 |============================================================================================================
 
 [[analysis-overview]]
-== *Analysis Overview*
+=== *Analysis Overview*
 
 This document shall provide the following information:
 
@@ -259,10 +257,10 @@ This document shall provide the following information:
 * Constraints.
 *   …
 
-The following https://github.com/jdiazgon/devon-methodology/blob/ASD_Practices/extracted-media/mediaASD/%5BProject%20Code%5D__%5BProject%20Name%5D_Analysis_Overview_v%5B1.0%5D_YYYYMMDD.dotx[document] shows sample content of this document.
+The following link:https://github.com/jdiazgon/devon-methodology/blob/ASD_Practices/extracted-media/mediaASD/%5BProject%20Code%5D__%5BProject%20Name%5D_Analysis_Overview_v%5B1.0%5D_YYYYMMDD.dotx[document] shows sample content of this document.
 
 [[first-steps-analysis]]
-== *First Steps Analysis*
+=== *First Steps Analysis*
 
 This document is used to present and validate the results of the analysis to and with customer.
 
@@ -272,10 +270,10 @@ The required content is:
 * Details of the requirements that fulfill the business needs, in the form of Epics and User Stories
 * Site map and sketches of the user interfaces that shall meet the requirements
 
- The powerpoint template can be found at following https://github.com/jdiazgon/devon-methodology/blob/ASD_Practices/extracted-media/mediaASD/ADCenter_First_Steps_Analysis_Document_TEMPLATE.potx[link]:
+ The powerpoint template can be found at following link:https://github.com/jdiazgon/devon-methodology/blob/ASD_Practices/extracted-media/mediaASD/ADCenter_First_Steps_Analysis_Document_TEMPLATE.potx[link]
 
 [[accelerated-solution-design]]
-== *Accelerated Solution Design*
+=== *Accelerated Solution Design*
 
 This document, which is forwarded to Development team, describes in detail the expected behavior of the solution. It includes both functional and technical information.
 
@@ -293,34 +291,34 @@ It can optionally contain the following data:
 
 * Class diagrams and anyother diagrams that help documenting the solution.
 
-Click to access to https://confluence.s2-eu.capgemini.com/display/ACM/Jump+The+Queue+Project[Accelerate Solution Design] sample
+Click link:https://github.com/devonfw/devon-methodology/blob/ASD_Pracices/references/JumpTheQueue/design/JumpTheQueue.adoc[here] to access a sample in GitHub and link:https://confluence.s2-eu.capgemini.com/display/ACM/Jump+The+Queue+Project[here] on Confluence
 
 [[uat]]
-== *UAT*
+=== *UAT*
 
 It defines the user acceptance criteria the solution must fulfill.
 
 A sample template can be found at following link:
 
-file:///C:\download\attachments\4327289\UAT_Template_v1.xlsx%3fversion=4&modificationDate=1516092498094&api=v2[UAT_Template_v1.xlsx]
+link:https://github.com/jdiazgon/devon-methodology/blob/ASD_Practices/extracted-media/mediaASD/UAT_Template_v1.xlsx[UAT_Template_v1.xlsx]
 
 [[style-guides-assets-ux-docs.]]
-== *Style guides, assets, … (UX docs.)*
+=== *Style guides, assets, … (UX docs.)*
 
 This set of documents includes all UX designs (visual guides, types, colors, style guides, etc.) to be used by Developers to develop the solution.
 
  image:extracted-media/mediaASD/image8.png[]
 
 [[design-process]]
-= *Design Process*
+== *Design Process*
 
 The design Process is part of the Accelerated Solution Design.  However, due to the big extension of this section, it has been described as a separated section which can be consulted link:design_process.adoc[here].
 
 [[architecture-process]]
-= *Architecture Process*
+== *Architecture Process*
 
 [[overall-goals]]
-== *Overall Goals*
+=== *Overall Goals*
 
 The goal of the Accelerated Solution Design is to create a document that is:
 
@@ -341,10 +339,10 @@ Much of the structuring of components and data should be presented at the Accele
 The documentation should contain only the strictly needed information and should be very pragmatic.Easy to maintainIt should be versioned together with the code. A developer should be able to change it using only a text editor.
 
 [[rationales]]
-== *Rationales*
+=== *Rationales*
 
 [[purpose-of-the-accelerated-solution-design-deliverables]]
-=== *Purpose of the accelerated solution design deliverables*
+==== *Purpose of the accelerated solution design deliverables*
 
 The Accelerated Solution Design deliverables are not meant to be the basis of an implementation.
 
@@ -356,7 +354,7 @@ The level of detail of the doumentation is meant to provide understanding, but n
 However, a certain level of detail was shown to be necessary for a thorugh understanding. Therefore, for example, the entities and their attributes are defined in the diagrams, but not in the tables.
 
 [[level-of-proximity-to-the-code]]
-=== *Level of proximity to the code*
+==== *Level of proximity to the code*
 
 The idea behind this documentation is to:
 
@@ -377,14 +375,14 @@ The definition of the business components shall be close to the code: Components
 * The angular components are very technically oriented. Basing the specification on these components would not result in a comprehensive document. Therefore, the documentation differs at least in this regard from the implementation.
 
 [[creation-of-a-ubiquitous-language-ddd]]
-=== *Creation of a ubiquitous language (DDD)*
+==== *Creation of a ubiquitous language (DDD)*
 
 The main goal is to enhance the understanding between the business departments and the technical staff. The main way of doing this is be specifying a language that will be uniformly used from the specification to the interfaces, the implementation and the tests. This includes not only entities and attributes, but also component names, subsystem and system names etc.
 
 One difference is the usage of prefixes for the terms: These are only used in the business specification and not in the implementation itself.
 
 [[level-of-detail-of-the-documentation]]
-=== *Level of detail of the documentation*
+==== *Level of detail of the documentation*
 
 The level of detail differs depending on the customer and his requirements for the documentation of the implemented systems. However, a certain level of detail has proven to be useful for the business analysts who do not have regular access to the code:
 
@@ -394,7 +392,7 @@ The level of detail differs depending on the customer and his requirements for t
 * …
 
 [[specifics-of-the-specification-methodology]]
-=== *Specifics of the specification methodology* 
+==== *Specifics of the specification methodology* 
 
 The specification methodology is based on UML. It is based on the _Capgemini Specification Method_ and was tailored for the use as a post-documentation in agile projects. The usage of this method has led to a significant increase in in the quality and efficiency of the Capgemini software projects:
 
@@ -407,7 +405,7 @@ The specification methodology is based on UML. It is based on the _Capgemini Spe
 The method is in detail described in the Specification Method manual.
 
 [[selection-of-the-tools-and-the-storage]]
-=== *Selection of the tools and the storage*
+==== *Selection of the tools and the storage*
 
 The main focus of the tooling was
 
@@ -420,10 +418,10 @@ The main focus of the tooling was
 Because of this, asciidoc was selected for the creation of the document and plantuml was selected for the diagrams.
 
 [[tools]]
-= *Tools*
+== *Tools*
 
 [[confluence]]
-== *Confluence*
+=== *Confluence*
 
 Confluence is a team collaboration software. It is developed and marketed by Atlassian.
 
@@ -434,7 +432,7 @@ The objective is that the deliveries will not a static document. It should be a 
 *For this, confluence should be the repository where project documentation resides. Each documentation delivery will reside in confluence project space as pages to easily the maintenance, collaboration and access.*
 
 [[jira]]
-== *Jira*
+=== *Jira*
 
 Jira is a proprietary issue tracking product, developed by Atlassian. It provides bug tracking, issue tracking, and project management functions. The product name is a truncation of Gojira, the Japanese name for Godzilla, itself a reference to Jira's main competitor, Bugzilla
 
@@ -449,7 +447,7 @@ As confluence and Jira are developed by Atlassian, the tools have native integra
  image:extracted-media/mediaASD/image9.png[]
 
 [[plantuml]]
-== *PlantUML*
+=== *PlantUML*
 
 PlantUML is an open-source tool allowing users to create UML diagrams from a plain text language. It allows to quickly write:
 
@@ -479,7 +477,7 @@ image:extracted-media/mediaASD/useCaseDiagramPlantUML.png[]
 More documentation about it link:http://plantuml.com/[here].
 
 [[github]]
-== *GitHub*
+=== *GitHub*
 
 GitHub is a web-based hosting service for version control using git (git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people). 
 
@@ -489,21 +487,21 @@ functionality of Git as well as adding its own features. It provides access cont
 GitHub also handles *asciidoc* documents, so normally the documentation is either in asciidoc format or in .md (MarkDown). For example, this document uses asciidoc syntax. 
 
 [[gitlab]]
-== *GitLab*
+=== *GitLab*
 
 GitLab is a web-based Git repository manager (Git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people) with wiki and issue tracking features, using an open source license, developed by GitLab Inc.
 
 We currently use it because its repositories are *private*, while in GitHub everybody can see our code and projects.
 
 [[enterprise-architect]]
-== *Enterprise Architect*
+=== *Enterprise Architect*
 
 Sparx Systems Enterprise Architect is a visual modeling and design tool based on the OMG UML. The platform supports: the design and construction of software systems; modeling business processes; and modeling industry based domains. It is used by businesses and organizations to not only model the architecture of their systems, but to process the implementation of these models across the full application development life-cycle.
 
 image:extracted-media/mediaASD/image10.png[]
 
 [[adobe-creative-cloud]]
-== *Adobe Creative Cloud*
+=== *Adobe Creative Cloud*
 
 Adobe Creative Cloud is a set of applications and services from Adobe Systems that gives subscribers access to a collection of software used for graphic design, video editing, web development, photography, along with a set of mobile applications and some optional cloud services.
 
