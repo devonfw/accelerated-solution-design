@@ -26,7 +26,7 @@ The Accelerated Solution Design is a possible answer to these challenges:
 The ASD is carefully designed to be a practical guideline that fosters and ensures the collaboration and communication among all team members.
 The members of the team involved in the ASD will be:
   - Customer.
-  - Studio members, made up of UX Designer, Business Analyst and Architect.
+  - Solution Delivery Office members, made up of UX Designer, Business Analyst and Architect.
   - Yard members, made up of Developers.
 
 The Accelerated Solution Design introduces a new type of team, which is broader, flexible and self-organized:

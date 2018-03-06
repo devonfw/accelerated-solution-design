@@ -79,7 +79,7 @@ PowerPoint, Word, Google slides, Google docs.
 
 *Team* 
 
-The Project Manager, Studio, Client and User.
+The Project Manager, Solution Delivery Office, Client and User.
 
 *Global Documents*
 
@@ -152,7 +152,7 @@ Axure, Adobe XD, Illustrator, Photoshop, Sketch, Invision, POP, HTML5, CSS.
 
 *Team* 
 
-Studio, client and user.
+Solution Delivery Office, client and user.
 
 [[ideate-1]]
 ==== 2.1) Ideate

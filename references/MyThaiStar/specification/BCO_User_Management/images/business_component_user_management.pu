@@ -1,0 +1,10 @@
+@startuml
+ACR_System_MyThaiStar << Actor >>
+rectangle "<<Business Component>>\nBCO_User_Management" #DDDDDD {
+  (<<Service UC>>\nUC_Manage_User) as UC_Manage_User
+  (<<Service UC>>\nUC_Manage_User_Roles) as UC_Manage_User_Roles
+
+  ACR_System_MyThaiStar ..|> UC_Manage_User : <<uses>>
+  ACR_System_MyThaiStar ..|> UC_Manage_User_Roles : <<uses>>
+}
+@enduml

@@ -14,7 +14,7 @@ The AD Center team shall customize those process, tools and methods for each pro
 The ASD is carefully designed to be a practical guideline that fosters and ensures the collaboration and communication among all team member. The members of the team involved in the ASD will be:
 
 * Customer.
-* Studio members, made up of UX Designer, Business Analyst and Architect
+* Solution Delivery Office members, made up of UX Designer, Business Analyst and Architect
 * Yard members, made up of Developers
 
 Customers are key members of the team, as they understand the business and have needs and expectations, which the solution must fulfill. It is essential that customers get involved in the development from the beginning. Thus, the feeling of belonging the solution will be assured and the customer satisfaction will be improved. In addition to validating the solution and supporting all development phases.
@@ -52,7 +52,7 @@ The core principles of the Accelerated Solution Design are the following:
 * Learn and apply continuous improvement
 * Visualize
 * Be iterative
-* Improve communication and collaboration among team members (Customer, Studio and Yard)
+* Improve communication and collaboration among team members (Customer, Solution Delivery Office and Yard)
 
 The practices adopted at the AD Center to apply those principles are:
 
@@ -161,7 +161,7 @@ Sprint 0 and 1 will be repeated until solution is completed and accepted by cust
 The main tasks of this phase are:
 
 * *Conceptualize analysis and design*.  The Business Analyst will work together with the UX Designer and customer to collect and document the requirements that fulfill the business needs. The requirements will be documented as epics and user stories, sketches and wirefraiming. In this task, the Business Analyst & UX Designer will generate a common document (First Steps Analysis) to present and validate the results of the tasks with the customer.
-* *Design*. Once the First Steps Analysis document is validated by customer, the members of Studio will work together to make a solution design document (Accelerated Solution Design), which covers user needs that were identied in Ideate + Prototype phase. Additionally, the whole team will work together with customer to document the user acceptance tests (UATs) to be fulfilled by the solution. This UAT document should be finished before the development task starts, so that it can be used by the Development team to understand what is the expected behavior of the application. And finally, the Style Guide and Assets shall be documented as well. All these documents will be the main input material for the Develop task.
+* *Design*. Once the First Steps Analysis document is validated by customer, the members of Solution Delivery Office will work together to make a solution design document (Accelerated Solution Design), which covers user needs that were identied in Ideate + Prototype phase. Additionally, the whole team will work together with customer to document the user acceptance tests (UATs) to be fulfilled by the solution. This UAT document should be finished before the development task starts, so that it can be used by the Development team to understand what is the expected behavior of the application. And finally, the Style Guide and Assets shall be documented as well. All these documents will be the main input material for the Develop task.
 * *Develop*. The Development team will start its sprint with the details collected in the previous tasks.
 
 ==== Inputs
