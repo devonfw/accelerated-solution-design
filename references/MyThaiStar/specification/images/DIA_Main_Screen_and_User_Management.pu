@@ -5,46 +5,46 @@
 class SCR_Main_Screen <<Screen>> {
 }
 
-class SCR_Screen_Name1<<Screen>> {
+class SCR_User_Login <<Screen>> {
 }
 
-class SCR_Screen_Name2 <<Screen>> {
+class SCR_User_Signup <<Screen>> {
 }
 
-package "DIA_Dialogue_Name2" #DDDDDD {
+package "DIA_Book_Table_and_Invite_Friends" #DDDDDD {
 
-  class SCR_Screen_Name3  <<Dialogue>> {
+  class SCR_Book_Table  <<Dialogue>> {
   }
 }
 
-class DIA_Dialogue_Name1  <<Dialogue>> {
+class DIA_Show_Menu_and_Create_Order  <<Dialogue>> {
 }
 
 
 
-SCR_Main_Screen --|> SCR_Screen_Name1: "Action"
+SCR_Main_Screen --|> SCR_User_Login : "User Icon"
 
-SCR_Screen_Name1--|> SCR_Screen_Name2 : "Action"
+SCR_User_Login --|> SCR_User_Signup : "Tab Signup"
 
-SCR_Screen_Name2 --|> SCR_Screen_Name1: "Action"
+SCR_User_Signup --|> SCR_User_Login : "Tab Login"
 
-SCR_Screen_Name1--|> SCR_Main_Screen : "Action"
+SCR_User_Login --|> SCR_Main_Screen : "Cancel / Register"
 
-SCR_Screen_Name2 --|> SCR_Main_Screen : "Action"
+SCR_User_Signup --|> SCR_Main_Screen : "Cancel / Register"
 
-SCR_Main_Screen --|> SCR_Screen_Name3 : "Action"
+SCR_Main_Screen --|> SCR_Book_Table : "Book table"
 
-DIA_Dialogue_Name2 --|> SCR_Main_Screen : "Action"
+DIA_Book_Table_and_Invite_Friends --|> SCR_Main_Screen : "Home"
 
-SCR_Main_Screen --|> DIA_Dialogue_Name1 : "Action"
+SCR_Main_Screen --|> DIA_Show_Menu_and_Create_Order : "Menu"
 
-DIA_Dialogue_Name1 --|> SCR_Main_Screen : "Action"
+DIA_Show_Menu_and_Create_Order --|> SCR_Main_Screen : "Home"
 
 
-class DIA_Dialogue_Name3 <<Dialogue>> {
+class DIA_Supervise_Orders  <<Dialogue>> {
 }
 
-class DIA_Dialogue_Name4  <<Dialogue>> {
+class DIA_Supervise_Reservations  <<Dialogue>> {
 }
 
 @enduml
