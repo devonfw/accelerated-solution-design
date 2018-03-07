@@ -5,19 +5,20 @@ This is the Accelerated Solution Design for the devon application reference call
 
 ## Design
 
-In design you will find high-level documentation about the Jump The Queue application like:
-  - User Stories. 
-  - Site maps including mock-ups.
-  - Entity relationship diagrams. 
-  - An overview of the architecture. 
+This folder contains the high-level documentation created to design the Jump The Queue application.
 
-Additionally, you will find the first step analysis PowerPoint of the Jump The Queue application.
+The documents provided in this folder are:
+  - First step analysis presentation, used to present the epics, user stories, mockups and architecture overview to the customer. 
+  - Accelerated Solution Design document, used to explain to the development team the expected behavior of the solution. 
+
 
 ## Specification
 
-In specification you will find low-level documentation about the Jump The Queue application like:
-  - Use cases including actors and Business Components. 
+This folder contains the low-level documentation of the Jump The Queue application. 
+
+The documents included in this folder describe technical artifacts such as:
+  - Use cases, actors and Business Components. 
   - Data model including Model Components.
-  - Dialogues including the different screens. 
-  - External interfaces. 
+  - Dialogues and screens. 
+  - External interfaces.
 
