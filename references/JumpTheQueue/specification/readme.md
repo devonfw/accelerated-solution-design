@@ -1,7 +1,9 @@
 # Specification
 
-In specification you will find low-level documentation about the Jump The Queue application like:
-  - Use cases including actors and Business Components. 
+This folder contains the low-level documentation of the Jump The Queue application. 
+
+The documents uploaded to this folder describe technical artifacts such as:
+  - Use cases, actors and Business Components. 
   - Data model including Model Components.
-  - Dialogues including the different screens. 
-  - External interfaces. 
+  - Dialogues and screens. 
+  - External interfaces.
