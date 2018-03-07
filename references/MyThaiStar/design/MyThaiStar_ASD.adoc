@@ -351,7 +351,7 @@ As a guest of MyThaiStar I want to define my order by removing dishes from my on
 [[user-story-13.-create-order]]
 ===== User story 13. Create Order
 
-As a guest of MyThaiStar I want to cancel my order.
+As a guest of MyThaiStar I want to order my selected dishes (order).
 
 *Acceptance Criteria:*
 
@@ -367,7 +367,8 @@ As a guest of MyThaiStar I want to cancel my order.
 [[user-story-14.-cancel-order]]
 ===== User story 14. Cancel Order
 
-As a guest of MyThaiStar I want to order my selected dishes (order).
+
+As a guest of MyThaiStar I want to cancel my order.
 
 *Acceptance Criteria:*
 

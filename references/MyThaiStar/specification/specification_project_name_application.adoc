@@ -13,8 +13,7 @@ _<Team_Name>_ _<Team_Email>_
 :toclevels: 4
 :numbered:
 :website: https://www.de.capgemini.com/devonfw
-:imagesdir: ./images/
-:imagesComponentNameManagement: /BCO_ComponentName_Management/images/
+:imagesdir: ./BCO_ComponentName_Management/images/
 
 
 == Introduction ==
@@ -68,7 +67,7 @@ image::overview_actors.svg[caption="Figure 1: ", title="Actors", alt="Actors"]
 === Business Component BCO_<Component_Name>_<Action_Name> ===
 _<Insert here a diagram explaining your component's use cases. Below you will find an example:>_
 
-image::{imagesComponentNameManagement}business_component_ComponentName_management.svg[caption="Figure 2: ", title="Business Component _<Component_Name>_ <Action_Name>", alt="Business Component _<Component_Name>_ <Action_Name>"]
+image::business_component_ComponentName_management.svg[caption="Figure 2: ", title="Business Component _<Component_Name>_ <Action_Name>", alt="Business Component _<Component_Name>_ <Action_Name>"]
 
 _<Explain here your component and its functionality>_
 
@@ -145,7 +144,7 @@ _<Insert here a diagram explaining the data model of your component. It is norma
  a class diagram that defines the attributes of each component and the entities 
  involved. See below an example.>_
 
-image::{imagesComponentNameManagement}mco_ComponentName.svg[caption="Figure 3: ", title="Model Component MCO_<Component_Name>", alt="Model Component MCO_<Component_Name>"]
+image::mco_ComponentName.svg[caption="Figure 3: ", title="Model Component MCO_<Component_Name>", alt="Model Component MCO_<Component_Name>"]
 
 TIP: Use the sufix ATT_ for defining attributes, entities with ETY_ and MCO_ for model components.
 
@@ -209,7 +208,7 @@ TIP: Not every dialogue has to be documented in the same way, it will depend on 
 
 The dialogue flow of this dialogue is shown in the next image:
 
-image::DIA_Main_Screen_and_User_Management.svg[caption="Figure 3: ", title="DIA_<Dialogue_Name>", alt="DIA_<Dialogue_Name>"]
+image::DIA_Main_Screen_Name.svg[caption="Figure 3: ", title="DIA_<Dialogue_Name>", alt="DIA_<Dialogue_Name>"]
 
 _<Briefly explain the purpose of this dialogue.>_
 
@@ -259,7 +258,7 @@ TIP: If an external interface is already defined and documented (most probably i
 
 _<Insert here a diagram describing the external interfaces like the example showed below.>_
 
-image::{imagesComponentNameManagement}eif_manage_ComponentName.svg[caption="Figure 4: ", title="External Interface EIF_<Action_Name>_<Component_Name>", alt="External Interface EIF_<Action_Name>_<Component_Name>"]
+image::eif_manage_ComponentName.svg[caption="Figure 4: ", title="External Interface EIF_<Action_Name>_<Component_Name>", alt="External Interface EIF_<Action_Name>_<Component_Name>"]
 
 This external interface provides the following operations using the different
 interface entity types:

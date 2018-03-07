@@ -1,0 +1,134 @@
+= Specification of the Restaurant Application =
+
+Devon FW Team icsddevonfwsupport.apps2@capgemini.com
+
+:imagesOrderManagement: images/
+
+:toc:
+:toclevels: 4
+:numbered:
+
+== Use Cases ==
+
+// tag::UseCases[]
+
+=== Business Component BCO_Order_Management ===
+
+image::{imagesOrderManagement}business_component_order_management.svg[caption="Figure 2: ", title="Business Component Order Management", alt="Business Component Order Management"]
+
+The business componente BCO_Order_Management encapsulates the service and client functionality necessary to handle an order.
+An order contains dishes, drinks and extra ingredients for one guest.
+
+
+==== Service Use Case "UC_Manage_Order" ====
+
+
+[cols="v,v" options=compact]
+|====
+2+| This servcice use case allows the management of an order: to find an order, to save an order and to delete an order. It is used via the external interface +EIF_Manage_Booking+.
+_This is a a trivial use case._
+|Actors | ACR_System_MyThaiStar
+|Usage |Automatic
+|Precondition |
+- *Find order* The search criteria for an order are transmitted in IET_Find_Order. IAT_Booking_Token and IAT_Email_Address are not used together with the other search criteria.
+- *Save order* The data to save an order are transmitted in IET_Save_Order
+- *Delete order* The order id transmitted in IET_Delete_Order
+|====
+
+.Standard workflow: Find Order
+. If the user does not posses the role WAITER, the use case ends.
+. The system searches for ETY_Order. All search criteria in IET_Find_Order need to match.
+. All resulting ETY_Order instances are provided, including the ETY_Order.ETY_Order_Line, as a paginated list.
+
+.Alternative workflow: Save Order
+. The system converts IET_Save_Order to ETY_Order.
+. The system stores ETY_Order to the database.
+. The system sends a confirmation mail to the email address specified in ETY_Order.ETY_Booking.ETY_User.
+
+.Mail Content
+----
+Subject: Order Confirmation
+Content:
+Hi <ATT_Email_Adress>
+Your order has been created.
+
+<Per Dish:>
+<ATT_Dish> x<ATT_Dish_Count>. Extras: <ATT_Extra (per Extra)> ==>. Dish Cost: <Total Price including extras>.
+
+Total Order cost: <Total Price of all dishes including extras>
+
+Link to cancel order: <Link to cancel order>
+----
+TIP: Normally, content like this should be documented as an artifact of type printout. However, in order to reduce the number of indirections, you may document it here.
+
+.Alternative workflow: Delete Order
+. The system searches for an ETY_Order using IAT_Order_ID.
+. If ETY_Order.ETY_Booking.ATT_Booking-Date is less than a configurable number of hours in the future, the system creates an appropriate error and the use case is ended.
+. The system deletes all ETY_Order.ETY_Order_Line instances.
+. The system deletes ETY_Order.
+
+
+==== Client Use Case "UC_Create_Order" ====
+
+
+[cols="v,v" options=compact]
+|====
+2+| This use case allows the creation of an order. The guest may browse the menu, select dishes and extras, view and edit his shopping cart, and send the order.
+
+|Actors | ACR_Guest, ACR_Invitee
+|Usage |Automatic
+|Preconditions |
+- The guest has ordered a table and has gotten a booking id.
+- The guest has gotten a link in an email.
+|====
+
+.Standard workflow: Booking ID
+. The user provides his booking ID and chooses to enter or change his order.
+. The system searches for the booking ID and reads the contents of the current order, displaying the status of the shopping cart (UCF_Load_Order).
+. The system presents the current menu to the user (UCF_Present_Menu)
+. For all selected dishes an drinks:
+.. The system adds the selected items, including the extras, to the shopping cart (UCF_Add_Item_to_Cart)
+. The user manages the shopping cart at any time during the order creation (UC_Manage_Shopping_Cart)
+. The user chooses to submit the order.
+. The system stores the order in the system and sends a confirmation email to the user (UC_Manage_Order, Scenario "Save Order")
+
+// end::UseCases[]
+== Data Model ==
+// tag::DataModel[]
+
+
+=== Model Component MCO_Order ===
+image::{imagesOrderManagement}mco_order.svg[caption="Figure 3: ", title="Model Component MCO_Order", alt="Model Component MCO_Order"]
+
+==== Entity Type ETY_Order ====
+ETY_Order encapsulates all dishes in combination with their extra
+ingredients for one person in a booking. Not every person in a booking needs an order.
+Especially at the creation of the booking, there will be no orders associated with it.
+
+==== Entity Type ETY_Order_Line ====
+ETY_Order_Line encapsulates one dish and all the extra ingredients selected for
+this dish. It contains in ATT_Amount the amount of the dish itself, and in ATT_Comment
+a comment for the preparation of the dish.
+
+==== Entity Type ETY_Ingredient ====
+
+ETY_Ingredient contains the possible additional ingredients for the dishes.
+They can be displayed in the menu and associated to an ETY_Order_Line instance
+to define the selected extra ingredients.
+
+// end::DataModel[]
+== External Interfaces ==
+// tag::ExternalInterfaces[]
+
+
+=== External Interface EIF_Manage_Order ===
+image::{imagesOrderManagement}eif_manage_order.svg[caption="Figure 4: ", title="External Interface EIF_Manage_Order", alt="External Interface EIF_Manage_Order"]
+
+This external interface provides the following operations using the different
+interface entity types:
+
+- Find Orders: See _UC_Manage_Order_, Scenario _Find Orders_ .
+- Delete Order: See _UC_Manage_Order_, Scenario _Delete Order_ .
+- Save Order: See _UC_Manage_Order_, Scenario _Save Order_ .
+
+// end::ExternalInterfaces[]

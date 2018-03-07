@@ -1,15 +1,15 @@
 @startuml
-:ACR_Actor_Name1: << Actor >> as ACR_Actor_Name1
-:Actor_Name2: << Actor >> as Actor_Name2
-:Actor_Name3: << Actor >> as Actor_Name3
+:ACR_Reserving_Guest: << Actor >> as ACR_Reserving_Guest
+:ACR_Invitee: << Actor >> as ACR_Invitee
+:ACR_Guest: << Actor >> as ACR_Guest
 
-:Actor_Parent: << Actor >> as Actor_Parent
-:Actor_Name4: << Actor >> as Actor_Name4
-:ACR_System_Project_Name: << Actor >> as ACR_System_Project_Name
+:ACR_User: << Actor >> as ACR_User
+:ACR_Waiter: << Actor >> as ACR_Waiter
+:ACR_System_MyThaiStar: << Actor >> as ACR_System_MyThaiStar
 
-Actor_Name3 <|-- ACR_Actor_Name1
-Actor_Name3 <|-- Actor_Name2
-Actor_Parent <|--  Actor_Name4
-Actor_Parent <|--  Actor_Name3
+ACR_Guest <|-- ACR_Reserving_Guest
+ACR_Guest <|-- ACR_Invitee
+ACR_User <|--  ACR_Waiter
+ACR_User <|--  ACR_Guest
 
 @enduml
