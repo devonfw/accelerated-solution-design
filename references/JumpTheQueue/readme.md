@@ -16,7 +16,7 @@ The documents provided in this folder are:
 
 This folder contains the low-level documentation of the Jump The Queue application. 
 
-The documents included in this folder describe technical artifacts such as:
+The documents uploaded to this folder describe technical artifacts such as:
   - Use cases, actors and Business Components. 
   - Data model including Model Components.
   - Dialogues and screens. 
