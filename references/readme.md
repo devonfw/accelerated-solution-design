@@ -1,7 +1,7 @@
 # References - Accelerated Solution Design
 
-In this folder you will find two uses cases that will allow you to understand how your application should be documented for implementing the Accelerated Solution Design.
+This folder contains 2 use cases that can be used as reference for your project. Both use cases provide sample documentation that was generated as per Accelerated Solution Design guideline.
 
-The projects that you will find here are:
-  - Jump The Queue: Application used for decreasing the waiting time of visitors in queues for any kind of events.
-  - My Thai Star: The MyThaiStar application is the online presence of a Thai restaurant called MyThaiStar restaurant.
+The purpose of Jump the Queue was to provide an application that helped users minimize the waiting time in queues. The users should be able to join several queues, which are easily managed.
+
+The purpose of My Thai Star was to improve the online presence of a restaurant by offering the guests advanced meal ordering and table booking services.
