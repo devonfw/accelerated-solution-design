@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The whole design can be written and edited by using the atom or Visual Studio Code editor with according plugins. Below you will find the explanation for how to install them.
+The whole design can be written and edited using either the Atom editor or Visual Studio Code, with according plugins. Please find below the installation instructions for both of them.
 
 ### Installation for Visual Studio Code
 
@@ -57,6 +57,4 @@ Install language-packages
 To get basic support for syntax highlighting  in plantuml and asciidoc files, you should additionally install the packages *language-plantuml* (by plafue) and *language-asciidoc* (by asciidoctor).
 
 
-## Authors
 
-* **Felix Murillo** - *Initial work*
