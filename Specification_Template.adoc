@@ -3,8 +3,29 @@ toc::[]
 
 = Specification of the _<Project_Name>_ Application =
 
-NOTE: Content inside tags like <Project_Name> should be changed by your 
-own project's information. additionally, delete all the tips before generating your document.
+NOTE: *_Handling of notes_*: _Content inside tags like <Project_Name> should be changed by your
+own project's information. additionally, delete all the tips before generating your document._
+
+NOTE: *_Content of a specification_*: _A specification contains a formalized desciption of the currently implemented portion of the application. While a story or epic describes necessary implementations to be done in the future, a specification describes the system as a whole in the current implementation state._
+
+[NOTE]
+====
+*_Usage of prefixes_*: _The artifacts (use cases, screens, interfaces, ...) of a specification shall be given a unique name (without spaces) prefixed by the type of the artifact, e.g. "ETY_Guest_Personal_Data" for an artifact of the type "Entity", where each instance of the entity contains the personal data of one guest._
+
+.The following entity types are typically used:
+- _ACO: An APPLICATION COMPONENT, a (mostly) independent part of the functionality of an application, e.g. "ACO_Customer_Management", "ACO_Invoice_Handling"_
+- _UC: A USE CASE describing the functionality of an application, grouped in application components._
+- _ACT: An ACTOR using a use case, invoking an interface etc. May be human or automated._
+- _AFU: An APPLCATION FUNCTION. While a use case is typically invoked or used by an actor, an application function is a part of the logic of a use case isolated in a seperate function in order to reduce redundancy or the complexity of use cases._
+- _BAT: A BATCH is invoked in defined intervals (minutes, months, years) to perform functionality on a large amount of data, e.g. deleting obsolete data.
+- _MCO: A MODEL COMPONENT: Entities are grouped in model components. Each model component is controlled by exactly one application component. Most often, these components correspond to each other._
+- _ETY: An ENTITY containing (most often persisted) information (see TODO)_
+- _ATT: An ATTRIBUTE inside an entity. It contains a name, a type, a description and information about its multiplicity._
+- _DTY: The data type of an attribute inside an entity._
+- _TODO ..._
+====
+
+
 
 
 _<Team_Name>_ _<Team_Email>_
@@ -80,7 +101,7 @@ TIP: Now you should explain each use case defined on your use case diagram.
 [cols="v,v" options=compact]
 |====
 2+| _<Explain here the functionalities of this use case>_
-|Actors | _<List the actors involved in this use case>_  
+|Actors | _<List the actors involved in this use case>_
 |Usage | _<Type of event that triggered it: "Automatic" if it was the system, or "Manual" if it was a user >_
 |Precondition | _<List the conditions or events needed for executing this use case>_
 |====
@@ -107,7 +128,7 @@ TIP: Make distinction between use cases related to clients (or users) and the on
 |====
 2+| _<Explain here the functionalities of this use case related to the client or user>_
 
-|Actors | _<List the actors involved in this use case>_ 
+|Actors | _<List the actors involved in this use case>_
 |Usage | _<Type of event that triggered it: "Automatic" if it was the system, or "Manual" if it was a user >_
 |Preconditions |
 _<List the conditions or events needed for executing this use case>_
@@ -132,17 +153,17 @@ _<List below the execution workflow followed by this use case.">_
 
 _<This chapter contains the data model of the application.>_
 
-TIP: This data model is primarily defined by diagrams. Textual documentation 
-is added for the entity types, attributes and relations, for which the diagrams 
+TIP: This data model is primarily defined by diagrams. Textual documentation
+is added for the entity types, attributes and relations, for which the diagrams
 are not sufficient as documentation. This should be the exception
 
-TIP: There is not only a data model for data stored in a database. If necessary, 
+TIP: There is not only a data model for data stored in a database. If necessary,
 transient internal data models may also be defined in this chapter.
 
 
 === Model Component MCO_<Component_Name> ===
 _<Insert here a diagram explaining the data model of your component. It is normally
- a class diagram that defines the attributes of each component and the entities 
+ a class diagram that defines the attributes of each component and the entities
  involved. See below an example.>_
 
 image::mco_ComponentName.svg[caption="Figure 3: ", title="Model Component MCO_<Component_Name>", alt="Model Component MCO_<Component_Name>"]
@@ -248,13 +269,13 @@ _<If necessary, list below user interaction with this dialogue.>_
 === External Interface EIF_<Action_Name>_<Component_Name> ===
 _<This section defines external interfaces required by the application or provided by the application.>_
 
-TIP: All services provided by the server application are documented here. If services 
+TIP: All services provided by the server application are documented here. If services
 are quite simple like CRUD (Create, Read, Update, Delete) services, they will be defined in diagrams alone.
 Additional documentation is supplied where needed.
 
 TIP: If an external interface is already defined and documented (most probably in the sending or receiving system),
- it does not need to be documented again: A reference to the existing documentation is sufficient. This documentation 
- may even be (within limits) technical. The benefit is, aside from the effort to document the interface, to have a 
+ it does not need to be documented again: A reference to the existing documentation is sufficient. This documentation
+ may even be (within limits) technical. The benefit is, aside from the effort to document the interface, to have a
  single source of truth for the interface.
 
 _<Insert here a diagram describing the external interfaces like the example showed below.>_
