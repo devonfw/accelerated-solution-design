@@ -10,6 +10,17 @@ NOTE: *_Content of a specification_*: _A specification contains a formalized des
 
 [NOTE]
 ====
+*_Formality of the artifacts_*: _The contents of a system are described in the form of focused and formalized artifacts (e.g. use cases, entities, interfaces). This is done in order to_
+
+- _reduce the complexity of the description._
+- _reduce the redundancy of the description and therefore contradictions._
+- _increase the level of detail and therefore the correctness per artifact._
+
+The artifacts will in many cases directly relate to the implementation, e.g. business components to packages, use cases to classes, entities to tables. Therefore, this structure enables the establishment of a ubiquitous language in the tradition of domain driven design.
+====
+
+[NOTE]
+====
 *_Usage of prefixes_*: _The artifacts (use cases, screens, interfaces, ...) of a specification shall be given a unique name (without spaces) prefixed by the type of the artifact, e.g. "ETY_Guest_Personal_Data" for an artifact of the type "Entity", where each instance of the entity contains the personal data of one guest._
 
 .The following entity types are typically used:
@@ -21,12 +32,17 @@ NOTE: *_Content of a specification_*: _A specification contains a formalized des
 - _MCO: A MODEL COMPONENT: Entities are grouped in model components. Each model component is controlled by exactly one application component. Most often, these components correspond to each other._
 - _ETY: An ENTITY containing (most often persisted) information (see TODO)_
 - _ATT: An ATTRIBUTE inside an entity. It contains a name, a type, a description and information about its multiplicity._
-- _DTY: The data type of an attribute inside an entity._
-- _TODO ..._
+- _DTY: The DATA TYPE of an attribute inside an entity._
+- _DIA: A DIALOGUE FLOW, typically supporting the functionality of a use case._
+- _SCR: A SCREEN inside a DIALOGUE FLOW, representing one page or one state of a page._
+- _PRI: A formatted PRINTOUT. Also used to define the structure of input data._
+- _EIF: An EXTERNAL INTERFACE of the system, either providing a service or using an external service._
+- _EIE: An ENTITY of an EXTERNAL INTERFACE, analogous to an entity of the data model._
+- _EIA: An ATTRIBUTE of an EXTERNAL INTERFACE._
+- _NFR: A NON-FUNCTIONAL REQUIREMENT of the system._
+
+_The usage of unique names without spaces and of these prefixes for artifacts allows to directly identify an artifact and its type._
 ====
-
-
-
 
 _<Team_Name>_ _<Team_Email>_
 
@@ -40,7 +56,11 @@ _<Team_Name>_ _<Team_Email>_
 
 == Introduction ==
 
-_<The first sections should provide an overview of the application and of the important concepts used in these applications. This information should enable the reader to comprehend the different artifacts that are described after that.>_
+_The first sections should provide an overview of the application and of the important concepts used in these applications. This information should enable the reader to comprehend the different artifacts that are described after that._
+
+NOTE: *_Purpose of the chapter_*: _This chapter must provide the context to understand the very specific artifacts (use cases, entities) defined in the following chapters. All cross cutting concepts should be defined here or in the appendix (and then be referenced here)._
+
+NOTE: *_Structure_*: _There are no rules for the structure of the introductory chapters. The focus should be to present the context with as much didactics as possible._
 
 
 === The _<Project_Name>_ application ===
@@ -54,18 +74,15 @@ _<List below the basic functionalities that your application implements for your
 - _<Explain Functionality>_
 
 == Use Cases ==
-_<This chapter contains the definition of the business logic of the application.>_
-
-
-TIP: The business logic is divided between the logic present in the services and the logic present in the client. If the logic implemented in the client is more complex than the dialogue flow, a simple service call or a confirmation dialogue, the logic may also be defined in a use case or a use case function. We differentiate between use cases in the client and service use cases using the stereotypes Client UC and Service UC
+_This chapter contains the definition of the business logic of the application. The business logic is split into business components. Each business component contains the use cases, use case functions and the batches of this business component._
 
 === Actors ===
 
-_<This chapter contains the actors using your application. They may be either technical systems or things like organizational units.>_
+_This chapter contains the actors using your application. They may be e.g. technical systems or organizational units. The benefit of defining actors is to use them in use cases, dialogues and interfaces to uniformly define who interacts with the system in what manner._
 
-TIP: Actors do not equal roles. Actors simply define the different organizational or business contexts in which the business logic is used. The roles and authorizations are defined seperateley, most often as part of the appendix.
+NOTE: *_Actors and roles_*: _Actors do not equal roles. Actors simply define the different organizational or business contexts in which the business logic is used. The roles and authorizations are defined seperateley, most often as part of the appendix._
 
-TIP: Note that each actor name contains a prefix _ACR_. Each artifact in the specification contains a prefix: This allows to easily identify the type of artifact referenced in any part of the specification.
+NOTE: *_Granularity of actors_*: _Do not define actors in a granularity that is too fine. Group organizational units it their interaction with the system is uniform. Use the actor description to define the underlying organizational units, and actors themselves to define the different kinds of interaction with the system._
 
 image::overview_actors.svg[caption="Figure 1: ", title="Actors", alt="Actors"]
 
@@ -87,15 +104,29 @@ image::overview_actors.svg[caption="Figure 1: ", title="Actors", alt="Actors"]
 // tag::UseCases[]
 
 === Business Component BCO_<Component_Name>_<Action_Name> ===
-_<Insert here a diagram explaining your component's use cases. Below you will find an example:>_
+
+[NOTE]
+====
+*_Business Components_*: _The business logic of an application is typically quite complex. In order to specify and implement it in a sustainable way, the business logic needs to be structured. As a first step, different areas of functionality that are largely independent from each other are identified. These areas shall be business components. In the implemented system, functionality of one component may only access the functionality of other components using a well defined interface. This keeps a growing complexity at bay and allows for a focused definition of the functionality._
+
+
+_Examples for business components could be business logging, printout creation, order handling or user administration._
+====
+
+NOTE: *_Business components and data_*: _Typically, a business component controls a number of entities in the database (the entities of a corresponding_ *_model component_*). _This data is only written (and in many cases only read) by the functionality of the business component. This is called the secrecy principle of a business component: Only the component itself knows about the details of its functionality and its data, making the whole application thereby easier to maintain._
+
 
 image::business_component_ComponentName_management.svg[caption="Figure 2: ", title="Business Component _<Component_Name>_ <Action_Name>", alt="Business Component _<Component_Name>_ <Action_Name>"]
 
-_<Explain here your component and its functionality>_
+_Explain here your component and its functionality_
 
-TIP: Now you should explain each use case defined on your use case diagram.
+_You should explain each use case defined on your use case diagram._
 
 ==== Service Use Case "UC_<Action_Name>_<Component_Name>" ====
+
+NOTE: *_Use Cases_*: _The functionality of a business component is still to complex to define in one artifact. Therefore, independent parts of the functionality need to be identified. Typically, this is done by identifying different ways to interact with the system. Each usage of the system that provides a benefit for a (potentially non-human) actor may be a_ *_use case_* _of the system._ 
+
+NOTE: *_Client (service) and server use cases_*: _The business logic is divided between the logic present in the services and the logic present in the client. If the logic implemented in the client is more complex than the dialogue flow, a simple service call or a confirmation dialogue, the logic may also be defined in a use case or a use case function. We differentiate between use cases in the client and service use cases using the stereotypes Client UC and Service UC_
 
 
 [cols="v,v" options=compact]
