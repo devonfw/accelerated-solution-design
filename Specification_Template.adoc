@@ -16,7 +16,7 @@ NOTE: *_Content of a specification_*: _A specification contains a formalized des
 - _reduce the redundancy of the description and therefore contradictions._
 - _increase the level of detail and therefore the correctness per artifact._
 
-The artifacts will in many cases directly relate to the implementation, e.g. business components to packages, use cases to classes, entities to tables. Therefore, this structure enables the establishment of a ubiquitous language in the tradition of domain driven design.
+_The artifacts will in many cases directly relate to the implementation, e.g. business components to packages, use cases to classes, entities to tables. Therefore, this structure enables the establishment of a ubiquitous language in the tradition of domain driven design._
 ====
 
 [NOTE]
@@ -44,6 +44,20 @@ The artifacts will in many cases directly relate to the implementation, e.g. bus
 _The usage of unique names without spaces and of these prefixes for artifacts allows to directly identify an artifact and its type._
 ====
 
+[NOTE]
+====
+*_Naming:_* _All Artifacts except components, entities and attributes (both in the data model and in interfaces) should be named with a verb followed by a noun, e.g._ DIA_Manage_User._
+
+_Entities (both for the data model and for interfaces shall be named after the contents of a single instance of the entitiy. E.g., an entity containing all users of the system should be called ETY_User,_ *_not_* _ETY_Users, ETY_User_Directory or something similar._
+
+_Attributes shall also be named according to a single value of the attribute, even if they are multi-valued. E.g., a multi-valued attribute for telephone numbers shall be named ATT_Telephone_Number,_ *_not_* _ATT_Telephone_Numbers._
+
+_Components (both for use cases and for the data model) shall not contain verbs, but describe the contents. E.g. BCO_Business_Log_Management._
+
+_A few artifacts will not fit into this schema.For these, exceptions shall be made._
+====
+
+
 _<Team_Name>_ _<Team_Email>_
 
 :toc:
@@ -62,9 +76,7 @@ NOTE: *_Purpose of the chapter_*: _This chapter must provide the context to unde
 
 NOTE: *_Structure_*: _There are no rules for the structure of the introductory chapters. The focus should be to present the context with as much didactics as possible._
 
-
-=== The _<Project_Name>_ application ===
-The _<Project_Name>_ application allows users to:
+The <Project_Name> application allows users to:
 
 _<List below the basic functionalities that your application implements for your customer or user>_
 
@@ -73,6 +85,28 @@ _<List below the basic functionalities that your application implements for your
 - _<Explain Functionality>_
 - _<Explain Functionality>_
 
+
+=== Architectural overview ===
+
+_Describe a brief architectural overview._
+
+[NOTE]
+====
+*_Goal of the architectural overview:_* _The architectural overview describes the integration of the specified application into the application landscape of the customer. It identifies the neighboring systems and displays its interfaces._
+
+_The architectural overview should be brief and clearly structured. A good overview diagram will show the placement of the application and will provide an impression of the complexity of the project._
+====
+
+
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+
+
 == Use Cases ==
 _This chapter contains the definition of the business logic of the application. The business logic is split into business components. Each business component contains the use cases, use case functions and the batches of this business component._
 
@@ -80,9 +114,11 @@ _This chapter contains the definition of the business logic of the application. 
 
 _This chapter contains the actors using your application. They may be e.g. technical systems or organizational units. The benefit of defining actors is to use them in use cases, dialogues and interfaces to uniformly define who interacts with the system in what manner._
 
-NOTE: *_Actors and roles_*: _Actors do not equal roles. Actors simply define the different organizational or business contexts in which the business logic is used. The roles and authorizations are defined seperateley, most often as part of the appendix._
+NOTE: *_Actors and roles_*: _Actors do not equal roles (in the context of access control). Actors simply define the different organizational or business contexts in which the business logic is used. The roles and authorizations are defined seperateley, most often as part of the appendix._
 
-NOTE: *_Granularity of actors_*: _Do not define actors in a granularity that is too fine. Group organizational units it their interaction with the system is uniform. Use the actor description to define the underlying organizational units, and actors themselves to define the different kinds of interaction with the system._
+NOTE: *_Actors and tools_*: _If an actor uses a tool to access the system (like a browser or a client), the actor is still the user and not the tool he used. The modeling of human actors should be preferred._
+
+NOTE: *_Granularity of actors_*: _Do not define actors in a granularity that is too fine. Group very detailed organizational units it their interaction with the system is uniform. Use the actor description to define the underlying organizational units, and actors themselves to define the different kinds of interaction with the system._
 
 image::overview_actors.svg[caption="Figure 1: ", title="Actors", alt="Actors"]
 
@@ -124,14 +160,31 @@ _You should explain each use case defined on your use case diagram._
 
 ==== Service Use Case "UC_<Action_Name>_<Component_Name>" ====
 
-NOTE: *_Use Cases_*: _The functionality of a business component is still to complex to define in one artifact. Therefore, independent parts of the functionality need to be identified. Typically, this is done by identifying different ways to interact with the system. Each usage of the system that provides a benefit for a (potentially non-human) actor may be a_ *_use case_* _of the system._ 
+NOTE: *_Use Cases_*: _The functionality of a business component is still to complex to define in one artifact. Therefore, independent parts of the functionality need to be identified. Typically, this is done by identifying different ways to interact with the system. Roughly put, each usage pattern of the system that provides a benefit for a (potentially non-human) actor may be a_ *_use case_* _of the system._
 
-NOTE: *_Client (service) and server use cases_*: _The business logic is divided between the logic present in the services and the logic present in the client. If the logic implemented in the client is more complex than the dialogue flow, a simple service call or a confirmation dialogue, the logic may also be defined in a use case or a use case function. We differentiate between use cases in the client and service use cases using the stereotypes Client UC and Service UC_
+NOTE: *_Client and service use cases_*: _The business logic is divided between the logic present in the services and the logic present in the client. If the logic implemented in the client is more complex than the dialogue flow, a simple service call or a confirmation dialogue, the logic may also be defined in a use case or a use case function (see below). We differentiate between use cases in the client and service use cases using the stereotypes Client UC and Service UC._
+
+[NOTE]
+====
+*_Use cases and use case functions_*: _As described above, a use case typically represents an interaction with the system that in itself provides a benefit for the actor. In some situations, part of the logic of a use case is defined in a_ use case function, _that is used by the use case. This is done if_
+
+- _the use case is complex and it is necessary to reduce its complexity._
+- _the part of the use case is used often and shall be implemented only once._
+
+_A use case function is defined just like a normal use case, but without the naming of an actor: This use case is not used by an actor, but by another use case function or another use case._
+====
+
+[NOTE]
+====
+*_Granularity of use cases and use case steps:_* _Do not define the use cases on a very fine granularity: E.g., do not create one use case to search for a customer per search criterion. Instead, create one use case with different input data or different scenarios for different criteria. Otherwise, the use cases will contain many equal steps, which will over time differ and create an inconsistent system._
+
+_Be careful concerning the level of detail for the individual use case steps. Functionality like the general validation of input data could also be specified in the datatypes or in a cross sectional section._
+====
 
 
 [cols="v,v" options=compact]
 |====
-2+| _<Explain here the functionalities of this use case>_
+2+| _<Explain here the goal of this use case>_
 |Actors | _<List the actors involved in this use case>_
 |Usage | _<Type of event that triggered it: "Automatic" if it was the system, or "Manual" if it was a user >_
 |Precondition | _<List the conditions or events needed for executing this use case>_
@@ -149,15 +202,15 @@ _<List below the execution workflow followed by this use case.>_
 . _<Explain step>_
 . _<Explain step>_
 
-TIP:  If this use case contains sub-use cases, then state their workflows too. For instance, manage order contains: find order, save order and delete order.
+TIP:  Do not forget small and atomic use cases. These need to be implemented and therefore named here. For instance, manage order contains: find order, save order and delete order.
 
 ==== Client Use Case "UC_Create_<Component_Name>" ====
 
-TIP: Make distinction between use cases related to clients (or users) and the ones related to the system.
+TIP: Make distinction between use cases related to clients and the ones related to the system.
 
 [cols="v,v" options=compact]
 |====
-2+| _<Explain here the functionalities of this use case related to the client or user>_
+2+| _<Explain here the goal of this use case related to the client or user>_
 
 |Actors | _<List the actors involved in this use case>_
 |Usage | _<Type of event that triggered it: "Automatic" if it was the system, or "Manual" if it was a user >_
@@ -177,7 +230,48 @@ _<List below the execution workflow followed by this use case.">_
 . _<Explain step>_
 . _<Explain step>_
 
+
+==== Batch "UC_Create_<Component_Name>" ====
+
+NOTE: *_Batches_*: _Aside from user interaction via the GUI or the automatic interfaces, business logic is also executed in the form of a regularly or ad-hoc executed batch. A batch typically handles a larger amount of data sets, e.g. sending reminders or deleting obsolete data sets. Batches are modeled similar to use cases, but have slightly different metadata (e.g. configuration, dependencies, data volume)._
+
+
+[cols="v,v" options=compact]
+|====
+2+| _<Explain here the goal of the batch_
+|Preconditions/Event| _Which criteria need to be fullfilled in order to execute the batch?_
+|Results | _Which results can the batch have? Which situation exists after the batch execution?_
+|Expected data volume| _If known: How many data sets will be (roughly) processed in the mean?_
+|Restart-Functionality| _If known: Can the batch be restarted at a point it broke off?_
+|====
+
+_<List below the execution workflow followed by this batch.">_
+
+.Standard workflow: _<Event_Name1>_
+. _<Explain step>_
+. _<Explain step>_
+. _<Explain step>_
+
+.Alternative workflow: _<Event_Name2>_
+. _<Explain step>_
+. _<Explain step>_
+. _<Explain step>_
+
+
+
+
+
+
+
 // end::UseCases[]
+
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
 
 == Data Model ==
 // tag::DataModel[]
@@ -212,7 +306,23 @@ _<Explain here the attributes of this entity, what encapsulates and in which cas
 // end::DataModel[]
 
 
-== Dialogue ==
+
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+
+== Dialogues ==
+
+[NOTE]
+====
+*_Dialogues and screens_*: _A "dialogue" defines the whole user interface used by a use case (screens, states, transitions). The description of the dialogue should if possible be self-containing and not rely on other dialogues._
+
+_A "screen" is a screen area necessary to perform a steps of a use-case, e.g. a window or a (part of a) web page. A single page application may be specified in different screens depending on the state it is in._
+====
 
 _<This chapter contains the description of the user interface.>_
 
@@ -223,114 +333,131 @@ _<List below all the dialogues of your application.>_
 - *_<Dialogue_Name>_* _<Describe briefly the dialogue.>_
 - *_<Dialogue_Name>_* _<Describe briefly the dialogue.>_
 
-TIP: The client flows are specified as dialogues and screens. Dialogues contain the flow between the screens. In current clients, the same screens are used in very different forms for different purposes. In this case, one "dialogue screen" may be represented in multiple screens in the documentation.
+NOTE: *_Client flows:_* _The client flows are specified as dialogues and screens. Dialogues contain the flow between the screens. In current clients, the same screens are used in very different forms for different purposes. In this case, one "dialogue screen" may be represented in multiple screens in the documentation._
 
-TIP: The screens can be documented mostly by mockups or screenshots. The different elements of the screens need to be documented if they are not self explanatory or invoke any kind of business functionality.
 
-=== Dialogue areas and mechanisms ===
+=== Cross sectional: Dialogue areas and mechanisms ===
 
-_<This chapter contains cross-sectional elements and mechanisms of the client.>_
-
-TIP: Cross-sectional topics do not need to be documented for each screen. They can be documented cross-sectional.
-
-==== _<Dialogue_Name>_ ====
-
-_<Explain briefly the purpose of your dialogue.>_
-
-_<Insert here a figure showing the dialogue.>_
-
-It contains
-
-- _<Explain each element of the dialogue and if its a link, to which screen it is directing to.>_
-- _<Explain each element of the dialogue and if its a link, to which screen it is directing to.>_
-- _<Explain each element of the dialogue and if its a link, to which screen it is directing to.>_
-- _<Explain each element of the dialogue and if its a link, to which screen it is directing to.>_
-
-_<If necessary, list below the user interaction with this dialogue.>_
-
-. _<Explain first step of user interaction.>_
-. _<Explain second step of user interaction.>_
-. _<Explain third step of user interaction.>_
-.. _<Explain system response to the user if everything went well.>_
-.. _<Explain system response to the user if something went wrong.>_
-
-TIP: Not every dialogue has to be documented in the same way, it will depend on what you think is important.
-
+_This chapter contains cross-sectional elements and mechanisms of the client. Cross-sectional topics do not need to be documented for each screen. They can be documented in this section before the different dialogues._
 
 === Dialogue DIA_<Dialogue_Name> ===
 
-The dialogue flow of this dialogue is shown in the next image:
+
+_The dialogue flow should be presented in an image like the following._
 
 image::DIA_Main_Screen_and_User_Management.svg[caption="Figure 3: ", title="DIA_<Dialogue_Name>", alt="DIA_<Dialogue_Name>"]
 
-_<Briefly explain the purpose of this dialogue.>_
+_Briefly explain the purpose of this dialogue. Describe the dependencies between the screens and the possibilities to navigate between them._
 
-TIP: Now you should document every screen and dialogue that involves the dialogue you just explained. Repeat this process for every important dialogue.
 
-==== Screen SCR_Main_Screen ====
+NOTE: Not every dialogue has to be documented in the same way, it will depend on what you think is important.
 
-_<Insert here a figure showing the screen.>_
 
-_<List below the dialogues that are entered from this screen:>_
+==== Screen SCR_<Screen_Name> ====
 
-- DIA_<Dialogue_Name1> is reached using the link _<Link_Name>_.
-- DIA_<Dialogue_Name2> is reached using the link _<Link_Name>_.
-- DIA_<Dialogue_Name3> and DIA_<Dialogue_Name4> are reached by their corresponding links for users with the role _<Role_Name>_.
+_Describe the goal of the screen in very few sentences._
 
-_<Explain here how this screen can be reached.>_
+[NOTE]
+====
+*_References to the data model:_* _If it is helpful, describe the relationship between a screen and the entities of the data model in a
 
-==== Screen SCR_<Screen_Name1> ====
+image::scr_entity_relationship.svg[caption="Figure 4: ", title="Screen SCR_<Screen_Name>: Entity Relationship", alt="Screen SCR_<Screen_Name>: Entity Relationship"]
+====
 
-_<Insert here a figure showing the screen.>_
+[NOTE]
+====
+*_Mockups and screenshots:_* _The screens can be documented mostly by mockups or screenshots. The different elements of the screens need to be documented if they are not self explanatory or invoke any kind of business functionality._
 
-_<Briefly explain the purpose of this screen.>_
+image::SCR_User_Login.png[caption="Figure 5: ", title="Screen SCR_<Screen_Name>: Screenshot", alt="Screen SCR_<Screen_Name>: Screenshot"]
+====
 
-_<If necessary, list below user interaction with this dialogue.>_
+_Describe the elements of the screen that are not self explanatory. There are no rules for the description._
 
-. _<Step 1 of interaction.>_
-. _<Step 2 of interaction.>_
-. _<Step 3 of interaction.>_
-. _<Step 4 of interaction.>_
+NOTE: *_business logic in screens:_* _Very limited business logic can be defined directly in the screen (e.g. a verification dialogue or a very simple call to a service). For other logic a use case or use case function should be referenced._
 
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+
+== Printouts ==
+_Use this section if you are either creating complex formatted printouts, or if you have to define the structure of formatted input data that is not externally defined. Otherwise, delete it._
+
+
+[NOTE]
+====
+*_External definition:_* _The definition of printout will typically happen in an external document (e.g. a spreadsheet or a Word/Writer document). This section contains sections for each printout._
+
+_In these sections, the goal of the different workouts are defined. Additionally, the external documents containing the detailed definitions are referenced._
+====
+
+=== Printout PRI_Reminder_Email_2_Weeks_Notice ===
+
+_Describe the goal of the printout and reference the external document defining the contents._
+
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
 
 == External Interfaces ==
 // tag::ExternalInterfaces[]
+_This section defines_ *_provided_* _external interfaces of the system itself that provide functionality as well as_ *_required_* _external interfaces necessary for the functionality of the system._
 
+[NOTE]
+====
+*_Level of detail:_* _Do not define an external interface, if it is already defined elsewhere. This includes rather technical documentation like xml schemas or swagger docs. There should be one source of truth for the external interfaces._
 
-=== External Interface EIF_<Action_Name>_<Component_Name> ===
-_<This section defines external interfaces required by the application or provided by the application.>_
+_If an external documentation exists, simply describe the goal of the interface and reference the external document. Even detailed diagrams should be omitted._
+====
 
-TIP: All services provided by the server application are documented here. If services
+=== Provided external interfaces ===
+
+==== External Interface EIF_<Action_Name>_<Component_Name> ====
+_This section defines external interfaces required by the application or provided by the application._
+
+NOTE: *_Technical interfaces:_* _All services provided and required by the server application are documented here. If services
 are quite simple like CRUD (Create, Read, Update, Delete) services, they will be defined in diagrams alone.
-Additional documentation is supplied where needed.
+Additional documentation is supplied where needed._
 
-TIP: If an external interface is already defined and documented (most probably in the sending or receiving system),
- it does not need to be documented again: A reference to the existing documentation is sufficient. This documentation
- may even be (within limits) technical. The benefit is, aside from the effort to document the interface, to have a
- single source of truth for the interface.
-
-_<Insert here a diagram describing the external interfaces like the example showed below.>_
+_Insert here a diagram describing the external interfaces like the example showed below._
 
 image::eif_manage_ComponentName.svg[caption="Figure 4: ", title="External Interface EIF_<Action_Name>_<Component_Name>", alt="External Interface EIF_<Action_Name>_<Component_Name>"]
 
 This external interface provides the following operations using the different
 interface entity types:
 
-- _<Event_Name1>_: See UC_<Action_Name>_<Component_Name>, Scenario _<Event_Name1>_ .
-- _<Event_Name2>_: See UC_<Action_Name>_<Component_Name>, Scenario _<Event_Name2>_ .
-- _<Event_Name3>_: See UC_<Action_Name>_<Component_Name>, Scenario _<Event_Name3>_ .
+- _<Operation 1>_: See UC_<Action_Name>_<Component_Name>, Scenario _<Event_Name1>_ .
+- _<Operation 2>_: See UC_<Action_Name>_<Component_Name>, Scenario _<Event_Name2>_ .
+- _<Operation 3>_: See UC_<Action_Name>_<Component_Name>, Scenario _<Event_Name3>_ .
 
 // end::ExternalInterfaces[]
 
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////
 
 == Appendix ==
 
-TIP: The appendix contains information not provided in the introduction or the artifacts of the specification method. It may contain, among other contents: +
- +
-- roles and authorization details +
-- business logging details +
-- static data +
-- business logging and protocol information +
+[NOTE]
+====
+The appendix contains information not provided in the introduction or the artifacts of the specification method. It may contain, among other contents:
+
+- roles and authorization details
+- business logging details
+- static data
+- business logging and protocol information
+====
 
 === Terms and definitions ===
 
