@@ -27,10 +27,10 @@ _The artifacts will in many cases directly relate to the implementation, e.g. bu
 - _ACO: An APPLICATION COMPONENT, a (mostly) independent part of the functionality of an application, e.g. "ACO_Customer_Management", "ACO_Invoice_Handling"_
 - _UC: A USE CASE describing the functionality of an application, grouped in application components._
 - _ACT: An ACTOR using a use case, invoking an interface etc. May be human or automated._
-- _AFU: An APPLCATION FUNCTION. While a use case is typically invoked or used by an actor, an application function is a part of the logic of a use case isolated in a seperate function in order to reduce redundancy or the complexity of use cases._
+- _AFU: An APPLCATION FUNCTION. While a use case is typically invoked or used by an actor, an application function is a part of the logic of a use case isolated in a seperate function in order to reduce redundancy or the complexity of use cases. Use Case Functions are often called more than once within a single UseCase._
 - _BAT: A BATCH is invoked in defined intervals (minutes, months, years) to perform functionality on a large amount of data, e.g. deleting obsolete data.
 - _MCO: A MODEL COMPONENT: Entities are grouped in model components. Each model component is controlled by exactly one application component. Most often, these components correspond to each other._
-- _ETY: An ENTITY containing (most often persisted) information (see TODO)_
+- _ETY: An ENTITY containing (most often persisted) information (see Chapter "Data Model")_
 - _ATT: An ATTRIBUTE inside an entity. It contains a name, a type, a description and information about its multiplicity._
 - _DTY: The DATA TYPE of an attribute inside an entity._
 - _DIA: A DIALOGUE FLOW, typically supporting the functionality of a use case._
@@ -92,7 +92,7 @@ _Describe a brief architectural overview._
 
 [NOTE]
 ====
-*_Goal of the architectural overview:_* _The architectural overview describes the integration of the specified application into the application landscape of the customer. It identifies the neighboring systems and displays its interfaces._
+*_Goal of the architectural overview:_* _The architectural overview describes the integration of the specified application into the application landscape of the customer. It identifies the neighboring systems and displays their interfaces. The application is briefly described with its different business components. This can be visualized by using a component diagram._
 
 _The architectural overview should be brief and clearly structured. A good overview diagram will show the placement of the application and will provide an impression of the complexity of the project._
 ====
@@ -126,15 +126,15 @@ image::overview_actors.svg[caption="Figure 1: ", title="Actors", alt="Actors"]
 |====================
 | Actor |  Description
 | ACR_<Actor_Parent> |
-- _<Description of the actor and its role on your application.>_
+- _<Description of the actor, its business goal and its role on your application.>_
 | ACR_<Actor_Name1> |
-- _<Description of the actor and its role on your application.>_
+- _<Description of the actor, its business goal and its role on your application.>_
 | ACR_<Actor_Name2> |
-- _<Description of the actor and its role on your application.>_
+- _<Description of the actor, its business goal and its role on your application.>_
 | ACR_<Actor_Name3> |
-- _<Description of the actor and its role on your application.>_
+- _<Description of the actor, its business goal and its role on your application.>_
 | ACR_System_<Project_Name> |
-- _<Description of the actor and its role on your application.>_
+- _<Description of the actor, its business goal and its role on your application.>_
 |====================
 
 // tag::UseCases[]
@@ -143,13 +143,15 @@ image::overview_actors.svg[caption="Figure 1: ", title="Actors", alt="Actors"]
 
 [NOTE]
 ====
-*_Business Components_*: _The business logic of an application is typically quite complex. In order to specify and implement it in a sustainable way, the business logic needs to be structured. As a first step, different areas of functionality that are largely independent from each other are identified. These areas shall be business components. In the implemented system, functionality of one component may only access the functionality of other components using a well defined interface. This keeps a growing complexity at bay and allows for a focused definition of the functionality._
+*_Business Components_*: _The business logic of an application is typically quite complex. In order to specify and implement it in a sustainable way, the business logic needs to be structured. As a first step, different areas of functionality that are largely independent from each other are identified. These areas shall be business components. In the implemented system, functionality of one component may only access the functionality of other components using a well defined interfaces. This keeps a growing complexity at bay and allows for a focused definition of the functionality._
 
 
 _Examples for business components could be business logging, printout creation, order handling or user administration._
 ====
 
 NOTE: *_Business components and data_*: _Typically, a business component controls a number of entities in the database (the entities of a corresponding_ *_model component_*). _This data is only written (and in many cases only read) by the functionality of the business component. This is called the secrecy principle of a business component: Only the component itself knows about the details of its functionality and its data, making the whole application thereby easier to maintain._
+
+NOTE: *_Use case diagram_*: _For each component, a use case diagram should be used to give an overview of all use cases of the component and the relationship between the actors and the use cases._
 
 
 image::business_component_ComponentName_management.svg[caption="Figure 2: ", title="Business Component _<Component_Name>_ <Action_Name>", alt="Business Component _<Component_Name>_ <Action_Name>"]
@@ -171,7 +173,7 @@ NOTE: *_Client and service use cases_*: _The business logic is divided between t
 - _the use case is complex and it is necessary to reduce its complexity._
 - _the part of the use case is used often and shall be implemented only once._
 
-_A use case function is defined just like a normal use case, but without the naming of an actor: This use case is not used by an actor, but by another use case function or another use case._
+_A use case function is defined just like a normal use case, but without the naming of an actor: This use case is not used by an actor, but is invoked by another use case function or another use case._
 ====
 
 [NOTE]
@@ -181,6 +183,10 @@ _A use case function is defined just like a normal use case, but without the nam
 _Be careful concerning the level of detail for the individual use case steps. Functionality like the general validation of input data could also be specified in the datatypes or in a cross sectional section._
 ====
 
+[NOTE]
+====
+*_standard workflow and alternative workflow_*: _Special cases during the execution of complex use cases should not be addressed too early. This can be achieved by describing the standard workflow and its steps first and describing alternative workflows with references to the according steps in the standard workflow afterwards. Defining alternative workflows is optional._
+====
 
 [cols="v,v" options=compact]
 |====
@@ -203,6 +209,8 @@ _<List below the execution workflow followed by this use case.>_
 . _<Explain step>_
 
 TIP:  Do not forget small and atomic use cases. These need to be implemented and therefore named here. For instance, manage order contains: find order, save order and delete order.
+
+TIP: Very complex use cases with a large number of steps involved can be visualized by using a UML activity diagram which contains all the steps and all the use case functions called.
 
 ==== Client Use Case "UC_Create_<Component_Name>" ====
 
@@ -257,12 +265,6 @@ _<List below the execution workflow followed by this batch.">_
 . _<Explain step>_
 . _<Explain step>_
 
-
-
-
-
-
-
 // end::UseCases[]
 
 // ///////////////////////////////////////////////////////////
@@ -275,6 +277,10 @@ _<List below the execution workflow followed by this batch.">_
 
 == Data Model ==
 // tag::DataModel[]
+
+NOTE: *_Data Model_*: _The data model describes the business-view of the data of the system. large data models are split into different model components. These model components do not overlap so that each entity type belongs to exactly one model component._
+
+NOTE: *_Data types_*: _The data model has its focus on the business view of the application. It is not necessary that the data types correspond to those used in application code. Instead we use more generic data types such as "date", "text", "number". If the data type is not self-explanatory and relevant to one of the specified business functions, describe it in detail in a table below the data model._
 
 _<This chapter contains the data model of the application.>_
 
@@ -297,6 +303,10 @@ TIP: Use the sufix ATT_ for defining attributes, entities with ETY_ and MCO_ for
 
 _<List below the entities shown on the diagram:>_
 
+NOTE: *_Omitting entity types_*: _Not every entity type has to be described in detail. Their name , their attributes as well as their relations to other entities should already be described in the UML diagram of the component. Use additional descriptions only if necessary._
+
+NOTE: *_Attribute description_*: _Each attribute and its data type should already be visualized in one of the component models. Therefore it is not necessary to describe each attribute in detail. Nevertheless, some attributes make an additional explanation necessary (for example when using non-standard data types with business relevance). In this case, an additional table with attribute-name, data-type and description should be used._
+
 ==== Entity Type ETY_<Entity_Name1> ====
 _<Explain here the attributes of this entity, what encapsulates and in which case it is needed.>_
 
@@ -304,8 +314,6 @@ _<Explain here the attributes of this entity, what encapsulates and in which cas
 _<Explain here the attributes of this entity, what encapsulates and in which case it is needed.>_
 
 // end::DataModel[]
-
-
 
 // ///////////////////////////////////////////////////////////
 // ///////////////////////////////////////////////////////////
