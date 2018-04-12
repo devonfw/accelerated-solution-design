@@ -46,7 +46,7 @@ _The usage of unique names without spaces and of these prefixes for artifacts al
 
 [NOTE]
 ====
-*_Naming:_* _All Artifacts except components, entities and attributes (both in the data model and in interfaces) should be named with a verb followed by a noun, e.g._ DIA_Manage_User._
+*_Naming:_* _All Artifacts except components, entities and attributes (both in the data model and in interfaces) should be named with a verb followed by a noun, e.g._ DIA_Manage_User_
 
 _Entities (both for the data model and for interfaces shall be named after the contents of a single instance of the entitiy. E.g., an entity containing all users of the system should be called ETY_User,_ *_not_* _ETY_Users, ETY_User_Directory or something similar._
 
@@ -114,11 +114,11 @@ _This chapter contains the definition of the business logic of the application. 
 
 _This chapter contains the actors using your application. They may be e.g. technical systems or organizational units. The benefit of defining actors is to use them in use cases, dialogues and interfaces to uniformly define who interacts with the system in what manner._
 
-NOTE: *_Actors and roles_*: _Actors do not equal roles (in the context of access control). Actors simply define the different organizational or business contexts in which the business logic is used. The roles and authorizations are defined seperateley, most often as part of the appendix._
+NOTE: *_Actors and roles_*: _Actors do not equal roles (in the context of access control). Actors simply define the different organizational or business contexts in which the business logic is used. The roles and authorizations are defined separately, most often as part of the appendix._
 
 NOTE: *_Actors and tools_*: _If an actor uses a tool to access the system (like a browser or a client), the actor is still the user and not the tool he used. The modeling of human actors should be preferred._
 
-NOTE: *_Granularity of actors_*: _Do not define actors in a granularity that is too fine. Group very detailed organizational units it their interaction with the system is uniform. Use the actor description to define the underlying organizational units, and actors themselves to define the different kinds of interaction with the system._
+NOTE: *_Granularity of actors_*: _Do not define actors in a granularity that is too fine. Group very detailed organizational units if their interaction with the system is uniform. Use the actor description to define the underlying organizational units, and actors themselves to define the different kinds of interaction with the system._
 
 image::overview_actors.svg[caption="Figure 1: ", title="Actors", alt="Actors"]
 
@@ -143,7 +143,7 @@ image::overview_actors.svg[caption="Figure 1: ", title="Actors", alt="Actors"]
 
 [NOTE]
 ====
-*_Business Components_*: _The business logic of an application is typically quite complex. In order to specify and implement it in a sustainable way, the business logic needs to be structured. As a first step, different areas of functionality that are largely independent from each other are identified. These areas shall be business components. In the implemented system, functionality of one component may only access the functionality of other components using a well defined interfaces. This keeps a growing complexity at bay and allows for a focused definition of the functionality._
+*_Business Components_*: _The business logic of an application is typically quite complex. In order to specify and implement it in a sustainable way, the business logic needs to be structured. As a first step, different areas of functionality that are largely independent from each other are identified. These areas shall be business components. In the implemented system, functionality of one component may only access the functionality of other components using well defined interfaces. This keeps a growing complexity at bay and allows for a focused definition of the functionality._
 
 
 _Examples for business components could be business logging, printout creation, order handling or user administration._
@@ -162,7 +162,7 @@ _You should explain each use case defined on your use case diagram._
 
 ==== Service Use Case "UC_<Action_Name>_<Component_Name>" ====
 
-NOTE: *_Use Cases_*: _The functionality of a business component is still to complex to define in one artifact. Therefore, independent parts of the functionality need to be identified. Typically, this is done by identifying different ways to interact with the system. Roughly put, each usage pattern of the system that provides a benefit for a (potentially non-human) actor may be a_ *_use case_* _of the system._
+NOTE: *_Use Cases_*: _The functionality of a business component is still too complex to be defined in one artifact. Therefore, independent parts of the functionality need to be identified. Typically, this is done by identifying different ways to interact with the system. Roughly put, each usage pattern of the system that provides a benefit for a (potentially non-human) actor may be a_ *_use case_* _of the system._
 
 NOTE: *_Client and service use cases_*: _The business logic is divided between the logic present in the services and the logic present in the client. If the logic implemented in the client is more complex than the dialogue flow, a simple service call or a confirmation dialogue, the logic may also be defined in a use case or a use case function (see below). We differentiate between use cases in the client and service use cases using the stereotypes Client UC and Service UC._
 
@@ -246,7 +246,7 @@ NOTE: *_Batches_*: _Aside from user interaction via the GUI or the automatic int
 
 [cols="v,v" options=compact]
 |====
-2+| _<Explain here the goal of the batch_
+2+| _<Explain here the goal of the batch>_
 |Preconditions/Event| _Which criteria need to be fullfilled in order to execute the batch?_
 |Results | _Which results can the batch have? Which situation exists after the batch execution?_
 |Expected data volume| _If known: How many data sets will be (roughly) processed in the mean?_
@@ -367,7 +367,7 @@ _Describe the goal of the screen in very few sentences._
 
 [NOTE]
 ====
-*_References to the data model:_* _If it is helpful, describe the relationship between a screen and the entities of the data model in a
+*_References to the data model:_* _If it is helpful, describe the relationship between a screen and the entities of the data model in a_
 
 image::scr_entity_relationship.svg[caption="Figure 4: ", title="Screen SCR_<Screen_Name>: Entity Relationship", alt="Screen SCR_<Screen_Name>: Entity Relationship"]
 ====
