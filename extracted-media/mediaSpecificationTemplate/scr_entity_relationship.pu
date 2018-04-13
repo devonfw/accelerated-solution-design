@@ -1,0 +1,11 @@
+@startuml
+allow_mixing
+component "<<Screen>>\nSCR_<Screen_Name>"
+
+package "MCO_User_Management" {
+  class "ETY_User" as User <<Entity>>
+}
+
+"<<Screen>>\nSCR_<Screen_Name>" ..> User : <<writes entity>>
+
+@enduml
