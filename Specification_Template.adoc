@@ -402,7 +402,7 @@ _Use this section if you are either creating complex formatted printouts, or if 
 _In these sections, the goal of the different workouts are defined. Additionally, the external documents containing the detailed definitions are referenced._
 ====
 
-=== Printout PRI_Reminder_Email_2_Weeks_Notice ===
+=== Printout PRI_<Printout-Name> ===
 
 _Describe the goal of the printout and reference the external document defining the contents._
 
