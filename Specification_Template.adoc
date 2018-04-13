@@ -404,6 +404,8 @@ _In these sections, the goal of the different workouts are defined. Additionally
 
 === Printout PRI_<Printout-Name> ===
 
+TIP: If the printout is related to exactly one screen, the names should be aligned accordingly. E.g. SCR_Order_List and PRI_Order_List.
+
 _Describe the goal of the printout and reference the external document defining the contents._
 
 // ///////////////////////////////////////////////////////////
