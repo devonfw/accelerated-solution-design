@@ -19,7 +19,7 @@ For getting the live-previews of the whole documentation as well as the uml-diag
      > Remember to reload Visual Studio.   
 
 3. To check if it worked, open an AsciiDoc file and activate the extension in one of these three ways:
-   - Toggle Preview - ctrl+shift+r
+   - Toggle Preview - ctrl+shift+r (or ctrl+k v in newer versions)
    - Open Preview to the Side - ctrl+k r
    - View symbols - go to symbol action - ctrl+shift+o, select a heading.
 
