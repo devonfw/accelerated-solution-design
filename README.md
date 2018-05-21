@@ -6,7 +6,7 @@
 
 The purpose of this space is to give an overview of the Devon methodology or Accelerated Solution Design and how we can apply this model to build the solution with the use of Devon framework.
 
-For a presentation about this topic see [Accelerated Solution Design - pdf version](https://github.com/devonfw/devon-methodology/blob/master/ASD_Presentation.pdf) or [the Powerpoint version](https://github.com/devonfw/devon-methodology/blob/master/ASD_Presentation.pptx)
+For a presentation about this topic see [Accelerated Solution Design - pdf version](https://github.com/devonfw/devon-methodology/blob/master/design-guidelines/ASD_Presentation.pdf) or [the Powerpoint version](https://github.com/devonfw/devon-methodology/blob/master/design-guidelines/ASD_Presentation.pptx)
 
 # Accelerated Solution Design
 
@@ -34,11 +34,11 @@ The Accelerated Solution Design introduces a new type of team, which is broader,
   - The team shall be flexible enough to adapt to unexpected changes, such as new requirements or the introduction of more roles in the development of the solution.
  - Finally, each team member shall be self-organized. In other words, self-aware of their capacity and area of responsibility, able to organize their work and committed to ensure an efficient communication within the team.
 
-We can access to the whole specification at [Accelerated Solution Design](https://github.com/devonfw/devon-methodology/blob/master/Accelerated_Solution_Design.adoc)
+We can access to the whole specification at [Accelerated Solution Design](https://github.com/devonfw/devon-methodology/blob/master/design-guidelines/Accelerated_Solution_Design.adoc)
 
 # Showcases
 
 We will introduce the required techniques, practices and methologies with two showcases:
-- [Jump the Queue](https://github.com/devonfw/devon-methodology/tree/master/references/JumpTheQueue). Sample application to offer companies and institutions to offer people a jumpstart in a ticket queue.
+- [Jump the Queue](https://github.com/devonfw/devon-methodology/tree/master/references/JumpTheQueue). Sample application to support queue management.
 
 - [My Thai Star](https://github.com/devonfw/devon-methodology/tree/master/references/MyThaiStar). Sample application that supports the online presence of the MyThaiStar restaurant.

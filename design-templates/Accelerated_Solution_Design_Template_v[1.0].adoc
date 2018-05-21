@@ -31,7 +31,7 @@ The objectives of this project are:
 
 _<Reference here any kind of visual presentation (like Power Point) that you have about your
  project. It should be used for presenting and validating the understanding of your User Stories 
- and the behaviour of the future solution to your customer. Template example link:https://github.com/devonfw/devon-methodology/blob/master/ADCenter_First_Steps_Analysis_Document_TEMPLATE.POTX[here]>_
+ and the behaviour of the future solution to your customer. Template example link:https://github.com/devonfw/devon-methodology/blob/master/ADCenter_First_Steps_Analysis_Template.potx[here]>_
 
 [[user-stories]]
 == *4. User Stories*

@@ -31,7 +31,7 @@ The objectives of the project are:
 [[first-steps-analysis]]
 == *3. First Steps Analysis*
 
-This is the link:///171124_ADCenter_JTQ_First_Steps_Analysis_Document_V1_3.pptx[First Steps Analysis] presentation used to present and validate our understanding of the User Stories and behaviour of the future solution with customer.
+This is the link:///171124_ADCenter_JTQ_First_Steps_Analysis_Document_V1_4.pptx[First Steps Analysis] presentation used to present and validate our understanding of the User Stories and behaviour of the future solution with customer.
 
 [[user-stories]]
 == *4. User Stories*
@@ -63,15 +63,15 @@ image:media/UserStoryMap.png[]
 
 This epic contains all needed functions that allow users to get a number for entering in the queue.
 
-As part of the process, the epic must implement:
+To perform this step, Jump the queue must support the following:
 
 1º Accept terms & conditions.
 
-2º Register in the queue. As part of this process the component must validate the information.
+2º Register for the queue. To accomplish this, the component must validate the personal information.
 
-3º Obtain the code to access the queue.
+3º Obtain the code to access to the queue.
 
-The user stories that define this are:
+The user stories that define this epic are:
 
 [[user-story-1.-accept-terms-conditions]]
 ==== User story 1. Accept terms & conditions
@@ -80,12 +80,14 @@ The user stories that define this are:
 |==================================================================================
 |Story Narrative |Accept terms & conditions |Priority |5
 |As |visitor  |Size |
-|I need to |accept terms and conditions |Dependency |
-|So that |I can access jump the queue system | |
+|I need to |accept the terms and conditions of the queue |Dependency |
+|So that |I can access the Jump the Queue system | |
 |Acceptance Criteria a|
-- Terms and conditions will be configurable and the system must show this text.
+- The terms and conditions of the queue need to be configured by the queue owner.
 
-- The system will ask to accept terms and conditions before getting an access code.
+- The user can read the terms and conditions statement corresponding to the queue the user is trying to access.
+
+- The system will ask to accept the terms and conditions of the queue before generating an access code.
 
  | |
 |==================================================================================
@@ -97,12 +99,15 @@ The user stories that define this are:
 |================================================================================
 |Story Narrative |Verify information |Priority |5
 |As |visitor  |Size |
-|I need |my telephone number or email to be verified |Dependency |
-|So that |their validity will be confirmed | |
+|I need |my telephone number and email to be verified |Dependency | US4
+|So that |their validity is confirmed | |
 |Acceptance Criteria a|
-- User has to receive an email or a SMS with a validation code.
+- Upon a queue registration request, the user receives and email with a validation code and identificator for that queue.
 
-- The system will only allow the access to users that input this validation code.
+- The user can use the validation code to verify the email and telephone number.
+
+- When a user uses the validation code for the first time the telephone number and email are verified. Next time the user tries to use the validation code the system will not do any action.
+
 
  | |
 |================================================================================
@@ -114,39 +119,35 @@ The user stories that define this are:
 |==================================================================================
 |Story Narrative |Consent information |Priority |1
 |As |visitor  |Size |
-|I want to |give my permission for the use of my personal information |Dependency |
-|So that |I can received commercial notices | |
+|I want to |give my permission to use my personal information for commercial use |Dependency |
+|So that |I can receive commercial notifications | |
 |Acceptance Criteria a|
-- This functionality can be activated or de-activated.
+- By default the commercial notifications are de-activated.
 
-- If the user gives its permission, the system must save this information.
+- If the user gives permission to use his or her personal information for commercial use, the system activates the commercial notifications.
 
  | |
 |==================================================================================
 
 [[user-story-4.-register]]
-==== User story 4. Register
+==== User story 4. Register and request access
 
 [cols=",,,",options="header",]
 |======================================================================================================
 |Story Narrative |Register |Priority |10
 |As |visitor  |Size |
-|I want to |register to obtain an access code for the queue |Dependency |
-|So that |I get an access code | |
+|I want to |register and request an access code for the queue |Dependency | US1, US2
+|So that |I can be attended in this queue | |
 |Acceptance Criteria a|
-- User can inform a phone, email and a Name.
+- The user has to provide a new telephone number, email and name. All these fields are mandatory.
 
-- The name is mandatory.
+- If an email and telephone number have been already used to request access to a queue, they cannot be used again in the same queue until the user is attended. As soon as the user is attended, this user can request a new access code by providing the identificator for this queue and the associated email or telephone number.
 
-- The phone or the email have to be informed.
+- Upon validation of the email and telephone number, the user gets registered and is assigned an access code for the queue.
 
-- The phone or the email have to be confirmed.
+- The access code is formatted as a "Q" plus a number between 0 and 999, which is the next free number, e.g. Q001.
 
-- The access code will be formatting as "Q" plus a number between 0 to 999.
-
-- The access code will be the next free number. If the number reaches 999, the number continues with 0.
-
-- The email, phone cannot be repeated in more than one non-attended turns.
+- The numbering starts at value 0. If the number has reached 999, the numbering continues with value 0.
 
  | |
 |======================================================================================================
@@ -157,14 +158,14 @@ The user stories that define this are:
 [cols=",,,",options="header",]
 |======================================================================================================
 |Story Narrative |Priority access |Priority |5
-|As |internal user  |Size |
+|As |VIP user  |Size |
 |I want to |get priority access code to the queue  |Dependency |
-|So that |I will be attended earlier | |
+|So that |I will be served earlier | |
 |Acceptance Criteria a|
 
-- The access code will be formatting as "A" plus a number between 0 to 999.
+- The access code will be formatted as an "A" plus a number between 0 and 999, which will be the next free number, e.g. A001.
 
-- The access code will be the next free number. If the number reaches 999, the number continues with 0.
+- The numbering starts at value 0. If the number has reached 999, the numbering continues with 0.
 
  | |
 |======================================================================================================
@@ -172,9 +173,14 @@ The user stories that define this are:
 [[epic-2.-consult-the-queue]]
 === *Epic 2. Consult the queue*
 
-It contains all functions that permit to order and to consult the status of the queue.
+This step contains all functions to consult the status of the user in the queue.
 
-The user stories that define this are:
+Jump the queue must support the following:
+
+- Show people their position in the queue
+- Show the estimated time to be attended
+
+The user stories that define this epic are:
 
 [[user-story-6.-consult-queue]]
 ==== User story 6. Consult Queue
@@ -182,17 +188,20 @@ The user stories that define this are:
 [cols=",,,",options="header",]
 |===============================================================================================================================================================================
 |Story Narrative |Consult queue |Priority |10
-|As |visitor or internal user or jump the queue owner |Size |
+|As |visitor or VIP user or owner |Size |
 |I want to |consult the status of the queue |Dependency |
-|So that |I would know when it is my turn | |
+|So that |I can know who is being served, when I am expected to be served and how I will be called | |
 |Acceptance Criteria a|
-- The system only returns the non-attended turns of the queue.
+- The visitor and VIP users have to provide the identificator generated for this queue and the email or telephone number used to register in that queue.
 
-- The list will be ordered by the time when the ticket was taken, except in the case that the access code will be of the form "A" + number that will be first (priority access).
+- The system will respond showing the access code of the user, the name, the estimated time and the list of unattended access codes for this queue.
 
-- The list must return the following information: Access code, estimated time and Name.
+- The list of unattended access codes will be arranged in chronological order, placing first the priority access codes (Axxx) and then the rest of access codes (Qxxx).
 
-- The user can consult the status of the queue although he has left of the system.
+- The users registered for the queue can consult the status of the queue at any moment.
+
+- The owner of the queue can see the access code of the current turn.
+
 
  | |
 |===============================================================================================================================================================================
