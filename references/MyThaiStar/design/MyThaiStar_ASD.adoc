@@ -908,3 +908,7 @@ About Capgemini
 A global leader in consulting, technology services and digital transformation, Capgemini is at the forefront of innovation to address the entire breadth of clients’ opportunities in the evolving world of cloud, digital and platforms. Building on its strong 50-year heritage and deep industry-specific expertise, Capgemini enables organizations to realize their business ambitions through an array of services from strategy to operations. Capgemini is driven by the conviction that the business value of technology comes from and through people. It is a multicultural company of 200,000 team members in over 40 countries. The Group reported 2016 global revenues of EUR 12.5 billion.
 
 Learn more about us at http://www.capgemini.com[www.capgemini.com]
+
+image:http://i.creativecommons.org/l/by-nd/4.0/88x31.png[]
+
+This documentation is licensed under the link:http://creativecommons.org/licenses/by-nd/4.0/[Creative Commons License (Attribution-NoDerivatives 4.0 International)]
