@@ -38,3 +38,5 @@ As a part of the methodology proposal, any item in the backlog that is a user st
 This Definition of Done **should not remain the same throughout the lifetime of the project**. As the team becomes more effective and productive, as the developers learn to work better together, they could and should enhance and refine their definition of done to produce more valuable and better quality features. They will recognize patterns in the processes and procedures that are required to produce high quality features and start adding these to the DoD.
 
 This refinement should be discussed in the **retrospective meetings** after each sprint. 
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License Agreement" style="border-width:0" src="http://i.creativecommons.org/l/by-nd/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">This documentation</span> is licensed under the <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons License (Attribution-NoDerivatives 4.0 International)</a>.
