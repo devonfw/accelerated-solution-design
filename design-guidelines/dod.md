@@ -1,5 +1,5 @@
 # Definition of done
-As a part of the methodology proposal in this project, any item in the backlog, since it is a user story, is considered as done if the following criteria is satisfied:
+As a part of the methodology proposal, any item in the backlog that is a user story, is considered as done if the following criteria is satisfied:
 
 1. **Code is peer-reviewed**
 
