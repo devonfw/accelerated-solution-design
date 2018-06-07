@@ -132,3 +132,8 @@ interface entity types:
 - Save Order: See _UC_Manage_Order_, Scenario _Save Order_ .
 
 // end::ExternalInterfaces[]
+
+
+image:http://i.creativecommons.org/l/by-nd/4.0/88x31.png[]
+
+This documentation is licensed under the link:http://creativecommons.org/licenses/by-nd/4.0/[Creative Commons License (Attribution-NoDerivatives 4.0 International)]
