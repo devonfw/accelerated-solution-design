@@ -1,5 +1,6 @@
 :toc: macro
 toc::[]
+:imagesdir: /extracted-media/mediaASD/
 
 [[accelerated-solution-design]]
 = Accelerated Solution Design
@@ -29,7 +30,7 @@ The Accelerated Solution Design introduces a new type of *team*, which is broade
 
  
 
-image:../extracted-media/mediaASD/image1.png[]
+image::image1.png[]
 
 Summarizing, the Accelerated Solution Design is:
 
@@ -73,21 +74,21 @@ The ASD process will combine and apply the following industry standard practices
 
 The final design (or rather “growing design”) emerges from the intersection of these three practices.
 
-image:../extracted-media/mediaASD/image2.png[] 
+image::image2.png[] 
 
 [[lean]]
 === *2. Lean*
 
 Using Lean discovery and design process model, the UX Designer, the Business Analyst and the Architect will work together to model and specify the design of the system and deliver to customer a product he desires much faster.
 
-image:../extracted-media/mediaASD/image3.png[]
+image::image3.png[]
 
 [[agile-requirements-flow]]
 === *3. Agile requirements flow*
 
 The Business Analyst and UX Designer will follow the agile requirements flow below to perform the analysis of the required solution which shall fulfill the business needs.
 
-image:../extracted-media/mediaASD/image4.png[]
+image::image4.png[]
 
 From the beginning, Business Analysts and UX Designers will work together with the Product Owner and users to understand the business needs.
 
@@ -100,7 +101,7 @@ The Business Analyst will discuss with the Project Owner and the Architect the m
 
 This chapter describes in detail the process to be followed at the AD Center to deliver the solution.
 
-image:../extracted-media/mediaASD/image5.png[]
+image::image5.png[]
 
 Following points explain in detail each phase.
 
@@ -310,7 +311,7 @@ link:https://github.com/devonfw/devon-methodology/design-templates/UAT_SprintXX_
 
 This set of documents includes all UX designs (visual guides, types, colors, style guides, etc.) to be used by Developers to implement the solution.
 
-image:../extracted-media/mediaASD/image8.png[]
+image::image8.png[]
 
 [[specification]]
 === *Specification*
@@ -458,7 +459,7 @@ Jira will mainly be used for:
 
 As confluence and Jira are developed by Atlassian, the tools have native integration. So, it is possible to share documentation between them.
 
-image:../extracted-media/mediaASD/image9.png[]
+image::image9.png[]
 
 [[plantuml]]
 === *PlantUML*
@@ -486,7 +487,7 @@ A PlantUML example:
 
 And the result:
 
-image:../extracted-media/mediaASD/useCaseDiagramPlantUML.png[]
+image::useCaseDiagramPlantUML.png[]
 
 More documentation about it link:http://plantuml.com/[here].
 
@@ -512,14 +513,14 @@ We currently use it because its repositories are *private*, while in GitHub ever
 
 Sparx Systems Enterprise Architect is a visual modeling and design tool based on the OMG UML. The platform supports: the design and construction of software systems; modeling business processes; and modeling industry based domains. It is used by businesses and organizations to not only model the architecture of their systems, but to process the implementation of these models across the full application development life-cycle.
 
-image:../extracted-media/mediaASD/image10.png[]
+image::image10.png[]
 
 [[adobe-creative-cloud]]
 === *Adobe Creative Cloud*
 
 Adobe Creative Cloud is a set of applications and services from Adobe Systems that gives subscribers access to a collection of software used for graphic design, video editing, web development and photography, along with a set of mobile applications and some optional cloud services.
 
-image:../extracted-media/mediaASD/image11.png[]
+image::image11.png[]
 
 The design tools used in the ADCenter are *Axure RP8, Adobe XD, Adobe Photoshop,* etc. Other desirable skills include Graphic user interface (GUI), HTML, CSS, & JavaScript.
 
