@@ -1,5 +1,6 @@
 :toc: macro
 toc::[]
+:imagesdir: /extracted-media/mediaASDTemplate
 
 NOTE: This document is used for giving a high-level system specification of your project. Try to use an
 informal and natural language so that the reader easily understands the overview of your project.
@@ -39,7 +40,7 @@ _<Reference here any kind of visual presentation (like Power Point) that you hav
 _<Give here a quick description of the main functionalities of your application. You may insert below a diagram explaining the flow of your project. Each functionality should be organized by the actor 
 that handles it.>_
 
-image:extracted-media/mediaASDTemplate/ProcessMap.svg[]
+image::ProcessMap.svg[]
 
 TIP: Remember that user stories are an informal, natural language description of one or more features 
 of a software system, written from the perspective of an end user or user of a system.
@@ -57,7 +58,7 @@ We can see the proposed user story map at the following figure:
 
 _<Insert a user story map, with epics at the top and its use cases below, like the next example>_
 
-image:extracted-media/mediaASDTemplate/UserStoryMap.svg[]
+image::UserStoryMap.svg[]
 
 TIP: Remember that epics are a large body of work that can be broken down into a number of smaller stories.
 
@@ -180,7 +181,7 @@ We propose the following sitemap and screens structures to support the requireme
 _<Insert below a list or diagram representing the hierarchical structure of the screens, 
 like the next example: >_
 
-image:extracted-media/mediaASDTemplate/SiteMap.svg[]
+image::SiteMap.svg[]
 
 _<List below all the screens shown on the diagram. Insert mockups if needed.>_
 
@@ -190,7 +191,7 @@ _<List below all the screens shown on the diagram. Insert mockups if needed.>_
 
  - _<Insert mockup image of your screen>_
 
-image:extracted-media/mediaASDTemplate/MockUpImage.png[]
+image::MockUpImage.png[]
 
 [[entity-relationship-diagram]]
 == *6. Entity relationship diagram*
@@ -199,7 +200,7 @@ Starting from the list of user stories, we found the below entities to support t
 
 _<Insert below an entity diagram containing the entities that implement user stories.>_
 
-image:extracted-media/mediaASDTemplate/ER.svg[]
+image::ER.svg[]
 
 Each entity will content the following information:
 
@@ -263,11 +264,11 @@ _<List below all the domains and subdomains that your project contains.>_
 _<Insert below a diagram of the bounded context you have just explained. Each domain will contain the
 entities you have declared above. Entities that are shared between epics should have the same colour>_
 
-image:extracted-media/mediaASDTemplate/BoundedContext.svg[]
+image::BoundedContext.svg[]
 
 _<The next figure is an example of domains containing sub-domains>_
 
-image:extracted-media/mediaASDTemplate/BoundedContext2.svg[]
+image::BoundedContext2.svg[]
 
 [[glossary-of-terms]]
 == *8. Glossary of terms*
