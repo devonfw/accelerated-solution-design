@@ -50,24 +50,24 @@ The main difference in here is that, RDV approach usually uses the development t
 The UX process appears all over the timeline of a full scale project, but has stronger presence in the early phases. 
 Most of the times an assignment will not cover the entire design process, but only a part of it, therefore each step in this way has an end deliverable. This way we can offer the phases as building blocks, so that the client can decide what he wants us to do. We'll represent here a full coverage example, Lean based.
 
-image:extracted-media/mediaDesign/image1.png[]
+image:../extracted-media/mediaDesign/image1.png[]
 
 [[how-we-do-the-steps-to-follow-1]]
 == How we do | the steps to follow
 
-image:extracted-media/mediaDesign/Sprint_Design.PNG[]
+image:../extracted-media/mediaDesign/Sprint_Design.png[]
 
 First of all, we need a couple of days to prepare all the material, templates and presentations we need to set the basis of our work. They can be physical assets like stationery, templates, continuous paper, etc. or online docs like PDF, Word and PowerPoint templates or videos. Adaption for every project is needed depending on the type of project, objective, budget, planning, and customer maturity. 
 It's also important to create the multidisciplinary team who is going to work in the process, setting an initial schedule and a due date if we know it.
 
 This way of working works well remotely with the use of skype meetings and agile documents interchange in the main touch points of the process, but we strongly recommend that the first two steps being as face-to-face as possible, to get a complete immersion into the project and to achieve an optimal communication, often disrupted for things such as the language, bad connections and lack of visual acknowledgment. 
 
-image:extracted-media/mediaDesign/image4.png[]
+image:../extracted-media/mediaDesign/image4.png[]
 
 [[explore-define-1]]
 ===  *1) Explore & Define*
 
-image:extracted-media/mediaDesign/image5.png[]
+image:../extracted-media/mediaDesign/image5.png[]
 
 *End result*
 
@@ -95,7 +95,7 @@ The UX designer and Business Analyst have to ask questions (about specifications
 
 *Team Shared Deliverables*: Requirements Document
 
-image:extracted-media/mediaDesign/image6.png[]
+image:../extracted-media/mediaDesign/image6.png[]
 
 [[research-1]]
 ==== 1.2) Research
@@ -110,7 +110,7 @@ We also need to know the client's business. We need to know their business goals
 
 *Team Shared Deliverables*: Review Report
 
-image:extracted-media/mediaDesign/image7.png[]
+image:../extracted-media/mediaDesign/image7.png[]
 
 [[analysis-1]]
 ==== 1.3) Analysis
@@ -131,12 +131,12 @@ With the information obtained in these three phases, we will complete the High L
 
 *Team Shared Deliverables*: Estimation & Analysis Report
 
-image:extracted-media/mediaDesign/image8.png[]
+image:../extracted-media/mediaDesign/image8.png[]
 
 [[conceptualize-1]]
 === 2) Conceptualize
 
-image:extracted-media/mediaDesign/image9.png[]+
+image:../extracted-media/mediaDesign/image9.png[]+
 
 *End result* 
 
@@ -161,7 +161,7 @@ In this step we´ll start conceptualizing and drafting the solution. First, we n
 
 Besides involving end users and clients in every phase, it's important that we do this together with the client. The process itself should also be a good experience to them, so that they enjoy working together with us to create the best digital part of their service.
 
-image:extracted-media/mediaDesign/image10.png[]
+image:../extracted-media/mediaDesign/image10.png[]
 
 [[brain-storming-1]]
 ===== 2.1.1) Brain Storming
@@ -172,7 +172,7 @@ image:extracted-media/mediaDesign/image10.png[]
 
 *Output*: The set of ideas which helps to transform the requirements into a design.
 
-image:extracted-media/mediaDesign/image11.png[]
+image:../extracted-media/mediaDesign/image11.png[]
 
 [[create-1]]
 ==== 2.2) Create
@@ -181,7 +181,7 @@ When the best idea has been chosen, the sketching starts together with business,
 
 *Output*: Concept description, sketches, card sorting (task work flows and information architecture).
 
-image:extracted-media/mediaDesign/image12.png[]
+image:../extracted-media/mediaDesign/image12.png[]
 
 [[sketching-1]]
 ===== 2.2.1) Sketching
@@ -190,7 +190,7 @@ image:extracted-media/mediaDesign/image12.png[]
 
 *Output*: Initial sketching of the interface.
 
-image:extracted-media/mediaDesign/image13.png[]
+image:../extracted-media/mediaDesign/image13.png[]
 
 [[card-sorting-defining-an-information-architecture-1]]
 ===== 2.2.2) Card Sorting: Defining an Information Architecture
@@ -199,7 +199,7 @@ image:extracted-media/mediaDesign/image13.png[]
 
 *Output*: The hierarchy, information architecture, structure of each element of the interface for the user to interact.
 
-image:extracted-media/mediaDesign/image14.png[]
+image:../extracted-media/mediaDesign/image14.png[]
 
 [[task-work-flow-1]]
 ===== 2.2.3) Task Work Flow
@@ -208,7 +208,7 @@ image:extracted-media/mediaDesign/image14.png[]
 
 *Output*: Task analysis report.
 
-image:extracted-media/mediaDesign/image15.png[]
+image:../extracted-media/mediaDesign/image15.png[]
 
 [[iterate-1]]
 ==== 2.3) Iterate
@@ -226,7 +226,7 @@ When the concept is clear we will create low fidelity wireframes and prototypes 
 
 *Output*: Detailed wireframes of different pages.
 
-image:extracted-media/mediaDesign/image16.png[]
+image:../extracted-media/mediaDesign/image16.png[]
 
 [[prototyping-1]]
 ===== 2.3.2) Prototyping
@@ -237,7 +237,7 @@ image:extracted-media/mediaDesign/image16.png[]
 
 *Output*: Low fidelity Wireframes, customer validated low fidelity prototype and high level information architecture.
 
-image:extracted-media/mediaDesign/image17.png[]
+image:../extracted-media/mediaDesign/image17.png[]
 
 [[validate-1]]
 ==== 2.4) Validate
@@ -255,12 +255,12 @@ Prototyping also enables us to test the app or website with end- users in an ear
 
 *Output*: User/Usability testing results and solutions for fixing the problems found.
 
-image:extracted-media/mediaDesign/image18.png[]
+image:../extracted-media/mediaDesign/image18.png[]
 
 [[design-and-develop-1]]
 === 3) Design and Develop
 
-image:extracted-media/mediaDesign/image19.png[]
+image:../extracted-media/mediaDesign/image19.png[]
 
 *End result* 
 
@@ -282,7 +282,7 @@ Business involvement (customer meeting) is important at this stage as well, beca
 
 *Craft Output*: High fidelity wireframes and Analytics implementation plan.
 
-image:extracted-media/mediaDesign/image20.png[]
+image:../extracted-media/mediaDesign/image20.png[]
 
 [[visual-design-1]]
 ===== 3.1.1) Visual Design
@@ -293,7 +293,7 @@ image:extracted-media/mediaDesign/image20.png[]
 
 *Output*: Final, detailed and Hi fi Visual design and (if clients wants) microinteractions.
 
-image:extracted-media/mediaDesign/image21.png[]
+image:../extracted-media/mediaDesign/image21.png[]
 
 [[ui-testing-1]]
 ===== 3.1.2) UI Testing
@@ -304,7 +304,7 @@ image:extracted-media/mediaDesign/image21.png[]
 
 *Output*: UI testing results of the visual design has to be documented. Changes or recommendations has to be noted and implemented as applicable.
 
-image:extracted-media/mediaDesign/image22.png[]
+image:../extracted-media/mediaDesign/image22.png[]
 
 [[build-1]]
 ==== 3.2) Build
@@ -322,7 +322,7 @@ When we know the concept works, we will start designing the details with a multi
 
 *Output*: The assets required for development (cropped images, icons, design instructions etc.)
 
-image:extracted-media/mediaDesign/image23.png[]
+image:../extracted-media/mediaDesign/image23.png[]
 
 [[style-guides-1]]
 ===== 3.2.2) Style Guides
@@ -333,7 +333,7 @@ image:extracted-media/mediaDesign/image23.png[]
 
 *Output*: Style guide with design specifications, guidelines and CSS description. 
 
-image:extracted-media/mediaDesign/image24.png[]
+image:../extracted-media/mediaDesign/image24.png[]
 
 [[front-end-develop-1]]
 ===== 3.2.3) Front-End Develop
@@ -344,12 +344,12 @@ image:extracted-media/mediaDesign/image24.png[]
 
 *Output*: HTML/CSS Layout, themes and templates development.
 
-image:extracted-media/mediaDesign/image25.png[]
+image:../extracted-media/mediaDesign/image25.png[]
 
 [[continuous-improvement-1]]
 === 4) Continuous Improvement
 
-image:extracted-media/mediaDesign/image26.png[]
+image:../extracted-media/mediaDesign/image26.png[]
 
 *End result* 
 
@@ -386,21 +386,21 @@ Monitor the project throughout the development stage and give instructions and s
 
 *Output:* Design bugs report.
 
-image:extracted-media/mediaDesign/image27.png[]
+image:../extracted-media/mediaDesign/image27.png[]
 
 [[ui-fixeschanges-1]]
 ==== 4.3) UI Fixes/Changes
 
 There are possibilities of UI bugs when implementing the design in development process, UI/UX designer should find out the issues and fix it.
 
-image:extracted-media/mediaDesign/image28.png[]
+image:../extracted-media/mediaDesign/image28.png[]
 
 [[manage-change-request-1]]
 ==== 4.4) Manage Change Request
 
 When a change request comes from client, the UX designer has to follow the design steps to implement the new changes without affecting the development process. Mockups and style guides has to be updated accordingly.
 
-image:extracted-media/mediaDesign/image29.png[]
+image:../extracted-media/mediaDesign/image29.png[]
 
 [[recommendations-1]]
 ==== 4.5) Recommendations
