@@ -6,4 +6,4 @@ Implements
 * 
 * 
 
-@devonfw/devonfw-shop-floor
+@devonfw/devon-methodology
