@@ -64,7 +64,7 @@ _<Team_Name>_ _<Team_Email>_
 :toclevels: 4
 :numbered:
 :website: https://www.de.capgemini.com/devonfw
-:imagesdir: ./extracted-media/mediaSpecificationTemplate
+:imagesdir: /extracted-media/mediaSpecificationTemplate
 :imagesComponentNameManagement: /extracted-media/mediaSpecificationTemplate/BCO_ComponentName_Managament_Images
 
 
