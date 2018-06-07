@@ -137,3 +137,8 @@ interface entity types:
 - _<Event_Name3>_: See _UC_Manage_Component_Name_, Scenario _<Event_Name3>_ .
 
 // end::ExternalInterfaces[]
+
+
+image:http://i.creativecommons.org/l/by-nd/4.0/88x31.png[]
+
+This documentation is licensed under the link:http://creativecommons.org/licenses/by-nd/4.0/[Creative Commons License (Attribution-NoDerivatives 4.0 International)]
