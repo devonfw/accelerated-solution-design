@@ -12,11 +12,11 @@ The *purpose* of this Space is to *give a full overview of the set of activities
 
 The AD Center team shall customize those process, tools and methods for each project, depending on the type of project, its objectives, budget and planning, and the customer maturity.
 
-The ASD is carefully designed to be a practical guideline that fosters and ensures the collaboration and communication among all team member. The members of the team involved in the ASD will be:
+The ASD is carefully designed to be a practical guideline that fosters and ensures the collaboration and communication among all team membersinvolved in the development of a product:
 
-* Customer.
-* Solution Delivery Office members, made up of UX Designer, Business Analyst and Architect
-* Yard members, made up of Developers
+* The Customer
+* The members of the Solution Delivery Office: UX Designer, Business Analyst and Architect
+* The members of the Yard: Developers and Testers
 
 Customers are key members of the team, as they understand the business and have needs and expectations, which the solution must fulfill. It is essential that customers get involved in the development from the beginning. Thus, the feeling of belonging the solution will be assured and the customer satisfaction will be improved. In addition to validating the solution and supporting all development phases.
 
@@ -242,7 +242,7 @@ This information will be necessary at project kick-off phase to describe among o
 |*Accelerated Solution Design* |Consulted |Responsible, Accountable |Responsible, Consulted |Responsible, Consulted |Informed
 |*UATs* |Consulted |Responsible, Accountable |Consulted |Responsible |Responsible
 |*Style Guide, assets..* |Consulted |Informed |Responsible, Accountable |Informed |Informed
-|*Specification* |Informed |Informed |Informed |Informed |Responsible, Accountable
+|*Specification* |Informed |Informed |Informed |Consulted |Responsible, Accountable
 |============================================================================================================
 
 [[high-level-analysis-overview]]
@@ -444,7 +444,7 @@ Confluence is a simple, powerful wiki that allows teams or units share informati
 
 The objective of using this wiki is to have dynamic deliverables, rather than static documents. The wiki should be a dynamic document easily accessible by all team members.
 
-*For this reason, Confluence should be used as the repository to store the project documentation. Each documentation deliverable will reside in Confluence space created for the project, as pages in Confluence ease with the maintenance, collaboration and access to project documentation.*
+*For this reason, Confluence should be used as the repository to store the project documentation. Each documentation deliverable will reside in the Confluence space created for the project, as pages in Confluence ease with the maintenance, collaboration and access to project documentation.*
 
 [[jira]]
 === *Jira*
@@ -457,7 +457,7 @@ Jira will mainly be used for:
 * Managing project tasks and resources.
 * Managing issues.
 
-As confluence and Jira are developed by Atlassian, the tools have native integration. So, it is possible to share documentation between them.
+As Confluence and Jira are developed by Atlassian, the tools have native integration. So, it is possible to share documentation between them.
 
 image::image9.png[]
 
