@@ -277,15 +277,17 @@ We proposed the following sitemap and screens structures to support the requirem
 
 image:media/SiteMap.PNG[]
 
-1º Select Queue. This step will not be a screen and represent the operation that a user will follow to enter to Jump the Queue.
+1º Log In or Register. This is the first step where a user has to either Log In to an existing account or register a new one where he/she would also have to accept the terms and coditons and prove he/she is human.
 
-2º Request/ Insert code. This functionality represents the process that a user has to follow to obtain a ticket number. The proposed screen will only apply to visitors users because existing users will have a direct access to step 3.
+image:media/LoginRegister.PNG[]
 
-image:media/InsertCode.png[]
+2º Home Screen. Here you can see the current status of the queue and either log out or join the queue.
 
-3º Assigned Order / Show Queue. Here, the user can consult its number and the list of people in the queue.
+image:media/JoinQueue.png[]
 
-image:media/ShowQueue.png[]
+3º Queue Screen. This is where you can see your number in the queue, the estimated time at which you'll be attended, which number is currently being attended and leave the queue.
+
+image:media/Queue_Position.png[]
 
 Finally, the owner of the queue can consult and pass the turn with the consult screen and with a button at the screen or pressing a physical button.
 
