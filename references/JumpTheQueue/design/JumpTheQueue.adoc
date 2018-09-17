@@ -275,7 +275,7 @@ The user stories that define this are:
 
 We proposed the following sitemap and screens structures to support the requirements that must fulfill the solution.
 
-image:media/SiteMap.png[]
+image:media/SiteMap.PNG[]
 
 1º Select Queue. This step will not be a screen and represent the operation that a user will follow to enter to Jump the Queue.
 
