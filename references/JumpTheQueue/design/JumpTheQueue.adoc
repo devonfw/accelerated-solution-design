@@ -74,7 +74,7 @@ The user stories that define this epic are:
 
 [cols=",,",]
 |==================================================================================
-|As |visitor  |Size |
+|As |visitor  |
 |I need to |accept the terms and conditions of the queue |
 |So that |I can access the Jump the Queue system | 
 |Acceptance Criteria a|
