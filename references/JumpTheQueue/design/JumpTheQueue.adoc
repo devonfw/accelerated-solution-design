@@ -52,7 +52,7 @@ In the next points, we can see the details of the user stories that define the m
 
 We can see the proposed user story map at the following figure.
 
-image:media/pUserStoryMap.png[]
+image:media/UserStoryMap.png[]
 
 [[epic-1.-register-and-log-in]]
 === *Epic 1. Register and Log in*
