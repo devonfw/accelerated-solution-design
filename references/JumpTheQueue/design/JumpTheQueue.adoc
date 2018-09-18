@@ -97,15 +97,10 @@ The user stories that define this epic are:
 |So that |I can get registered in the queue system
 |Acceptance Criteria a|
 - The user can enter the following mandatory information:
-
-  1- Username, which must be a valid email account
-  
-  2- Password
-  
-  3- Name
-  
-  4- Telephone
-  
+-- Username, which must be a valid email account  
+-- Password
+-- Name
+-- Telephone
 - By default the commercial notifications must be deactivated. 
 - The user can refuse to receive commercial notifications.
 - The user can accept the terms and conditions.
@@ -191,9 +186,9 @@ Started, the user gets the first available ticket number and the estimated time 
 - If a ticket number was removed from the system, it cannot be re-assigned unless it had been the last number assigned.
 - Each user can have only one ticket number at a time.
 - The user can see:
-    1.The assigned ticket number
-    2.Waiting time
-    3.The current ticket number being served
+-- The assigned ticket number
+-- Waiting time
+-- The current ticket number being served
 - The user can cancel the request to join and go back to the login screen. The assigned ticket number will be removed.
 
 |==================================================================================================================================================================================================================
@@ -225,9 +220,9 @@ Started, the user gets the first available ticket number and the estimated time 
 |Acceptance Criteria a|
 - The users can consult the status of the queue at any moment even if the user has closed the session or logged out.
 - If the user has a ticket number that was not called yet and logs in, the user will see:
-    1.his or her ticket number
-    2.the waiting time to be served (recalculated) 
-    3.the current ticket number being served.
+-- his or her ticket number
+-- the waiting time to be served (recalculated) 
+-- the current ticket number being served.
 - The user can quit from the queue (“Leave Queue” operation) at any moment.
 - Upon cancellation of the user request to join the queue, the user gets back to the home screen and the ticket number that was assigned to this user is removed from the system.
 - The user can request to go back to the login screen (“Logout” button).
