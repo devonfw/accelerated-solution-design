@@ -61,7 +61,7 @@ This epic contains all needed functions that allow users to Log in if they have 
 
 To perform this step, Jump the queue must support the following:
 
-1º Accept terms & conditions.
+1º Access Log In screen.
 
 2º Filling out of personal data.
 
@@ -74,37 +74,41 @@ The user stories that define this epic are:
 
 [cols=",,",]
 |==================================================================================
-|As |visitor  |
-|I need to |accept the terms and conditions of the queue |
-|So that |I can access the Jump the Queue system | 
+|As |Visitor & Owner  |
+|I need to |access the login screen |
+|So that |I can access the service provided by the shop| 
 |Acceptance Criteria a|
-- The terms and conditions of the queue need to be configured by the queue owner.
-
-- The user can read the terms and conditions statement corresponding to the queue the user is trying to access.
-
-- The system will ask to accept the terms and conditions of the queue before generating an access code.
+-The user can choose to register or log in.
+-The user can enter his or her username and password.
+-The username must be an email.
+-If the user requests to log in, the system checks if the user has entered a valid username and password.
+-If the user has requested to log in and the username or password are missing or are not valid, the system informs the user.
+-The user can request a password reminder email be sent to his or her registered email account.
 
  | 
 |==================================================================================
 
-[[user-story-2.-verify-information]]
-==== User story 2. Verify information
+[[user-story-2.-registration]]
+==== User story 2. Registration
 
-[cols=",,,",options="header",]
+[cols=",",options="header",]
 |================================================================================
-|Story Narrative |Verify information |Priority |5
-|As |visitor  |Size |
-|I need |my telephone number and email to be verified |Dependency | US4
-|So that |their validity is confirmed | |
+|As |visitor 
+|I want to |fill in the registration form 
+|So that |I can get registered in the queue system
 |Acceptance Criteria a|
-- Upon a queue registration request, the user receives and email with a validation code and identificator for that queue.
+-The user can enter the following mandatory information:
+  -Username, which must be a valid email account
+  -Password
+  -Name
+  -Telephone
+-By default the commercial notifications must be deactivated. 
+-The user can refuse to receive commercial notifications.
+-The user can accept the terms and conditions.
+-The user can click the “No robot” captcha.
+-Once the terms & conditions are accepted and the “No robot” captcha is checked, the “Accept” button is enabled.
 
-- The user can use the validation code to verify the email and telephone number.
 
-- When a user uses the validation code for the first time the telephone number and email are verified. Next time the user tries to use the validation code the system will not do any action.
-
-
- | |
 |================================================================================
 
 [[user-story-3.-consent-information]]
