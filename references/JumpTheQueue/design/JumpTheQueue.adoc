@@ -230,49 +230,60 @@ Started, the user gets the first available ticket number and the estimated time 
 
 |=======================================================================================
 
-[[epic-3.-manage-queue]]
-=== *Epic 3. Manage queue*
+[[epic-3.-operate-queue]]
+=== *Epic 3. Operate the queue*
 
-It contains all functions that allow to manage the queue in order to configure and attend active turn.
+It contains all functions that allow management of the queue in order to configure and serve the active turn.
 
 The user stories that define this are:
 
-[[user-story-99.-configure-queue]]
-==== User story 99. Configure queue
+[[user-story-9.-call-next]]
+==== User story 9. Call next customer.
 
-[cols=",,,",options="header",]
+[cols=",",]
 |=============================================================================
-|Story Narrative |Configure queue |Priority |5
-|As |jump the queue owner of the queue |Size |
-|I want to |personalize the logo and description showed to users |Dependency |
-|So that |I can personalize my business | |
-|Acceptance Criteria a|
-- The system allows to configure a logo and description.
-
-- Jump the queue front shows the logo and description
-
- | |
+|As |Owner
+|I need to |to close the current customer service
+|So that |I can call next customer
+|Acceptance Criteria|
+* The owner can see the ticket number of current customer.
+* The owner can call next customer (“Next” button), which will be the first in the queue that is non-attended.
+* Upon a call for a new customer:
+** The service end time for current customer (if any) gets updated with current time.
+** The service start time for the new customer (if any) gets updated with current time.
+** The displayed ticket number is updated to the ticket number of the new customer (if any). If there are no new customers, no ticket number is displayed.
+** The attention time is updated.
 |=============================================================================
 
-[[user-story-9.-attend-queue]]
-==== User story 9. Attend queue
+[[user-story-10.-start-queue]]
+==== User story 10. Start the queue
 
-[cols=",,,",options="header",]
+[cols=",",]
 |================================================================
-|Story Narrative |Attend queue |Priority |10
-|As |jump the queue owner of the queue |Size |
-|I need to |know the current turn of the queue |Dependency |
-|So that |I can attend it | |
-|Acceptance Criteria a|
-* The turn has to be the first in the queue that is non-attended.
+|As |Owner
+|I need to |start the queue
+|So that |my customers can join the queue
+|Acceptance Criteria|
+* The owner can start the queue by pressing the “Start” button.
+* The system will ask the customer to confirm that he or she wants to start the queue.
+* Upon a queue start confirmation, the numbering of the queue is reset to Q000.
 
-* The system must save:
+|================================================================
 
-** At the previous turn: Save the current time as end time
+[[user-story-11.-stop-queue]]
+==== User story 11. Stop the queue
 
-** At the new turn: Save the current time as start time
+[cols=",",]
+|================================================================
+|As |Owner
+|I need to |stop the queue
+|So that |my customers cannot join the queue
+|Acceptance Criteria|
+* The owner of the queue can stop the queue by pressing the “Stop” button.
+* The system will ask the customer to confirm that he or she wants to stop the queue.
+* The system stops the process that grants new ticket numbers to the customers that request to join the queue.
+* At midnight a cronjob clears the unattended ticket numbers and, if still running, stops the process that generates new ticket numbers.
 
- | |
 |================================================================
 
 [[site-map]]
