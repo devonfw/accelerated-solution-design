@@ -97,10 +97,10 @@ The user stories that define this epic are:
 |So that |I can get registered in the queue system
 |Acceptance Criteria a|
 - The user can enter the following mandatory information:
-  - Username, which must be a valid email account
-  - Password
-  - Name
-  - Telephone
+  1- Username, which must be a valid email account
+  2- Password
+  3- Name
+  4- Telephone
 - By default the commercial notifications must be deactivated. 
 - The user can refuse to receive commercial notifications.
 - The user can accept the terms and conditions.
