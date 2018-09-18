@@ -79,11 +79,17 @@ The user stories that define this epic are:
 |So that |I can access the service provided by the shop| 
 |Acceptance Criteria a|
 -The user can choose to register or log in.
+
 -The user can enter his or her username and password.
+
 -The username must be an email.
+
 -If the user requests to log in, the system checks if the user has entered a valid username and password.
+
 -If the user has requested to log in and the username or password are missing or are not valid, the system informs the user.
+
 -The user can request a password reminder email be sent to his or her registered email account.
+
 
  | 
 |==================================================================================
@@ -98,15 +104,25 @@ The user stories that define this epic are:
 |So that |I can get registered in the queue system
 |Acceptance Criteria a|
 -The user can enter the following mandatory information:
+
   -Username, which must be a valid email account
+  
   -Password
+  
   -Name
+  
   -Telephone
+  
 -By default the commercial notifications must be deactivated. 
+
 -The user can refuse to receive commercial notifications.
+
 -The user can accept the terms and conditions.
+
 -The user can click the “No robot” captcha.
+
 -Once the terms & conditions are accepted and the “No robot” captcha is checked, the “Accept” button is enabled.
+
 
 
 |================================================================================
