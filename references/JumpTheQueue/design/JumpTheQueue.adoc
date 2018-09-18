@@ -97,7 +97,7 @@ The user stories that define this epic are:
 [[user-story-2.-registration]]
 ==== User story 2. Registration
 
-[cols=",",options="header",]
+[cols=",",]
 |================================================================================
 |As |visitor 
 |I want to |fill in the registration form 
@@ -130,7 +130,7 @@ The user stories that define this epic are:
 [[user-story-3.-read-terms-&-conditions]]
 ==== User story 3. Read Terms & Conditions
 
-[cols=",",options="header",]
+[cols=",",]
 |==================================================================================
 |As |visitor  
 |I need to |to read the terms and conditions of the queue  
@@ -145,7 +145,7 @@ The user stories that define this epic are:
 [[user-story-4.-log-out]]
 ==== User story 4. Log out
 
-[cols=",",options="header",]
+[cols=",",]
 |======================================================================================================
 |As |visitor  
 |I need to |log out of the system 
@@ -156,26 +156,8 @@ The user stories that define this epic are:
 -Upon logout request, the user is sent to the login screen.
 
 
- 
 |======================================================================================================
 
-[[user-story-5.-priority-access]]
-==== User story 5. Priority access
-
-[cols=",,,",options="header",]
-|======================================================================================================
-|Story Narrative |Priority access |Priority |5
-|As |VIP user  |Size |
-|I want to |get priority access code to the queue  |Dependency |
-|So that |I will be served earlier | |
-|Acceptance Criteria a|
-
-- The access code will be formatted as an "A" plus a number between 0 and 999, which will be the next free number, e.g. A001.
-
-- The numbering starts at value 0. If the number has reached 999, the numbering continues with 0.
-
- | |
-|======================================================================================================
 
 [[epic-2.-consult-the-queue]]
 === *Epic 2. Consult the queue*
