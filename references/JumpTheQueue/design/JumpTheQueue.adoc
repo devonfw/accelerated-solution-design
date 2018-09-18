@@ -127,44 +127,36 @@ The user stories that define this epic are:
 
 |================================================================================
 
-[[user-story-3.-consent-information]]
-==== User story 3. Consent information
+[[user-story-3.-read-terms-&-conditions]]
+==== User story 3. Read Terms & Conditions
 
-[cols=",,,",options="header",]
+[cols=",",options="header",]
 |==================================================================================
-|Story Narrative |Consent information |Priority |1
-|As |visitor  |Size |
-|I want to |give my permission to use my personal information for commercial use |Dependency |
-|So that |I can receive commercial notifications | |
+|As |visitor  
+|I need to |to read the terms and conditions of the queue  
+|So that |I can complete my registration 
 |Acceptance Criteria a|
-- By default the commercial notifications are de-activated.
+- The user can read the terms and conditions statement of the queue.
 
-- If the user gives permission to use his or her personal information for commercial use, the system activates the commercial notifications.
 
- | |
+
 |==================================================================================
 
-[[user-story-4.-register]]
-==== User story 4. Register and request access
+[[user-story-4.-log-out]]
+==== User story 4. Log out
 
-[cols=",,,",options="header",]
+[cols=",",options="header",]
 |======================================================================================================
-|Story Narrative |Register |Priority |10
-|As |visitor  |Size |
-|I want to |register and request an access code for the queue |Dependency | US1, US2
-|So that |I can be attended in this queue | |
+|As |visitor  
+|I need to |log out of the system 
+|So that |I can log in as another user
 |Acceptance Criteria a|
-- The user has to provide a new telephone number, email and name. All these fields are mandatory.
+-At any moment, the logged in users can log out of the queue system (“Logout” button) and their ticket number must persist in the system.
 
-- If an email and telephone number have been already used to request access to a queue, they cannot be used again in the same queue until the user is attended. As soon as the user is attended, this user can request a new access code by providing the identificator for this queue and the associated email or telephone number.
+-Upon logout request, the user is sent to the login screen.
 
-- Upon validation of the email and telephone number, the user gets registered and is assigned an access code for the queue.
 
-- The access code is formatted as a "Q" plus a number between 0 and 999, which is the next free number, e.g. Q001.
-
-- The numbering starts at value 0. If the number has reached 999, the numbering continues with value 0.
-
- | |
+ 
 |======================================================================================================
 
 [[user-story-5.-priority-access]]
