@@ -273,7 +273,7 @@ The user stories that define this are:
 [[site-map]]
 == *5. Site Map*
 
-We proposed the following sitemap and screens structures to support the requirements that must fulfill the solution.
+We proposed the following sitemap and screen structures to support the requirements that must be fulfilled according to the solution.
 
 image:media/SiteMap.PNG[]
 
@@ -296,65 +296,57 @@ image:media/ServeQueue.png[]
 [[entity-relationship-diagram]]
 == *6. Entity relationship diagram*
 
-Starting from the list of user stories, we found the below entities to support them.
+Starting from the list of user stories, we created the below entities to support them.
 
 image:media/ER.png[]
 
-Each entity will content the following information:
+Each entity will contain the following information:
 
 
-.1. Visitor Information
+.1. Visitor
 It contains the personal information of the visitors who gave the permission to use it.
 [cols="",options="header",]
 |======================================================================================
 | Attribute| Type
+|id | BigInt
+|modificationCounter | Int
+|username(email) | EmailType
 |Name | String
-|Telephone | TelephoneType
-|Email | EmailType
+|password | String
+|phoneNumber | TelephoneType
+|acceptedCommercial| Boolean
+|acceptedTerms| Boolean
+|userType| String
 |======================================================================================
 
-.2 Terms and conditions
-It describes the Terms and conditions that the user must accept to use the queue.
+.2 VisitorTicket
+It contains all the necesary information about the Ticket of ech visitor
 [cols="",options="header",]
 |================================================================================
 | Attribute| Type
-|Description | String
+|id | BigInt
+|modificationCounter | Int
+|ticketNumber | String
+|creationTime | TimeStamp
+|startTime | TimeStamp
+|endTime | TimeStamp
 |================================================================================
 
-.3 Queue owner
-It contains information for the users that can manage queues.
+.3 DailyQueue
+It contains all the information about the daily queue.
 [cols="",options="header",]
 |================================================================================
 | Attribute| Type
-|User |userIdType
-|Name |String
-|Email |EmailType
-|Password |PasswordType
+|id | BigInt
+|modificationCounter | Int
+|name |String
+|logo |ImageType
+|currentNumber |String
+|attentionTime| TimeType
+|minAttentionTime| TimeType
+|active| Boolean
 |================================================================================
 
-.4 Queue
-It contains the information that describes a queue.
-[cols="",options="header",]
-|================================================================================
-| Attribute| Type
-|Description |String
-|Logo |Image
-|================================================================================
-
-.5 Access code
-It contains the list people that are in the queue and their information..
-[cols="",options="header",]
-|================================================================================
-| Attribute| Type
-|Id_code |String. Assigned code. PK
-|Name |String
-|Email |EmailType
-|Telephone |TelephoneType
-|CreationTime |Time (HH:MM). The hour when the user got the turn
-|StartTime |Time (HH:MM). The hour when the attendance of the user starts
-|EndTime |Time (HH:MM). The hour when the attendance of the user ends
-|EstimatedTime |Time (HH:MM). The hour which the system estimated when the user will be attended
-|================================================================================
 
 
 [[bounded-context]]
