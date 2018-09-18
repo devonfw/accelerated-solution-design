@@ -147,60 +147,88 @@ The user stories that define this epic are:
 |======================================================================================================
 
 
-[[epic-2.-consult-the-queue]]
-=== *Epic 2. Consult the queue*
+[[epic-2.-join-and-consult-the-queue]]
+=== *Epic 2. Join and Consult the queue*
 
-This step contains all functions to consult the status of the user in the queue.
+This step contains all functions to join the queue and consult the status of the user in the queue.
 
 Jump the queue must support the following:
 
-- Show people their position in the queue
-- Show the estimated time to be attended
+- Show customers their position in the queue
+- Show the estimated waiting time to be served
 
 The user stories that define this epic are:
 
-[[user-story-6.-consult-queue]]
-==== User story 6. Consult Queue
+[[user-story-5.-home-screen]]
+==== User story 5. Home Screen.
 
-[cols=",,,",options="header",]
+[cols=",",]
 |===============================================================================================================================================================================
-|Story Narrative |Consult queue |Priority |10
-|As |visitor or VIP user or owner |Size |
-|I want to |consult the status of the queue |Dependency |
-|So that |I can know who is being served, when I am expected to be served and how I will be called | |
+|As |visitor 
+|I want to |see the home screen of the queue
+|So that |I can decide to join it
 |Acceptance Criteria a|
-- The visitor and VIP users have to provide the identificator generated for this queue and the email or telephone number used to register in that queue.
-
-- The system will respond showing the access code of the user, the name, the estimated time and the list of unattended access codes for this queue.
-
-- The list of unattended access codes will be arranged in chronological order, placing first the priority access codes (Axxx) and then the rest of access codes (Qxxx).
-
-- The users registered for the queue can consult the status of the queue at any moment.
-
-- The owner of the queue can see the access code of the current turn.
+- The user can see the current ticket number being served in the queue.
+- The user can request to join the queue (“Join” button).
+- The user can request to go back to the login screen (“Logout” button).
 
 
- | |
 |===============================================================================================================================================================================
 
-[[user-story-7.-waiting-time]]
-==== User story 7. Waiting time
+[[user-story-6.-join-request]]
+==== User story 6. Join request.
 
-[cols=",,,",options="header",]
+[cols=",",]
 |==================================================================================================================================================================================================================
-|Story Narrative |Waiting time |Priority |10
-|As |visitor or internal user |Size |
-|I want to |see my estimated waiting time |Dependency |
-|So that |I would know when I will be attended | |
+|As |visitor
+|I want to |to join the queue
+|So that |I can be served by the shop assistant
 |Acceptance Criteria a|
-- The system has to calculate the estimated time with the following formula: current hour + (Sum(The last ten attention time)/nº of attended turn counted)*(number of non-attended turns in the queue before this).
+- Upon request to join, if the queue is:
+Stopped, the user gets a message reporting that.
+Started, the user gets the first available ticket number and the estimated time to be attended.
+- The format of the ticket number is: Qxxx (e.g. Q047). When the value Q999 is reached, the numbering restarts at Q000. 
+- If a ticket number was removed from the system, it cannot be re-assigned unless it had been the last number assigned.
+- Each user can have only one ticket number at a time.
+- The user can see:
+    1.The assigned ticket number
+    2.Waiting time
+    3.The current ticket number being served
+- The user can cancel the request to join and go back to the login screen. The assigned ticket number will be removed.
 
-- The number cannot be less than a configurable value.
-
-- The attention time is the difference between the start time and the end time.
-
- | |
 |==================================================================================================================================================================================================================
+
+[[user-story-7.-calculate-waiting-time]]
+==== User story 7. Calculate the waiting time.
+
+[cols=",",]
+|====================================================================================================================================================================================================================
+|As |visitor
+|I want to |see the estimated wating time
+|So that |I  can know when I am expected to be served
+|Acceptance Criteria a|
+- The waiting_time is calculated as: (Sum of last X attention_times / X) * (nº of non-attended customers in queue before me).
+- The attention_time is calculated as: the period between the moment the customer starts to be served and the moment the next customer is called.
+- If the end time of a visitor is not set, it is not used to calculate the attention time.
+- The waiting_time cannot be shorter than a configured minimum waiting_time. If that happens, the waiting_time is set to that configured minimum waiting_time.
+
+|====================================================================================================================================================================================================================
+
+[[user-story-8.-calculate-waiting-time]]
+==== User story 8. Calculate the waiting time.
+
+[cols=",",]
+|=====
+|As |visitor
+|I want to |see the estimated wating time
+|So that |I  can know when I am expected to be served
+|Acceptance Criteria a|
+- The waiting_time is calculated as: (Sum of last X attention_times / X) * (nº of non-attended customers in queue before me).
+- The attention_time is calculated as: the period between the moment the customer starts to be served and the moment the next customer is called.
+- If the end time of a visitor is not set, it is not used to calculate the attention time.
+- The waiting_time cannot be shorter than a configured minimum waiting_time. If that happens, the waiting_time is set to that configured minimum waiting_time.
+
+|=====
 
 [[epic-3.-manage-queue]]
 === *Epic 3. Manage queue*
@@ -209,8 +237,8 @@ It contains all functions that allow to manage the queue in order to configure a
 
 The user stories that define this are:
 
-[[user-story-8.-configure-queue]]
-==== User story 8. Configure queue
+[[user-story-99.-configure-queue]]
+==== User story 99. Configure queue
 
 [cols=",,,",options="header",]
 |=============================================================================
