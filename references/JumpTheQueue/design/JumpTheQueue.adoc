@@ -214,21 +214,26 @@ Started, the user gets the first available ticket number and the estimated time 
 
 |====================================================================================================================================================================================================================
 
-[[user-story-8.-calculate-waiting-time]]
-==== User story 8. Calculate the waiting time.
+[[user-story-8.-queue-status]]
+==== User story 8. Queue status.
 
 [cols=",",]
-|=====
+|=======================================================================================
 |As |visitor
-|I want to |see the estimated wating time
-|So that |I  can know when I am expected to be served
+|I want to |see the status of the queue
+|So that |I know when I am expected to be served
 |Acceptance Criteria a|
-- The waiting_time is calculated as: (Sum of last X attention_times / X) * (nº of non-attended customers in queue before me).
-- The attention_time is calculated as: the period between the moment the customer starts to be served and the moment the next customer is called.
-- If the end time of a visitor is not set, it is not used to calculate the attention time.
-- The waiting_time cannot be shorter than a configured minimum waiting_time. If that happens, the waiting_time is set to that configured minimum waiting_time.
+- The users can consult the status of the queue at any moment even if the user has closed the session or logged out.
+- If the user has a ticket number that was not called yet and logs in, the user will see:
+    1.his or her ticket number
+    2.the waiting time to be served (recalculated) 
+    3.the current ticket number being served.
+- The user can quit from the queue (“Leave Queue” operation) at any moment.
+- Upon cancellation of the user request to join the queue, the user gets back to the home screen and the ticket number that was assigned to this user is removed from the system.
+- The user can request to go back to the login screen (“Logout” button).
 
-|=====
+
+|=======================================================================================
 
 [[epic-3.-manage-queue]]
 === *Epic 3. Manage queue*
