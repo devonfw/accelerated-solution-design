@@ -7,26 +7,24 @@ toc::[]
 [[project-introduction.-statement-of-purpose]]
 == *1. Project Introduction. Statement of Purpose*
 
-Existing systems to manage queues and turns consists only in the assignation of a number without any associated logic that improves user experience and give value to user and to queue owner.
+Customers value their time as much as business owners do, and existing ticket dispensers do not help caring about them. Currently, customers need to physically go to the establishment, take a number and wait for a while. Not only is this system inefficient, as customers have to book an unreasonable amount of time only to get to the shop assistant, but also a sales barrier, as many customers get discouraged and walk away, or do not even visit the shop.
 
-Classic systems do not allow to know at what time will be each turn. In addition, clients only can consult queue status if he stays at the queue location. This provoke a bad user experience because he must to stay in the queue all waiting time. Besides, in an amount of cases, this causes that some users leave the queue because the long waiting time, provoking the loss of the sales.
+Capgemini proposes an outstanding application to manage your queue. This service will contribute to a relaxed visit through your shop by prescribing customers when to approach your desk. 
 
-Ideally the users of the queue have to be able to know at what hour could be its turn. It is very important because he can improve its time and he will need to wait in the queue and only go when its time reaches.
+This application helps you improve the customer satisfaction as it eliminates the need to stand waiting, reduces the actual and perceived wait time and improves your business image.
 
-Besides, to facilitate that the user has not to be in the queue waiting its turn, he can consult the queue status at any device that he can have. (for example a mobile phone, tablet,  ..)
+Capgemini only delivers user-centric and scalable applications which are easy to use and solve your problems at the same time.
 
-As value added, queue owners will be able to prioritize users at the queue to have the possibility of creating marketing campaigns.
-
-A successful solution would be to improve user experience facilitating that the user has not to be in the queue waiting its turn.
 
 [[objectives]]
 == *2. Objectives*
 
 The objectives of the project are:
 
-* Eliminate the needed of stay waiting in a queue.
-* Improve user experience, easing the access to the queue.
-* The system has to be simple and easily scalable and extensible
+* Reduce the actual and perceived waiting time.
+* Improve the user experience by easing the access to the queue.
+* Simplicity and scalability.
+
 
 [[first-steps-analysis]]
 == *3. First Steps Analysis*
@@ -36,19 +34,17 @@ This is the link:///171124_ADCenter_JTQ_First_Steps_Analysis_Document_V1_4.pptx[
 [[user-stories]]
 == *4. User Stories*
 
-The first objective of Jump the Queue component is to improve the time management of the user, providing the needed functionalities to do so.
+The first objective of Jump the Queue is to improve the time management of the user, providing the needed functionalities to do so.
 
-The solution focus on this premise and has to facilitate the process of accessing and consulting to the queue.
+The solution focuses on this premise and has to facilitate the process of accessing and consulting the queue.
 
 Roughly, the entire process that a user will follow to obtain and consult the access code of a queue will be:
 
-image:media/ProcessMap.png[]
+image:media/pProcessMap.png[]
 
 The main actors that will interact with jump the queue component will be the following:
 
--      User: It is an internal user of the external system that creates the queue and it will have privilege access to the queue.
-
--      Visitor: User of the queue component that does not exist in the external system that created the queue.
+-      Visitor: User of the queue component that requests access to the queue.
 
 -      Owner: User that manages the queue.
 
@@ -56,32 +52,31 @@ In the next points, we can see the details of the user stories that define the m
 
 We can see the proposed user story map at the following figure.
 
-image:media/UserStoryMap.png[]
+image:media/pUserStoryMap.png[]
 
-[[epic-1.-get-a-number]]
-=== *Epic 1. Get a number*
+[[epic-1.-register-and-log-in]]
+=== *Epic 1. Register and Log in*
 
-This epic contains all needed functions that allow users to get a number for entering in the queue.
+This epic contains all needed functions that allow users to Log in if they have an account and Register if they dont.
 
 To perform this step, Jump the queue must support the following:
 
 1º Accept terms & conditions.
 
-2º Register for the queue. To accomplish this, the component must validate the personal information.
+2º Filling out of personal data.
 
-3º Obtain the code to access to the queue.
+3º Verification of human identity (No robot).
 
 The user stories that define this epic are:
 
 [[user-story-1.-accept-terms-conditions]]
 ==== User story 1. Accept terms & conditions
 
-[cols=",,,",options="header",]
+[cols=",,",]
 |==================================================================================
-|Story Narrative |Accept terms & conditions |Priority |5
 |As |visitor  |Size |
-|I need to |accept the terms and conditions of the queue |Dependency |
-|So that |I can access the Jump the Queue system | |
+|I need to |accept the terms and conditions of the queue |
+|So that |I can access the Jump the Queue system | 
 |Acceptance Criteria a|
 - The terms and conditions of the queue need to be configured by the queue owner.
 
@@ -89,7 +84,7 @@ The user stories that define this epic are:
 
 - The system will ask to accept the terms and conditions of the queue before generating an access code.
 
- | |
+ | 
 |==================================================================================
 
 [[user-story-2.-verify-information]]
