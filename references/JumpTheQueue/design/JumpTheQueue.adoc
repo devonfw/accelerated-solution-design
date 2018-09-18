@@ -289,7 +289,7 @@ image:media/JoinQueue.png[]
 
 image:media/Queue_Position.png[]
 
-Finally, the owner of the queue can consult and pass the turn with the consult screen and with a button at the screen or pressing a physical button.
+Finally, we have the queue management screen where the queue owner can start and stop the queue as well as pass the turn and consult general information such as how many people are still waiting, how long it takes them to attend each visitor and how long it would still take at the current rate to finish the entire queue
 
 image:media/ServeQueue.png[]
 
