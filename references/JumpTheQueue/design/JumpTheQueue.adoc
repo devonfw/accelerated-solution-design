@@ -366,7 +366,7 @@ It contains all the information about the daily queue.
 
 
 [[bounded-context]]
-== *7. Bounded context   [Outdated]*
+== *7. Bounded context*
 
 Here, we will define the bounded context of the final solution.
 
