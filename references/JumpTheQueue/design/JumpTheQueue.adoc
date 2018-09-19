@@ -368,29 +368,29 @@ It contains all the information about the daily queue.
 [[bounded-context]]
 == *7. Bounded context   [Outdated]*
 
-In this point, we will define the bounded context of the final solution.
+Here, we will define the bounded context of the final solution.
 
 In the figure below we have three domains, one for each related Epic.
 
-* Obtain Access code domain: As we saw at epic chapter, this domain contains the required logic to get a turn in the queue. The related entities are:
+*	Register & LogIn Domain: As we saw at epic chapter 1, this domain contains the required logic to Log in or Register. The related entities are:
+**	Terms & Conditions.
+**	Personal information
+**	Receive notifications.
+**	Visitor
 
-** Access code: It is shared with Consult queue status domain.
-** Queue: It is shared by the three domains.
-** Personal information
-** Terms and conditions: This is shared with Manage queue domain.
+*	Join & Consult queue status domain: It has the needed logic to join and check the turn status. This is supported by the entities:
+**	Access Codes.
+**	Queue.
+**	Visitor.
 
-* Consult queue status domain: It has the needed logic to check turn status. This is supported by the entities:
+*	Operate the queue domain: This domain contains all functionalities to configure and operate the queues.
+**	Queue.
+**	Start & Stop.
+**	Next visitor.
+**	Queue owner.
 
-** Access Code: It is shared with Obtain access code domain.
-** Queue: It is shared by the three domains.
 
-* Manage queue domain: This domain contains all functionalities to configurate the queues and their owners.
-
-** Queue: It is shared by the three domains.
-** Terms and conditions: This is shared with Manage queue domain.
-** Queue owner.
-
-image:media/BoundedContext.png[]
+image:media/BoundContext.png[]
 
 [[glossary-of-terms]]
 == *8. Glossary of terms*
