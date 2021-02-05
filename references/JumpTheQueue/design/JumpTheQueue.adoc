@@ -7,48 +7,44 @@ toc::[]
 [[project-introduction.-statement-of-purpose]]
 == *1. Project Introduction. Statement of Purpose*
 
-Existing systems to manage queues and turns consists only in the assignation of a number without any associated logic that improves user experience and give value to user and to queue owner.
+Customers value their time as much as business owners do, and existing ticket dispensers do not help caring about them. Currently, customers need to physically go to the establishment, take a number and wait for a while. Not only is this system inefficient, as customers have to book an unreasonable amount of time only to get to the shop assistant, but also a sales barrier, as many customers get discouraged and walk away, or do not even visit the shop.
 
-Classic systems do not allow to know at what time will be each turn. In addition, clients only can consult queue status if he stays at the queue location. This provoke a bad user experience because he must to stay in the queue all waiting time. Besides, in an amount of cases, this causes that some users leave the queue because the long waiting time, provoking the loss of the sales.
+Capgemini proposes an outstanding application to manage your queue. This service will contribute to a relaxed visit through your shop by prescribing customers when to approach your desk. 
 
-Ideally the users of the queue have to be able to know at what hour could be its turn. It is very important because he can improve its time and he will need to wait in the queue and only go when its time reaches.
+This application helps you improve the customer satisfaction as it eliminates the need to stand waiting, reduces the actual and perceived wait time and improves your business image.
 
-Besides, to facilitate that the user has not to be in the queue waiting its turn, he can consult the queue status at any device that he can have. (for example a mobile phone, tablet,  ..)
+Capgemini only delivers user-centric and scalable applications which are easy to use and solve your problems at the same time.
 
-As value added, queue owners will be able to prioritize users at the queue to have the possibility of creating marketing campaigns.
-
-A successful solution would be to improve user experience facilitating that the user has not to be in the queue waiting its turn.
 
 [[objectives]]
 == *2. Objectives*
 
 The objectives of the project are:
 
-* Eliminate the needed of stay waiting in a queue.
-* Improve user experience, easing the access to the queue.
-* The system has to be simple and easily scalable and extensible
+* Reduce the actual and perceived waiting time.
+* Improve the user experience by easing the access to the queue.
+* Simplicity and scalability.
+
 
 [[first-steps-analysis]]
 == *3. First Steps Analysis*
 
-This is the link:///171124_ADCenter_JTQ_First_Steps_Analysis_Document_V1_4.pptx[First Steps Analysis] presentation used to present and validate our understanding of the User Stories and behaviour of the future solution with customer.
+This is the link:///ADCenter_JumpTheQueue_First_Steps_Analysis_V0.3.pptx[First Steps Analysis] presentation used to present and validate our understanding of the User Stories and behaviour of the future solution with customer.
 
 [[user-stories]]
 == *4. User Stories*
 
-The first objective of Jump the Queue component is to improve the time management of the user, providing the needed functionalities to do so.
+The first objective of Jump the Queue is to improve the time management of the user, providing the needed functionalities to do so.
 
-The solution focus on this premise and has to facilitate the process of accessing and consulting to the queue.
+The solution focuses on this premise and has to facilitate the process of accessing and consulting the queue.
 
 Roughly, the entire process that a user will follow to obtain and consult the access code of a queue will be:
 
-image:media/ProcessMap.png[]
+image:media/pProcessMap.png[]
 
 The main actors that will interact with jump the queue component will be the following:
 
--      User: It is an internal user of the external system that creates the queue and it will have privilege access to the queue.
-
--      Visitor: User of the queue component that does not exist in the external system that created the queue.
+-      Visitor: User of the queue component that requests access to the queue.
 
 -      Owner: User that manages the queue.
 
@@ -58,329 +54,343 @@ We can see the proposed user story map at the following figure.
 
 image:media/UserStoryMap.png[]
 
-[[epic-1.-get-a-number]]
-=== *Epic 1. Get a number*
+[[epic-1.-register-and-log-in]]
+=== *Epic 1. Register and Log in*
 
-This epic contains all needed functions that allow users to get a number for entering in the queue.
+This epic contains all needed functions that allow users to Log in if they have an account and Register if they dont.
 
 To perform this step, Jump the queue must support the following:
 
-1º Accept terms & conditions.
+1º Access Log In screen.
 
-2º Register for the queue. To accomplish this, the component must validate the personal information.
+2º Filling out of personal data.
 
-3º Obtain the code to access to the queue.
+3º Verification of human identity (No robot).
 
 The user stories that define this epic are:
 
 [[user-story-1.-accept-terms-conditions]]
 ==== User story 1. Accept terms & conditions
 
-[cols=",,,",options="header",]
+[cols=",",]
 |==================================================================================
-|Story Narrative |Accept terms & conditions |Priority |5
-|As |visitor  |Size |
-|I need to |accept the terms and conditions of the queue |Dependency |
-|So that |I can access the Jump the Queue system | |
+|As |Visitor & Owner  
+|I need to |access the login screen 
+|So that |I can access the service provided by the shop 
 |Acceptance Criteria a|
-- The terms and conditions of the queue need to be configured by the queue owner.
+- The user can choose to register or log in.
+- The user can enter his or her username and password.
+- The username must be an email.
+- If the user requests to log in, the system checks if the user has entered a valid username and password.
+- If the user has requested to log in and the username or password are missing or are not valid, the system informs the user.
+- The user can request a password reminder email be sent to his or her registered email account.
 
-- The user can read the terms and conditions statement corresponding to the queue the user is trying to access.
-
-- The system will ask to accept the terms and conditions of the queue before generating an access code.
-
- | |
 |==================================================================================
 
-[[user-story-2.-verify-information]]
-==== User story 2. Verify information
+[[user-story-2.-registration]]
+==== User story 2. Registration
 
-[cols=",,,",options="header",]
+[cols=",",]
 |================================================================================
-|Story Narrative |Verify information |Priority |5
-|As |visitor  |Size |
-|I need |my telephone number and email to be verified |Dependency | US4
-|So that |their validity is confirmed | |
+|As |visitor 
+|I want to |fill in the registration form 
+|So that |I can get registered in the queue system
 |Acceptance Criteria a|
-- Upon a queue registration request, the user receives and email with a validation code and identificator for that queue.
+- The user can enter the following mandatory information:
+** Username, which must be a valid email account  
+** Password
+** Name
+** Telephone
+- By default the commercial notifications must be deactivated. 
+- The user can refuse to receive commercial notifications.
+- The user can accept the terms and conditions.
+- The user can click the “No robot” captcha.
+- Once the terms & conditions are accepted and the “No robot” captcha is checked, the “Accept” button is enabled.
 
-- The user can use the validation code to verify the email and telephone number.
-
-- When a user uses the validation code for the first time the telephone number and email are verified. Next time the user tries to use the validation code the system will not do any action.
 
 
- | |
 |================================================================================
 
-[[user-story-3.-consent-information]]
-==== User story 3. Consent information
+[[user-story-3.-read-terms-and-conditions]]
+==== User story 3. Read Terms & Conditions
 
-[cols=",,,",options="header",]
+[cols=",",]
 |==================================================================================
-|Story Narrative |Consent information |Priority |1
-|As |visitor  |Size |
-|I want to |give my permission to use my personal information for commercial use |Dependency |
-|So that |I can receive commercial notifications | |
+|As |visitor  
+|I need to |to read the terms and conditions of the queue  
+|So that |I can complete my registration 
 |Acceptance Criteria a|
-- By default the commercial notifications are de-activated.
+- The user can read the terms and conditions statement of the queue.
 
-- If the user gives permission to use his or her personal information for commercial use, the system activates the commercial notifications.
 
- | |
+
 |==================================================================================
 
-[[user-story-4.-register]]
-==== User story 4. Register and request access
+[[user-story-4.-log-out]]
+==== User story 4. Log out
 
-[cols=",,,",options="header",]
+[cols=",",]
 |======================================================================================================
-|Story Narrative |Register |Priority |10
-|As |visitor  |Size |
-|I want to |register and request an access code for the queue |Dependency | US1, US2
-|So that |I can be attended in this queue | |
+|As |visitor  
+|I need to |log out of the system 
+|So that |I can log in as another user
 |Acceptance Criteria a|
-- The user has to provide a new telephone number, email and name. All these fields are mandatory.
+- At any moment, the logged in users can log out of the queue system (“Logout” button) and their ticket number must persist in the system.
+- Upon logout request, the user is sent to the login screen.
 
-- If an email and telephone number have been already used to request access to a queue, they cannot be used again in the same queue until the user is attended. As soon as the user is attended, this user can request a new access code by providing the identificator for this queue and the associated email or telephone number.
 
-- Upon validation of the email and telephone number, the user gets registered and is assigned an access code for the queue.
-
-- The access code is formatted as a "Q" plus a number between 0 and 999, which is the next free number, e.g. Q001.
-
-- The numbering starts at value 0. If the number has reached 999, the numbering continues with value 0.
-
- | |
 |======================================================================================================
 
-[[user-story-5.-priority-access]]
-==== User story 5. Priority access
 
-[cols=",,,",options="header",]
-|======================================================================================================
-|Story Narrative |Priority access |Priority |5
-|As |VIP user  |Size |
-|I want to |get priority access code to the queue  |Dependency |
-|So that |I will be served earlier | |
-|Acceptance Criteria a|
+[[epic-2.-join-and-consult-the-queue]]
+=== *Epic 2. Join and Consult the queue*
 
-- The access code will be formatted as an "A" plus a number between 0 and 999, which will be the next free number, e.g. A001.
-
-- The numbering starts at value 0. If the number has reached 999, the numbering continues with 0.
-
- | |
-|======================================================================================================
-
-[[epic-2.-consult-the-queue]]
-=== *Epic 2. Consult the queue*
-
-This step contains all functions to consult the status of the user in the queue.
+This step contains all functions to join the queue and consult the status of the user in the queue.
 
 Jump the queue must support the following:
 
-- Show people their position in the queue
-- Show the estimated time to be attended
+- Show customers their position in the queue
+- Show the estimated waiting time to be served
 
 The user stories that define this epic are:
 
-[[user-story-6.-consult-queue]]
-==== User story 6. Consult Queue
+[[user-story-5.-home-screen]]
+==== User story 5. Home Screen.
 
-[cols=",,,",options="header",]
+[cols=",",]
 |===============================================================================================================================================================================
-|Story Narrative |Consult queue |Priority |10
-|As |visitor or VIP user or owner |Size |
-|I want to |consult the status of the queue |Dependency |
-|So that |I can know who is being served, when I am expected to be served and how I will be called | |
+|As |visitor 
+|I want to |see the home screen of the queue
+|So that |I can decide to join it
 |Acceptance Criteria a|
-- The visitor and VIP users have to provide the identificator generated for this queue and the email or telephone number used to register in that queue.
-
-- The system will respond showing the access code of the user, the name, the estimated time and the list of unattended access codes for this queue.
-
-- The list of unattended access codes will be arranged in chronological order, placing first the priority access codes (Axxx) and then the rest of access codes (Qxxx).
-
-- The users registered for the queue can consult the status of the queue at any moment.
-
-- The owner of the queue can see the access code of the current turn.
+- The user can see the current ticket number being served in the queue.
+- The user can request to join the queue (“Join” button).
+- The user can request to go back to the login screen (“Logout” button).
 
 
- | |
 |===============================================================================================================================================================================
 
-[[user-story-7.-waiting-time]]
-==== User story 7. Waiting time
+[[user-story-6.-join-request]]
+==== User story 6. Join request.
 
-[cols=",,,",options="header",]
+[cols=",",]
 |==================================================================================================================================================================================================================
-|Story Narrative |Waiting time |Priority |10
-|As |visitor or internal user |Size |
-|I want to |see my estimated waiting time |Dependency |
-|So that |I would know when I will be attended | |
+|As |visitor
+|I want to |to join the queue
+|So that |I can be served by the shop assistant
 |Acceptance Criteria a|
-- The system has to calculate the estimated time with the following formula: current hour + (Sum(The last ten attention time)/nº of attended turn counted)*(number of non-attended turns in the queue before this).
+- Upon request to join, if the queue is:
+Stopped, the user gets a message reporting that.
+Started, the user gets the first available ticket number and the estimated time to be attended.
+- The format of the ticket number is: Qxxx (e.g. Q047). When the value Q999 is reached, the numbering restarts at Q000. 
+- If a ticket number was removed from the system, it cannot be re-assigned unless it had been the last number assigned.
+- Each user can have only one ticket number at a time.
+- The user can see:
+** The assigned ticket number
+** Waiting time
+** The current ticket number being served
+- The user can cancel the request to join and go back to the login screen. The assigned ticket number will be removed.
 
-- The number cannot be less than a configurable value.
-
-- The attention time is the difference between the start time and the end time.
-
- | |
 |==================================================================================================================================================================================================================
 
-[[epic-3.-manage-queue]]
-=== *Epic 3. Manage queue*
+[[user-story-7.-calculate-waiting-time]]
+==== User story 7. Calculate the waiting time.
 
-It contains all functions that allow to manage the queue in order to configure and attend active turn.
+[cols=",",]
+|====================================================================================================================================================================================================================
+|As |visitor
+|I want to |see the estimated wating time
+|So that |I  can know when I am expected to be served
+|Acceptance Criteria a|
+- The waiting_time is calculated as: (Sum of last X attention_times / X) * (nº of non-attended customers in queue before me).
+- The attention_time is calculated as: the period between the moment the customer starts to be served and the moment the next customer is called.
+- If the end time of a visitor is not set, it is not used to calculate the attention time.
+- The waiting_time cannot be shorter than a configured minimum waiting_time. If that happens, the waiting_time is set to that configured minimum waiting_time.
+
+|====================================================================================================================================================================================================================
+
+[[user-story-8.-queue-status]]
+==== User story 8. Queue status.
+
+[cols=",",]
+|=======================================================================================
+|As |visitor
+|I want to |see the status of the queue
+|So that |I know when I am expected to be served
+|Acceptance Criteria a|
+- The users can consult the status of the queue at any moment even if the user has closed the session or logged out.
+- If the user has a ticket number that was not called yet and logs in, the user will see:
+** his or her ticket number
+** the waiting time to be served (recalculated) 
+** the current ticket number being served.
+- The user can quit from the queue (“Leave Queue” operation) at any moment.
+- Upon cancellation of the user request to join the queue, the user gets back to the home screen and the ticket number that was assigned to this user is removed from the system.
+- The user can request to go back to the login screen (“Logout” button).
+
+
+|=======================================================================================
+
+[[epic-3.-operate-queue]]
+=== *Epic 3. Operate the queue*
+
+It contains all functions that allow management of the queue in order to configure and serve the active turn.
 
 The user stories that define this are:
 
-[[user-story-8.-configure-queue]]
-==== User story 8. Configure queue
+[[user-story-9.-call-next]]
+==== User story 9. Call next customer.
 
-[cols=",,,",options="header",]
+[cols=",",]
 |=============================================================================
-|Story Narrative |Configure queue |Priority |5
-|As |jump the queue owner of the queue |Size |
-|I want to |personalize the logo and description showed to users |Dependency |
-|So that |I can personalize my business | |
-|Acceptance Criteria a|
-- The system allows to configure a logo and description.
-
-- Jump the queue front shows the logo and description
-
- | |
+|As |Owner
+|I need to |to close the current customer service
+|So that |I can call next customer
+|Acceptance Criteria|
+* The owner can see the ticket number of current customer.
+* The owner can call next customer (“Next” button), which will be the first in the queue that is non-attended.
+* Upon a call for a new customer:
+** The service end time for current customer (if any) gets updated with current time.
+** The service start time for the new customer (if any) gets updated with current time.
+** The displayed ticket number is updated to the ticket number of the new customer (if any). If there are no new customers, no ticket number is displayed.
+** The attention time is updated.
 |=============================================================================
 
-[[user-story-9.-attend-queue]]
-==== User story 9. Attend queue
+[[user-story-10.-start-queue]]
+==== User story 10. Start the queue
 
-[cols=",,,",options="header",]
+[cols=",",]
 |================================================================
-|Story Narrative |Attend queue |Priority |10
-|As |jump the queue owner of the queue |Size |
-|I need to |know the current turn of the queue |Dependency |
-|So that |I can attend it | |
-|Acceptance Criteria a|
-* The turn has to be the first in the queue that is non-attended.
+|As |Owner
+|I need to |start the queue
+|So that |my customers can join the queue
+|Acceptance Criteria|
+* The owner can start the queue by pressing the “Start” button.
+* The system will ask the customer to confirm that he or she wants to start the queue.
+* Upon a queue start confirmation, the numbering of the queue is reset to Q000.
 
-* The system must save:
+|================================================================
 
-** At the previous turn: Save the current time as end time
+[[user-story-11.-stop-queue]]
+==== User story 11. Stop the queue
 
-** At the new turn: Save the current time as start time
+[cols=",",]
+|================================================================
+|As |Owner
+|I need to |stop the queue
+|So that |my customers cannot join the queue
+|Acceptance Criteria|
+* The owner of the queue can stop the queue by pressing the “Stop” button.
+* The system will ask the customer to confirm that he or she wants to stop the queue.
+* The system stops the process that grants new ticket numbers to the customers that request to join the queue.
+* At midnight a cronjob clears the unattended ticket numbers and, if still running, stops the process that generates new ticket numbers.
 
- | |
 |================================================================
 
 [[site-map]]
 == *5. Site Map*
 
-We proposed the following sitemap and screens structures to support the requirements that must fulfill the solution.
+We proposed the following sitemap and screen structures to support the requirements that must be fulfilled according to the solution.
 
-image:media/SiteMap.png[]
+image:media/SiteMap.PNG[]
 
-1º Select Queue. This step will not be a screen and represent the operation that a user will follow to enter to Jump the Queue.
+1º Log In or Register. This is the first step where a user has to either Log In to an existing account or register a new one where he/she would also have to accept the terms and coditons and prove he/she is human.
 
-2º Request/ Insert code. This functionality represents the process that a user has to follow to obtain a ticket number. The proposed screen will only apply to visitors users because existing users will have a direct access to step 3.
+image:media/LoginRegister.PNG[]
 
-image:media/InsertCode.png[]
+2º Home Screen. Here you can see the current status of the queue and either log out or join the queue.
 
-3º Assigned Order / Show Queue. Here, the user can consult its number and the list of people in the queue.
+image:media/JoinQueue.png[]
 
-image:media/ShowQueue.png[]
+3º Queue Screen. This is where you can see your number in the queue, the estimated time at which you'll be attended, which number is currently being attended and leave the queue.
 
-Finally, the owner of the queue can consult and pass the turn with the consult screen and with a button at the screen or pressing a physical button.
+image:media/Queue_Position.png[]
+
+Finally, we have the queue management screen where the queue owner can start and stop the queue as well as pass the turn and consult general information such as how many people are still waiting, how long it takes them to attend each visitor and how long it would still take at the current rate to finish the entire queue
 
 image:media/ServeQueue.png[]
 
 [[entity-relationship-diagram]]
 == *6. Entity relationship diagram*
 
-Starting from the list of user stories, we found the below entities to support them.
+Starting from the list of user stories, we created the below entities to support them.
 
 image:media/ER.png[]
 
-Each entity will content the following information:
+Each entity will contain the following information:
 
 
-.1. Visitor Information
+.1. Visitor
 It contains the personal information of the visitors who gave the permission to use it.
 [cols="",options="header",]
 |======================================================================================
 | Attribute| Type
+|id | BigInt
+|modificationCounter | Int
+|username(email) | EmailType
 |Name | String
-|Telephone | TelephoneType
-|Email | EmailType
+|password | String
+|phoneNumber | TelephoneType
+|acceptedCommercial| Boolean
+|acceptedTerms| Boolean
+|userType| String
 |======================================================================================
 
-.2 Terms and conditions
-It describes the Terms and conditions that the user must accept to use the queue.
+.2 VisitorTicket
+It contains all the necesary information about the Ticket of ech visitor
 [cols="",options="header",]
 |================================================================================
 | Attribute| Type
-|Description | String
+|id | BigInt
+|modificationCounter | Int
+|ticketNumber | String
+|creationTime | TimeStamp
+|startTime | TimeStamp
+|endTime | TimeStamp
 |================================================================================
 
-.3 Queue owner
-It contains information for the users that can manage queues.
+.3 DailyQueue
+It contains all the information about the daily queue.
 [cols="",options="header",]
 |================================================================================
 | Attribute| Type
-|User |userIdType
-|Name |String
-|Email |EmailType
-|Password |PasswordType
+|id | BigInt
+|modificationCounter | Int
+|name |String
+|logo |ImageType
+|currentNumber |String
+|attentionTime| TimeType
+|minAttentionTime| TimeType
+|active| Boolean
 |================================================================================
 
-.4 Queue
-It contains the information that describes a queue.
-[cols="",options="header",]
-|================================================================================
-| Attribute| Type
-|Description |String
-|Logo |Image
-|================================================================================
-
-.5 Access code
-It contains the list people that are in the queue and their information..
-[cols="",options="header",]
-|================================================================================
-| Attribute| Type
-|Id_code |String. Assigned code. PK
-|Name |String
-|Email |EmailType
-|Telephone |TelephoneType
-|CreationTime |Time (HH:MM). The hour when the user got the turn
-|StartTime |Time (HH:MM). The hour when the attendance of the user starts
-|EndTime |Time (HH:MM). The hour when the attendance of the user ends
-|EstimatedTime |Time (HH:MM). The hour which the system estimated when the user will be attended
-|================================================================================
 
 
 [[bounded-context]]
 == *7. Bounded context*
 
-In this point, we will define the bounded context of the final solution.
+Here, we will define the bounded context of the final solution.
 
 In the figure below we have three domains, one for each related Epic.
 
-* Obtain Access code domain: As we saw at epic chapter, this domain contains the required logic to get a turn in the queue. The related entities are:
+*	Register & LogIn Domain: As we saw at epic chapter 1, this domain contains the required logic to Log in or Register. The related entities are:
+**	Terms & Conditions.
+**	Personal information
+**	Receive notifications.
+**	Visitor
 
-** Access code: It is shared with Consult queue status domain.
-** Queue: It is shared by the three domains.
-** Personal information
-** Terms and conditions: This is shared with Manage queue domain.
+*	Join & Consult queue status domain: It has the needed logic to join and check the turn status. This is supported by the entities:
+**	Access Codes.
+**	Queue.
+**	Visitor.
 
-* Consult queue status domain: It has the needed logic to check turn status. This is supported by the entities:
+*	Operate the queue domain: This domain contains all functionalities to configure and operate the queues.
+**	Queue.
+**	Start & Stop.
+**	Next visitor.
+**	Queue owner.
 
-** Access Code: It is shared with Obtain access code domain.
-** Queue: It is shared by the three domains.
 
-* Manage queue domain: This domain contains all functionalities to configurate the queues and their owners.
-
-** Queue: It is shared by the three domains.
-** Terms and conditions: This is shared with Manage queue domain.
-** Queue owner.
-
-image:media/BoundedContext.png[]
+image:media/BoundContext.png[]
 
 [[glossary-of-terms]]
 == *8. Glossary of terms*
@@ -389,10 +399,8 @@ image:media/BoundedContext.png[]
 |===========================================================================================================================================================
 |Term |Description
 |Access code |This is the turn number assigned to a person.
-|Validation code |It is a code used to confirm the validity of the email or telephone number informed by the user
 |Estimated time |Stands for the time that the system calculates when the person in the queue will be attended
-|Attention time |This is the time that it takes for a user to be attended. It is calculated as the difference between the start and the end of the attention
-|Priority access |It is the access granted to privileged users so they can be attended earlier
+|Serving time |This is the time that it takes for a user to be attended. It is calculated as the difference between the start and the end of the attention
 |===========================================================================================================================================================
 
 
