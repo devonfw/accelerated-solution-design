@@ -1,6 +1,6 @@
 # devonfw Methodology
 
-
+*_This repository has been deprecated and archived as `Accelerated Solution Design` is replaced by `ADAM`._*
 
 # Introduction
 
